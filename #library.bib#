@@ -1,0 +1,492 @@
+@inproceedings{lowe1999object,
+  title={Object recognition from local scale-invariant features},
+  author={Lowe, David G.},
+  booktitle={Computer vision, 1999. The proceedings of the seventh {IEEE} international conference on},
+  volume={2},
+  pages={1150--1157},
+  year={1999},
+  organization={Ieee}
+}
+
+@article{garrido2014automatic,
+  title={Automatic generation and detection of highly reliable fiducial markers under occlusion},
+  author={Garrido-Jurado, S. and Mu{\~n}oz-Salinas, Rafael and Madrid-Cuevas, Francisco Jos{\'e} and Mar{\'\i}n-Jim{\'e}nez, Manuel Jes{\'u}s},
+  journal={{P}attern {R}ecognition},
+  volume={47},
+  number={6},
+  pages={2280--2292},
+  year={2014},
+  publisher={Elsevier}
+}
+
+@inproceedings{brockers2014towards,
+  title={Towards autonomous navigation of miniature uav},
+  author={Brockers, Roland and Hummenberger, Martin and Weiss, Steven and Matthies, Larry},
+  booktitle={2014 {IEEE} {C}onference on{C}omputer {V}ision and {P}attern {R}ecognition {W}orkshops ({CVPRW})},
+  pages={645--651},
+  year={2014},
+  organization={IEEE}
+}
+
+@article{de2012appearance,
+  title={The appearance variation cue for obstacle avoidance},
+  author={De Croon, G.C.H.E and De Weerdt, E. and De Wagter, C. and
+                  Remes, B.D.W. and Ruijsink, R.},
+  journal={{IEEE} {T}ransactions on {R}obotics},
+  volume={28},
+  number={2},
+  pages={529--534},
+  year={2012},
+  publisher={IEEE}
+}
+
+@article{de2009design,
+  title={Design, aerodynamics, and vision-based control of the {D}el{F}ly},
+  author={De Croon, G.C.H.E. and De Clercq, K.M.E. and Ruijsink and Remes and De Wagter, C.},
+  journal={{I}nternational {J}ournal of {M}icro {A}ir {V}ehicles},
+  volume={1},
+  number={2},
+  pages={71--97},
+  year={2009},
+  publisher={Multi Science Publishing}
+}
+
+@article{kendall2015convolutional,
+  title={Convolutional networks for real-time 6-{DOF} camera relocalization},
+  author={Kendall, Alex and Grimes, Matthew and Cipolla, Roberto},
+  journal={arXiv preprint arXiv:1505.07427},
+  year={2015}
+}
+
+
+@incollection{bay2006surf,
+  title={{SURF}: Speeded up robust features},
+  author={Bay, Herbert and Tuytelaars, Tinne and Van Gool, Luc},
+  booktitle={Computer vision--ECCV 2006},
+  pages={404--417},
+  year={2006},
+  publisher={Springer}
+}
+
+@inproceedings{gee20126d,
+  title={{6D} Relocalisation for {RGBD} Cameras Using Synthetic View
+                  Regression.},
+  author={Gee, Andrew P and Mayol-Cuevas, Walterio W},
+  booktitle={BMVC},
+  pages={1--11},
+  year={2012}
+}
+
+
+@inproceedings{rublee2011orb,
+  title={ORB: an efficient alternative to SIFT or SURF},
+  author={Rublee, Ethan and Rabaud, Vincent and Konolige, Kurt and Bradski, Gary},
+  booktitle={Computer Vision (ICCV), 2011 IEEE International Conference on},
+  pages={2564--2571},
+  year={2011},
+  organization={IEEE}
+}
+
+
+@inproceedings{achtelik2011onboard,
+  title={Onboard {IMU} and monocular vision based control for {MAV}s in unknown in- and outdoor environments},
+  author={Achtelik, Markus and Achtelik, Michael and Weiss, Stephan and Siegwart, Roland},
+  booktitle={Robotics and automation (ICRA), 2011 IEEE international conference on},
+  pages={3056--3063},
+  year={2011},
+  organization={IEEE}
+}
+
+@inproceedings{shen2011autonomous,
+  title={Autonomous multi-floor indoor navigation with a computationally constrained {MAV}},
+  author={Shen, Shaojie and Michael, Nathan and Kumar, Vijay},
+  booktitle={2011 {IEEE} {I}nternational {C}onference on {R}obotics and {A}utomation ({ICRA})},
+  pages={20--25},
+  year={2011},
+  organization={IEEE}
+}
+
+@article{eberli2011vision,
+  title={Vision based position control for {MAV}s using one single circular landmark},
+  author={Eberli, Daniel and Scaramuzza, Davide and Weiss, Stephan and Siegwart, Roland},
+  journal={Journal of Intelligent \& Robotic Systems},
+  volume={61},
+  number={1-4},
+  pages={495--512},
+  year={2011},
+  publisher={Springer}
+}
+
+@inproceedings{klein2007parallel,
+  title={Parallel tracking and mapping for small {AR} work-spaces},
+  author={Klein, Georg and Murray, David},
+  booktitle={6th {IEEE} and {ACM} {I}nternational {S}ymposium on {M}ixed and Augmented Reality ({ISMAR}) 2007},
+  pages={225--234},
+  year={2007},
+  organization={IEEE}
+}
+
+@incollection{rosten2006machine,
+  title={Machine learning for high-speed corner detection},
+  author={Rosten, Edward and Drummond, Tom},
+  booktitle={Computer Vision--ECCV 2006},
+  pages={430--443},
+  year={2006},
+  publisher={Springer}
+}
+
+@article{se2002mobile,
+  title={Mobile robot localization and mapping with uncertainty using scale-invariant visual landmarks},
+  author={Se, Stephen and Lowe, David and Little, Jim},
+  journal={The {I}nternational {J}ournal of {R}obotics {R}esearch},
+  volume={21},
+  number={8},
+  pages={735--758},
+  year={2002},
+  publisher={{SAGE} Publications}
+}
+
+
+@inproceedings{fraundorfer2012vision,
+  title={Vision-based autonomous mapping and exploration using a quadrotor {MAV}},
+  author={Fraundorfer, Friedrich and Heng, Lionel and Honegger, Dominik and Lee, Gim Hee and Meier, Lorenz and Tanskanen, Petri and Pollefeys, Marc},
+  booktitle={Intelligent Robots and Systems (IROS), 2012 IEEE/RSJ International Conference on},
+  pages={4557--4564},
+  year={2012},
+  organization={IEEE}
+}
+
+@inproceedings{kato1999marker,
+  title={Marker tracking and {HMD} calibration for a video-based
+                  augmented reality conferencing system},
+  author={Kato, Hirokazu and Billinghurst, Mark},
+  booktitle={2nd {IEEE} and {ACM} {I}nternational {W}orkshop on {A}ugmented {R}eality (IWAR'99), 1999 Proceedings.},
+  pages={85--94},
+  year={1999},
+  organization={IEEE}
+}
+@article{lecun1998gradient,
+  title={Gradient-based learning applied to document recognition},
+  author={LeCun, Yann and Bottou, L{\'e}on and Bengio, Yoshua and Haffner, Patrick},
+  journal={Proceedings of the {IEEE}},
+  volume={86},
+  number={11},
+  pages={2278--2324},
+  year={1998},
+  publisher={IEEE}
+}
+
+@online{bebop2015,
+  author={Parrot},
+  title={CES 2015 : Parrot Bebop Dance Choreography},
+  year={2015},
+  url={https://www.youtube.com/watch?v=A_3UifFb45Y},
+  urldate={2015-10-15}
+}
+
+@inproceedings{engelson1992error,
+  title={Error correction in mobile robot map learning},
+  author={Engelson, Sean P and McDermott, Drew V},
+  booktitle={{IEEE} {I}nternational {C}onference on {R}obotics and {A}utomation, 1992 {P}roceedings.},
+  pages={2555--2560},
+  year={1992},
+  organization={IEEE}
+}
+
+@inproceedings{dosovitskiy2014discriminative,
+  title={Discriminative unsupervised feature learning with convolutional neural networks},
+  author={Dosovitskiy, Alexey and Springenberg, Jost Tobias and Riedmiller, Martin and Brox, Thomas},
+  booktitle={Advances in {N}eural {I}nformation {P}rocessing {S}ystems},
+  pages={766--774},
+  year={2014}
+}
+
+@article{varma2005statistical,
+  title={A statistical approach to texture classification from single images},
+  author={Varma, Manik and Zisserman, Andrew},
+  journal={International Journal of Computer Vision},
+  volume={62},
+  number={1-2},
+  pages={61--81},
+  year={2005},
+  publisher={Springer}
+}
+
+@inproceedings{brisset2006paparazzi,
+  title={The {P}aparazzi solution},
+  author={Brisset, Pascal and Drouin, Antoine and Gorraz, Michel and Huard, Pierre-Selim and Tyler, Jeremy},
+  booktitle={2nd US-European Competition and Workshop on Micro Air Vehicles 2006},
+  year={2006}
+}
+
+@article{geusebroek2001color,
+  title={Color invariance},
+  author={Geusebroek, Jan-Mark and Van den Boomgaard, Rein and Smeulders, Arnold W.M. and Geerts, Hugo},
+  journal={{IEEE} {T}ransactions on {P}attern {A}nalysis and {M}achine {I}ntelligence},
+  volume={23},
+  number={12},
+  pages={1338--1350},
+  year={2001},
+  publisher={IEEE}
+}
+
+% Laser range finders for indoor localization
+@inproceedings{grzonka2009towards,
+  title={Towards a navigation system for autonomous indoor flying},
+  author={Grzonka, Slawomir and Grisetti, Giorgio and Burgard, Wolfram},
+  booktitle={{IEEE} {I}nternational {C}onference on {R}obotics and {A}utomation, 2009 ({ICRA}'09). },
+  pages={2878--2883},
+  year={2009},
+  organization={IEEE}
+}
+
+@phdthesis{bachrach2009autonomous,
+  title={Autonomous flight in unstructured and unknown indoor environments},
+  author={Bachrach, Abraham Galton},
+  year={2009},
+  school={Massachusetts Institute of Technology}
+}
+
+@inproceedings{blosch2010vision,
+  title={Vision based MAV navigation in unknown and unstructured environments},
+  author={Bl{\"o}sch, Michael and Weiss, Stephan and Scaramuzza, Davide and Siegwart, Roland},
+  booktitle={2010 {IEEE} {I}nternational {C}onference on {R}obotics and {A}utomation ({ICRA})},
+  pages={21--28},
+  year={2010},
+  organization={IEEE}
+}
+
+@inproceedings{angeli20062d,
+  title={2{D} simultaneous localization and mapping for micro air vehicles},
+  author={Angeli, Adrien and Filliat, David and Doncieux, St{\'e}phane and Meyer, Jean-Arcady},
+  booktitle={European Micro Aerial Vehicles ({EMAV})},
+  year={2006}
+}
+
+@inproceedings{ahrens2009vision,
+  title={Vision-based guidance and control of a hovering vehicle in unknown, GPS-denied environments},
+  author={Ahrens, Spencer and Levine, Daniel and Andrews, Gregory and How, Jonathan P},
+  booktitle={Robotics and Automation, 2009. ICRA'09. IEEE International Conference on},
+  pages={2643--2648},
+  year={2009},
+  organization={IEEE}
+}
+
+@article{chu2013halftone,
+  title={Halftone QR codes},
+  author={Chu, Hung-Kuo and Chang, Chia-Sheng and Lee, Ruen-Rone and Mitra, Niloy J},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={32},
+  number={6},
+  pages={217},
+  year={2013},
+  publisher={ACM}
+}
+
+@misc{agisoft2013agisoft,
+  title={Agisoft PhotoScan user manual. Professional edition, version 0.9. 0},
+  author={Agisoft, LLC},
+  year={2013}
+}
+
+@article{lloyd1982least,
+  title={Least squares quantization in {PCM}},
+  author={Lloyd, Stuart P},
+  journal={IEEE Transactions on Information Theory},
+  volume={28},
+  number={2},
+  pages={129--137},
+  year={1982},
+  publisher={IEEE}
+}
+
+@inproceedings{varma2003texture,
+  title={Texture classification: Are filter banks necessary?},
+  author={Varma, Manik and Zisserman, Andrew},
+  booktitle={2003 {IEEE} {C}omputer {S}ociety {S}onference on {C}omputer {V}ision and {P}attern {R}ecognition, 2003 Proceedings},
+  volume={2},
+  pages={II--691},
+  year={2003},
+  organization={IEEE}
+}
+
+@inproceedings{driessen2008map,
+  title={MAP estimation in particle filter tracking},
+  author={Driessen, Hans and Boers, Yvo},
+  booktitle={2008 {IET} {S}eminar on {T}arget {T}racking and {D}ata {F}usion: {A}lgorithms and {A}pplications},
+  pages={41--45},
+  year={2008},
+  organization={IET}
+}
+
+@article{martinez2011board,
+  title={On-board and ground visual pose estimation techniques for {UAV} control},
+  author={Mart{\'\i}nez, Carol and Mondrag{\'o}n, Iv{\'a}n F and Olivares-M{\'e}ndez, Miguel A and Campoy, Pascual},
+  journal={Journal of {I}ntelligent \& {R}obotic {S}ystems},
+  volume={61},
+  number={1-4},
+  pages={301--320},
+  year={2011},
+  publisher={Springer}
+}
+
+@article{mcguire2016local,
+  title={Local Histogram Matching for Efficient Optical Flow Computation Applied to Velocity Estimation on Pocket Drones},
+  author={McGuire, Kimberly and de Croon, Guido and de Wagter, Christophe and Remes, Bart and Tuyls, Karl and Kappen, Hilbert},
+  journal={arXiv preprint arXiv:1603.07644},
+  year={2016}
+}
+
+@inproceedings{fraundorfer2012vision,
+  title={Vision-based autonomous mapping and exploration using a quadrotor {MAV}},
+  author={Fraundorfer, Friedrich and Heng, Lionel and Honegger, Dominik and Lee, Gim Hee and Meier, Lorenz and Tanskanen, Petri and Pollefeys, Marc},
+  booktitle={2012 {IEEE/RSJ} {I}nternational {C}onference on {I}ntelligent {R}obots and {S}ystems},
+  pages={4557--4564},
+  year={2012},
+  organization={IEEE}
+}
+
+@inproceedings{chao2013survey,
+  title={A survey of optical flow techniques for UAV navigation applications},
+  author={Chao, Haiyang and Gu, Yu and Napolitano, Marcello},
+  booktitle={Unmanned Aircraft Systems (ICUAS), 2013 International Conference on},
+  pages={710--716},
+  year={2013},
+  organization={IEEE}
+}
+
+@article{aruco2014,
+ title = "Automatic generation and detection of highly reliable fiducial markers under occlusion ",
+ journal = "Pattern Recognition ",
+ volume = "47",
+ number = "6",
+ pages = "2280 - 2292",
+ year = "2014",
+ issn = "0031-3203",
+ doi = "http://dx.doi.org/10.1016/j.patcog.2014.01.005",
+ url = "http://www.sciencedirect.com/science/article/pii/S0031320314000235",
+ author = "S. Garrido-Jurado and R. Mu\~noz-Salinas and F.J. Madrid-Cuevas and M.J. Mar\'in-Jim\'enez"
+}
+
+@inproceedings{albasiouny2015mean,
+  title={Mean-shift-FAST algorithm to handle motion-blur with tracking fiducial markers},
+  author={AlBasiouny, Eman R and Sarhan, Amany and Medhat, T},
+  booktitle={Computer Engineering \& Systems (ICCES), 2015 Tenth International Conference on},
+  pages={286--292},
+  year={2015},
+  organization={IEEE}
+}
+
+@inproceedings{se2002global,
+  title={Global localization using distinctive visual features},
+  author={Se, Stephen and Lowe, David and Little, Jim},
+  booktitle={{IEEE/RSJ} International Conference on Intelligent Robots and Systems, 2002.},
+  volume={1},
+  pages={226--231},
+  year={2002},
+  organization={IEEE}
+}
+
+@inproceedings{achtelik2011onboard,
+  title={Onboard {IMU} and monocular vision based control for MAVs in unknown in- and outdoor environments},
+  author={Achtelik, Markus and Achtelik, Michael and Weiss, Stephan and Siegwart, Roland},
+  booktitle={2011 IEEE international conference on Robotics and automation (ICRA)},
+  pages={3056--3063},
+  year={2011},
+  organization={IEEE}
+}
+
+@inproceedings{ruffier2003bio,
+  title={Bio-inspired optical flow circuits for the visual guidance of micro air vehicles},
+  author={Ruffier, Franck and Viollet, St{\'e}phane and Amic, S and Franceschini, N},
+  booktitle={Circuits and Systems, 2003. ISCAS'03. Proceedings of the 2003 International Symposium on},
+  volume={3},
+  pages={III--846},
+  year={2003},
+  organization={IEEE}
+}
+
+@article{fox1999monte,
+  title={Monte carlo localization: Efficient position estimation for mobile robots},
+  author={Fox, Dieter and Burgard, Wolfram and Dellaert, Frank and Thrun, Sebastian},
+  journal={AAAI/IAAI},
+  volume={1999},
+  pages={343--349},
+  year={1999}
+}
+
+@inproceedings{engelson1992error,
+  title={Error correction in mobile robot map learning},
+  author={Engelson, Sean P and McDermott, Drew V},
+  booktitle={Robotics and Automation, 1992. Proceedings., 1992 IEEE International Conference on},
+  pages={2555--2560},
+  year={1992},
+  organization={IEEE}
+}
+
+@article{de2009design,
+  title={Design, aerodynamics, and vision-based control of the DelFly},
+  author={De Croon, GCHE and De Clercq, KME and Ruijsink, Remes and Remes, B and De Wagter, C},
+  journal={International Journal of Micro Air Vehicles},
+  volume={1},
+  number={2},
+  pages={71--97},
+  year={2009},
+  publisher={SAGE Publications}
+}
+
+@article{de2012sub,
+  title={Sub-sampling: Real-time vision for Micro Air Vehicles},
+  author={De Croon, GCHE and De Wagter, C and Remes, BDW and Ruijsink, R},
+  journal={Robotics and Autonomous Systems},
+  volume={60},
+  number={2},
+  pages={167--181},
+  year={2012},
+  publisher={Elsevier}
+}
+
+@inproceedings{kato1999marker,
+  title={Marker tracking and {HMD} calibration for a video-based augmented reality conferencing system},
+  author={Kato, Hirokazu and Billinghurst, Mark},
+  booktitle={Augmented Reality, 1999.(IWAR'99) Proceedings. 2nd IEEE and ACM International Workshop on},
+  pages={85--94},
+  year={1999},
+  organization={IEEE}
+}
+
+@inproceedings{hornecker2005using,
+  title={Using {ARToolKit} markers to build tangible prototypes and simulate other technologies},
+  author={Hornecker, Eva and Psik, Thomas},
+  booktitle={IFIP Conference on Human-Computer Interaction},
+  pages={30--42},
+  year={2005},
+  organization={Springer}
+}
+
+@article{lecun1998gradient,
+  title={Gradient-based learning applied to document recognition},
+  author={LeCun, Yann and Bottou, L{\'e}on and Bengio, Yoshua and Haffner, Patrick},
+  journal={Proceedings of the IEEE},
+  volume={86},
+  number={11},
+  pages={2278--2324},
+  year={1998},
+  publisher={IEEE}
+}
+
+@inproceedings{dosovitskiy2014discriminative,
+  title={Discriminative unsupervised feature learning with convolutional neural networks},
+  author={Dosovitskiy, Alexey and Springenberg, Jost Tobias and Riedmiller, Martin and Brox, Thomas},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={766--774},
+  year={2014}
+}
+
+@inproceedings{kendall2015posenet,
+  title={PoseNet: A convolutional network for real-time 6-DOF camera relocalization},
+  author={Kendall, Alex and Grimes, Matthew and Cipolla, Roberto},
+  booktitle={Proceedings of the IEEE International Conference on Computer Vision},
+  pages={2938--2946},
+  year={2015}
+}
