@@ -4,11 +4,11 @@
   <bcf:options component="biber" type="global">
     <bcf:option type="singlevalued">
       <bcf:key>output_encoding</bcf:key>
-      <bcf:value>utf8</bcf:value>
+      <bcf:value>ascii</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>input_encoding</bcf:key>
-      <bcf:value>utf8</bcf:value>
+      <bcf:value>ascii</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>debug</bcf:key>
@@ -1970,49 +1970,58 @@
     <bcf:citekey order="2">angeli20062d</bcf:citekey>
     <bcf:citekey order="2">ahrens2009vision</bcf:citekey>
     <bcf:citekey order="3">blosch2010vision</bcf:citekey>
-    <bcf:citekey order="4">kendall2015convolutional</bcf:citekey>
+    <bcf:citekey order="4">kendall2015posenet</bcf:citekey>
     <bcf:citekey order="5">varma2005statistical</bcf:citekey>
     <bcf:citekey order="6">fox1999monte</bcf:citekey>
     <bcf:citekey order="7">engelson1992error</bcf:citekey>
-    <bcf:citekey order="8">kato1999marker</bcf:citekey>
-    <bcf:citekey order="8">garrido2014automatic</bcf:citekey>
-    <bcf:citekey order="9">eberli2011vision</bcf:citekey>
-    <bcf:citekey order="9">bebop2015</bcf:citekey>
-    <bcf:citekey order="10">kato1999marker</bcf:citekey>
-    <bcf:citekey order="11">aruco2014</bcf:citekey>
-    <bcf:citekey order="12">albasiouny2015mean</bcf:citekey>
-    <bcf:citekey order="13">hornecker2005using</bcf:citekey>
-    <bcf:citekey order="14">chu2013halftone</bcf:citekey>
-    <bcf:citekey order="15">se2002global</bcf:citekey>
-    <bcf:citekey order="16">lowe1999object</bcf:citekey>
-    <bcf:citekey order="17">blosch2010vision</bcf:citekey>
-    <bcf:citekey order="18">blosch2010vision</bcf:citekey>
-    <bcf:citekey order="19">achtelik2011onboard</bcf:citekey>
-    <bcf:citekey order="20">de2009design</bcf:citekey>
-    <bcf:citekey order="21">lecun1998gradient</bcf:citekey>
-    <bcf:citekey order="22">dosovitskiy2014discriminative</bcf:citekey>
+    <bcf:citekey order="8">microsoft</bcf:citekey>
+    <bcf:citekey order="9">kato1999marker</bcf:citekey>
+    <bcf:citekey order="9">garrido2014automatic</bcf:citekey>
+    <bcf:citekey order="10">eberli2011vision</bcf:citekey>
+    <bcf:citekey order="10">bebop2015</bcf:citekey>
+    <bcf:citekey order="11">kato1999marker</bcf:citekey>
+    <bcf:citekey order="12">aruco2014</bcf:citekey>
+    <bcf:citekey order="13">albasiouny2015mean</bcf:citekey>
+    <bcf:citekey order="14">hornecker2005using</bcf:citekey>
+    <bcf:citekey order="15">chu2013halftone</bcf:citekey>
+    <bcf:citekey order="16">se2002global</bcf:citekey>
+    <bcf:citekey order="17">lowe1999object</bcf:citekey>
+    <bcf:citekey order="18">kendall2015posenet</bcf:citekey>
+    <bcf:citekey order="19">blosch2010vision</bcf:citekey>
+    <bcf:citekey order="20">blosch2010vision</bcf:citekey>
+    <bcf:citekey order="21">achtelik2011onboard</bcf:citekey>
+    <bcf:citekey order="22">de2009design</bcf:citekey>
     <bcf:citekey order="23">lecun1998gradient</bcf:citekey>
     <bcf:citekey order="24">dosovitskiy2014discriminative</bcf:citekey>
-    <bcf:citekey order="25">kendall2015posenet</bcf:citekey>
-    <bcf:citekey order="26">kendall2015posenet</bcf:citekey>
-    <bcf:citekey order="27">ruffier2003bio</bcf:citekey>
-    <bcf:citekey order="28">chao2013survey</bcf:citekey>
-    <bcf:citekey order="29">chao2013survey</bcf:citekey>
-    <bcf:citekey order="30">mcguire2016local</bcf:citekey>
-    <bcf:citekey order="31">mcguire2016local</bcf:citekey>
+    <bcf:citekey order="25">lecun1998gradient</bcf:citekey>
+    <bcf:citekey order="26">dosovitskiy2014discriminative</bcf:citekey>
+    <bcf:citekey order="27">kendall2015posenet</bcf:citekey>
+    <bcf:citekey order="28">kendall2015posenet</bcf:citekey>
+    <bcf:citekey order="29">ruffier2003bio</bcf:citekey>
+    <bcf:citekey order="30">chao2013survey</bcf:citekey>
+    <bcf:citekey order="31">chao2013survey</bcf:citekey>
     <bcf:citekey order="32">mcguire2016local</bcf:citekey>
-    <bcf:citekey order="33">varma2005statistical</bcf:citekey>
-    <bcf:citekey order="34">varma2005statistical</bcf:citekey>
+    <bcf:citekey order="33">mcguire2016local</bcf:citekey>
+    <bcf:citekey order="34">mcguire2016local</bcf:citekey>
     <bcf:citekey order="35">varma2005statistical</bcf:citekey>
-    <bcf:citekey order="36">de2012sub</bcf:citekey>
-    <bcf:citekey order="37">de2009design</bcf:citekey>
-    <bcf:citekey order="38">de2009design</bcf:citekey>
-    <bcf:citekey order="39">de2012appearance</bcf:citekey>
-    <bcf:citekey order="40">de2012appearance</bcf:citekey>
+    <bcf:citekey order="36">varma2005statistical</bcf:citekey>
+    <bcf:citekey order="37">varma2005statistical</bcf:citekey>
+    <bcf:citekey order="38">de2012sub</bcf:citekey>
+    <bcf:citekey order="39">de2009design</bcf:citekey>
+    <bcf:citekey order="40">de2009design</bcf:citekey>
     <bcf:citekey order="41">de2012appearance</bcf:citekey>
-    <bcf:citekey order="42">lowe1999object</bcf:citekey>
-    <bcf:citekey order="43">varma2003texture</bcf:citekey>
-    <bcf:citekey order="44">driessen2008map</bcf:citekey>
+    <bcf:citekey order="42">de2012appearance</bcf:citekey>
+    <bcf:citekey order="43">de2012appearance</bcf:citekey>
+    <bcf:citekey order="44">bebop</bcf:citekey>
+    <bcf:citekey order="45">paparazzi</bcf:citekey>
+    <bcf:citekey order="46">blosch2010vision</bcf:citekey>
+    <bcf:citekey order="47">ice</bcf:citekey>
+    <bcf:citekey order="48">lowe1999object</bcf:citekey>
+    <bcf:citekey order="49">varma2003texture</bcf:citekey>
+    <bcf:citekey order="50">kohonen1990self</bcf:citekey>
+    <bcf:citekey order="51">knn</bcf:citekey>
+    <bcf:citekey order="52">driessen2008map</bcf:citekey>
+    <bcf:citekey order="53">driessen2008map</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="nty">
   <bcf:sorting>

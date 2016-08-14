@@ -96,17 +96,17 @@
       \name{labelname}{4}{}{%
         {{hash=a629cfa28c2269a55bff6d0622bc6ecd}{Angeli}{A\bibinitperiod}{Adrien}{A\bibinitperiod}{}{}{}{}}%
         {{hash=86d3a84fdaeef92ef05a26619046b52c}{Filliat}{F\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
-        {{hash=8542510baf2c653fa6317e0911fedc62}{Doncieux}{D\bibinitperiod}{Stéphane}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=62f232e1ef2f07b8ddc8e7161b906fbb}{Doncieux}{D\bibinitperiod}{St{\'e}phane}{S\bibinitperiod}{}{}{}{}}%
         {{hash=d98e4d0d1cce17d83e99263790da3a47}{Meyer}{M\bibinitperiod}{Jean-Arcady}{J\bibinithyphendelim A\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{4}{}{%
         {{hash=a629cfa28c2269a55bff6d0622bc6ecd}{Angeli}{A\bibinitperiod}{Adrien}{A\bibinitperiod}{}{}{}{}}%
         {{hash=86d3a84fdaeef92ef05a26619046b52c}{Filliat}{F\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
-        {{hash=8542510baf2c653fa6317e0911fedc62}{Doncieux}{D\bibinitperiod}{Stéphane}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=62f232e1ef2f07b8ddc8e7161b906fbb}{Doncieux}{D\bibinitperiod}{St{\'e}phane}{S\bibinitperiod}{}{}{}{}}%
         {{hash=d98e4d0d1cce17d83e99263790da3a47}{Meyer}{M\bibinitperiod}{Jean-Arcady}{J\bibinithyphendelim A\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{8ebcea6cfd09b86ae1cde90892497f12}
-      \strng{fullhash}{54284e101628faa53dcb6a9a48ab7ed0}
+      \strng{fullhash}{e4bee36dfd6b25e03ad0c99b15ce84f7}
       \field{sortinit}{A}
       \field{labeltitle}{2{D} simultaneous localization and mapping for micro air vehicles}
       \field{booktitle}{European Micro Aerial Vehicles ({EMAV})}
@@ -133,13 +133,13 @@
     \endentry
     \entry{blosch2010vision}{inproceedings}{}
       \name{labelname}{4}{}{%
-        {{hash=f5681f94207ecf679565eb4c043d8797}{Blösch}{B\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=d98e559f8d985ddd482b4bad0dd12f80}{Bl{\"o}sch}{B\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
         {{hash=ed319fd1813ea37877cf88da07f5b096}{Weiss}{W\bibinitperiod}{Stephan}{S\bibinitperiod}{}{}{}{}}%
         {{hash=dac21ab4ede215439fcc6b051be53a11}{Scaramuzza}{S\bibinitperiod}{Davide}{D\bibinitperiod}{}{}{}{}}%
         {{hash=6ee8958bbf32527489012d8ca7c95ee3}{Siegwart}{S\bibinitperiod}{Roland}{R\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{4}{}{%
-        {{hash=f5681f94207ecf679565eb4c043d8797}{Blösch}{B\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=d98e559f8d985ddd482b4bad0dd12f80}{Bl{\"o}sch}{B\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
         {{hash=ed319fd1813ea37877cf88da07f5b096}{Weiss}{W\bibinitperiod}{Stephan}{S\bibinitperiod}{}{}{}{}}%
         {{hash=dac21ab4ede215439fcc6b051be53a11}{Scaramuzza}{S\bibinitperiod}{Davide}{D\bibinitperiod}{}{}{}{}}%
         {{hash=6ee8958bbf32527489012d8ca7c95ee3}{Siegwart}{S\bibinitperiod}{Roland}{R\bibinitperiod}{}{}{}{}}%
@@ -147,8 +147,8 @@
       \list{organization}{1}{%
         {IEEE}%
       }
-      \strng{namehash}{fc4d26ed94e6d85f39b6fd01f25a8804}
-      \strng{fullhash}{511255e66d091ad3a913613c2e21ee43}
+      \strng{namehash}{625b41f93cebf24a7deddfdd7af9e0ce}
+      \strng{fullhash}{1597303378e644dd6fac2da5dfe40aa2}
       \field{sortinit}{B}
       \field{labeltitle}{Vision based MAV navigation in unknown and unstructured environments}
       \field{booktitle}{2010 {IEEE} {I}nternational {C}onference on {R}obotics and {A}utomation ({ICRA})}
@@ -205,6 +205,17 @@
       \field{volume}{32}
       \field{year}{2013}
       \field{pages}{217}
+    \endentry
+    \entry{knn}{online}{}
+      \field{sortinit}{C}
+      \field{labeltitle}{CPSC 340: Machine Learning and Data Mining}
+      \field{title}{CPSC 340: Machine Learning and Data Mining}
+      \field{urlday}{10}
+      \field{urlmonth}{08}
+      \field{urlyear}{2016}
+      \verb{url}
+      \verb https://www.cs.ubc.ca/~schmidtm/Courses/340-F15/L7.pdf
+      \endverb
     \endentry
     \entry{de2009design}{article}{}
       \name{labelname}{5}{}{%
@@ -408,21 +419,21 @@
     \entry{garrido2014automatic}{article}{}
       \name{labelname}{4}{}{%
         {{hash=3af5a2edc984fbb2d48b25d5f00665b2}{Garrido-Jurado}{G\bibinithyphendelim J\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
-        {{hash=b328616f1d120f57ec8a03604fe66d35}{Muñoz-Salinas}{M\bibinithyphendelim S\bibinitperiod}{Rafael}{R\bibinitperiod}{}{}{}{}}%
-        {{hash=cf29305d6241d63be0b5aa6b87f9caa5}{Madrid-Cuevas}{M\bibinithyphendelim C\bibinitperiod}{Francisco\bibnamedelima José}{F\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
-        {{hash=e3a38f2292e97ac3bcdf31fd981e7cdd}{Mar{\'ı}n-Jiménez}{M\bibinithyphendelim J\bibinitperiod}{Manuel\bibnamedelima Jesús}{M\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=b31953c7aed1eb5c967178225d2c48ed}{Mu{\~n}oz-Salinas}{M\bibinitperiod}{Rafael}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=c43ce5a602051e83ef56256dd5d18c4e}{Madrid-Cuevas}{M\bibinithyphendelim C\bibinitperiod}{Francisco\bibnamedelima Jos{\'e}}{F\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=105d244b41fe130bb98584baf0fde72e}{Mar{\'\i}n-Jim{\'e}nez}{M\bibinithyphendelim J\bibinitperiod}{Manuel\bibnamedelima Jes{\'u}s}{M\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{4}{}{%
         {{hash=3af5a2edc984fbb2d48b25d5f00665b2}{Garrido-Jurado}{G\bibinithyphendelim J\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
-        {{hash=b328616f1d120f57ec8a03604fe66d35}{Muñoz-Salinas}{M\bibinithyphendelim S\bibinitperiod}{Rafael}{R\bibinitperiod}{}{}{}{}}%
-        {{hash=cf29305d6241d63be0b5aa6b87f9caa5}{Madrid-Cuevas}{M\bibinithyphendelim C\bibinitperiod}{Francisco\bibnamedelima José}{F\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
-        {{hash=e3a38f2292e97ac3bcdf31fd981e7cdd}{Mar{\'ı}n-Jiménez}{M\bibinithyphendelim J\bibinitperiod}{Manuel\bibnamedelima Jesús}{M\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=b31953c7aed1eb5c967178225d2c48ed}{Mu{\~n}oz-Salinas}{M\bibinitperiod}{Rafael}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=c43ce5a602051e83ef56256dd5d18c4e}{Madrid-Cuevas}{M\bibinithyphendelim C\bibinitperiod}{Francisco\bibnamedelima Jos{\'e}}{F\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=105d244b41fe130bb98584baf0fde72e}{Mar{\'\i}n-Jim{\'e}nez}{M\bibinithyphendelim J\bibinitperiod}{Manuel\bibnamedelima Jes{\'u}s}{M\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
       }
       \list{publisher}{1}{%
         {Elsevier}%
       }
       \strng{namehash}{45ad2176be8bc40a05a5e6b53bf3640f}
-      \strng{fullhash}{6bd8bfb3bf6c4922587c1eb87a624ae1}
+      \strng{fullhash}{efc572fdb311002517af507c6d035e80}
       \field{sortinit}{G}
       \field{labeltitle}{Automatic generation and detection of highly reliable fiducial markers under occlusion}
       \field{journaltitle}{{P}attern {R}ecognition}
@@ -435,18 +446,18 @@
     \entry{aruco2014}{article}{}
       \name{labelname}{4}{}{%
         {{hash=3af5a2edc984fbb2d48b25d5f00665b2}{Garrido-Jurado}{G\bibinithyphendelim J\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
-        {{hash=24c9bb5e3d687771d40b433b09ca40a1}{Muñoz-Salinas}{M\bibinithyphendelim S\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=253d569c54010766a2f01b9fd7607d6c}{Mu\~noz-Salinas}{M\bibinithyphendelim S\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
         {{hash=3383cb30b042017574befada8cc23c85}{Madrid-Cuevas}{M\bibinithyphendelim C\bibinitperiod}{F.J.}{F\bibinitperiod}{}{}{}{}}%
-        {{hash=b9d604308fe93b79460b19cb27537a19}{Marín-Jiménez}{M\bibinithyphendelim J\bibinitperiod}{M.J.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=445662b5b8f223bc17acdc0a2af46bff}{Mar\'in-Jim\'enez}{M\bibinitperiod}{M.J.}{M\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{4}{}{%
         {{hash=3af5a2edc984fbb2d48b25d5f00665b2}{Garrido-Jurado}{G\bibinithyphendelim J\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
-        {{hash=24c9bb5e3d687771d40b433b09ca40a1}{Muñoz-Salinas}{M\bibinithyphendelim S\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=253d569c54010766a2f01b9fd7607d6c}{Mu\~noz-Salinas}{M\bibinithyphendelim S\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
         {{hash=3383cb30b042017574befada8cc23c85}{Madrid-Cuevas}{M\bibinithyphendelim C\bibinitperiod}{F.J.}{F\bibinitperiod}{}{}{}{}}%
-        {{hash=b9d604308fe93b79460b19cb27537a19}{Marín-Jiménez}{M\bibinithyphendelim J\bibinitperiod}{M.J.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=445662b5b8f223bc17acdc0a2af46bff}{Mar\'in-Jim\'enez}{M\bibinitperiod}{M.J.}{M\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{45ad2176be8bc40a05a5e6b53bf3640f}
-      \strng{fullhash}{709f99750ef36f3cce8cd427a00e1612}
+      \strng{fullhash}{bf209e49b1227836b1e2581f6ea50a4f}
       \field{sortinit}{G}
       \field{labeltitle}{Automatic generation and detection of highly reliable fiducial markers under occlusion}
       \field{issn}{0031-3203}
@@ -528,7 +539,7 @@
       \field{year}{1999}
       \field{pages}{85\bibrangedash 94}
     \endentry
-    \entry{kendall2015convolutional}{article}{}
+    \entry{kendall2015posenet}{inproceedings}{}
       \name{labelname}{3}{}{%
         {{hash=4b1053f4ffb69cd61c1f122cc435c884}{Kendall}{K\bibinitperiod}{Alex}{A\bibinitperiod}{}{}{}{}}%
         {{hash=7b022234f3f49a729a26e95123973ff7}{Grimes}{G\bibinitperiod}{Matthew}{M\bibinitperiod}{}{}{}{}}%
@@ -542,21 +553,43 @@
       \strng{namehash}{67fae8c7b2d9ca45db463bbf1488d262}
       \strng{fullhash}{f4d52c13accfa11c5398cbd2479eaff4}
       \field{sortinit}{K}
-      \field{labeltitle}{Convolutional networks for real-time 6-{DOF} camera relocalization}
-      \field{journaltitle}{arXiv preprint arXiv:1505.07427}
-      \field{title}{Convolutional networks for real-time 6-{DOF} camera relocalization}
+      \field{labeltitle}{PoseNet: A convolutional network for real-time 6-DOF camera relocalization}
+      \field{booktitle}{Proceedings of the IEEE International Conference on Computer Vision}
+      \field{title}{PoseNet: A convolutional network for real-time 6-DOF camera relocalization}
       \field{year}{2015}
+      \field{pages}{2938\bibrangedash 2946}
+    \endentry
+    \entry{kohonen1990self}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=a239233dfb1d78ba7f02fe9e49b13503}{Kohonen}{K\bibinitperiod}{Teuvo}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=a239233dfb1d78ba7f02fe9e49b13503}{Kohonen}{K\bibinitperiod}{Teuvo}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{a239233dfb1d78ba7f02fe9e49b13503}
+      \strng{fullhash}{a239233dfb1d78ba7f02fe9e49b13503}
+      \field{sortinit}{K}
+      \field{labeltitle}{The self-organizing map}
+      \field{journaltitle}{Proceedings of the IEEE}
+      \field{number}{9}
+      \field{title}{The self-organizing map}
+      \field{volume}{78}
+      \field{year}{1990}
+      \field{pages}{1464\bibrangedash 1480}
     \endentry
     \entry{lecun1998gradient}{article}{}
       \name{labelname}{4}{}{%
         {{hash=6a1aa6b7eab12b931ca7c7e3f927231d}{LeCun}{L\bibinitperiod}{Yann}{Y\bibinitperiod}{}{}{}{}}%
-        {{hash=ac762f2592005edf6bad58f566967c6c}{Bottou}{B\bibinitperiod}{Léon}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=fbb135512b80dccbcc6538e1b5cae8d8}{Bottou}{B\bibinitperiod}{L{\'e}on}{L\bibinitperiod}{}{}{}{}}%
         {{hash=40a8e4774982146adc2688546f54efb2}{Bengio}{B\bibinitperiod}{Yoshua}{Y\bibinitperiod}{}{}{}{}}%
         {{hash=844e183692f08a63f99285330fcf90cc}{Haffner}{H\bibinitperiod}{Patrick}{P\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{4}{}{%
         {{hash=6a1aa6b7eab12b931ca7c7e3f927231d}{LeCun}{L\bibinitperiod}{Yann}{Y\bibinitperiod}{}{}{}{}}%
-        {{hash=ac762f2592005edf6bad58f566967c6c}{Bottou}{B\bibinitperiod}{Léon}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=fbb135512b80dccbcc6538e1b5cae8d8}{Bottou}{B\bibinitperiod}{L{\'e}on}{L\bibinitperiod}{}{}{}{}}%
         {{hash=40a8e4774982146adc2688546f54efb2}{Bengio}{B\bibinitperiod}{Yoshua}{Y\bibinitperiod}{}{}{}{}}%
         {{hash=844e183692f08a63f99285330fcf90cc}{Haffner}{H\bibinitperiod}{Patrick}{P\bibinitperiod}{}{}{}{}}%
       }
@@ -564,10 +597,10 @@
         {IEEE}%
       }
       \strng{namehash}{9e4c6012409dc8dd9b2aa198a2059804}
-      \strng{fullhash}{c397b2e6efe8e5c6ca906410fc9e0ff9}
+      \strng{fullhash}{2c025d43b81333044be302294d292eab}
       \field{sortinit}{L}
       \field{labeltitle}{Gradient-based learning applied to document recognition}
-      \field{journaltitle}{Proceedings of the {IEEE}}
+      \field{journaltitle}{Proceedings of the IEEE}
       \field{number}{11}
       \field{title}{Gradient-based learning applied to document recognition}
       \field{volume}{86}
@@ -619,6 +652,28 @@
       \field{title}{Local Histogram Matching for Efficient Optical Flow Computation Applied to Velocity Estimation on Pocket Drones}
       \field{year}{2016}
     \endentry
+    \entry{ice}{online}{}
+      \field{sortinit}{M}
+      \field{labeltitle}{Microsoft Image Composite Editor}
+      \field{title}{Microsoft Image Composite Editor}
+      \field{urlday}{02}
+      \field{urlmonth}{08}
+      \field{urlyear}{2016}
+      \verb{url}
+      \verb http://research.microsoft.com/en-us/um/redmond/projects/ice/
+      \endverb
+    \endentry
+    \entry{microsoft}{online}{}
+      \field{sortinit}{M}
+      \field{labeltitle}{Microsoft Indoor Localization Competition}
+      \field{title}{Microsoft Indoor Localization Competition}
+      \field{urlday}{02}
+      \field{urlmonth}{08}
+      \field{urlyear}{2016}
+      \verb{url}
+      \verb https://www.microsoft.com/en-us/research/event/microsoft-indoor-localization-competition-ipsn-2016/
+      \endverb
+    \endentry
     \entry{bebop2015}{online}{}
       \name{labelname}{1}{}{%
         {{hash=e7cb1e977e896954fec46d2ea7832072}{Parrot}{P\bibinitperiod}{}{}{}{}{}{}}%
@@ -639,16 +694,27 @@
       \verb https://www.youtube.com/watch?v=A_3UifFb45Y
       \endverb
     \endentry
+    \entry{bebop}{online}{}
+      \field{sortinit}{P}
+      \field{labeltitle}{Parrot Bebop Drone}
+      \field{title}{Parrot Bebop Drone}
+      \field{urlday}{14}
+      \field{urlmonth}{07}
+      \field{urlyear}{2016}
+      \verb{url}
+      \verb http://www.parrot.com/products/bebop-drone/
+      \endverb
+    \endentry
     \entry{ruffier2003bio}{inproceedings}{}
       \name{labelname}{4}{}{%
         {{hash=73787972df8e03801899469601087333}{Ruffier}{R\bibinitperiod}{Franck}{F\bibinitperiod}{}{}{}{}}%
-        {{hash=f4014fb0e77c78b1ac841df3546e6eb5}{Viollet}{V\bibinitperiod}{Stéphane}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=035accde3a55a34e42e73660618474f8}{Viollet}{V\bibinitperiod}{St{\'e}phane}{S\bibinitperiod}{}{}{}{}}%
         {{hash=a5911372742a2c94911b6738cc124967}{Amic}{A\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
         {{hash=4a7d20aecc6bf4eaf9f6dde47612bc0b}{Franceschini}{F\bibinitperiod}{N}{N\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{4}{}{%
         {{hash=73787972df8e03801899469601087333}{Ruffier}{R\bibinitperiod}{Franck}{F\bibinitperiod}{}{}{}{}}%
-        {{hash=f4014fb0e77c78b1ac841df3546e6eb5}{Viollet}{V\bibinitperiod}{Stéphane}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=035accde3a55a34e42e73660618474f8}{Viollet}{V\bibinitperiod}{St{\'e}phane}{S\bibinitperiod}{}{}{}{}}%
         {{hash=a5911372742a2c94911b6738cc124967}{Amic}{A\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
         {{hash=4a7d20aecc6bf4eaf9f6dde47612bc0b}{Franceschini}{F\bibinitperiod}{N}{N\bibinitperiod}{}{}{}{}}%
       }
@@ -656,7 +722,7 @@
         {IEEE}%
       }
       \strng{namehash}{5370fb08187d2be198de4b68332de62a}
-      \strng{fullhash}{3d7c20b4ae456695c69dea8d8bf84a18}
+      \strng{fullhash}{6425caecd1f218622526173e684550ac}
       \field{sortinit}{R}
       \field{labeltitle}{Bio-inspired optical flow circuits for the visual guidance of micro air vehicles}
       \field{booktitle}{Circuits and Systems, 2003. ISCAS'03. Proceedings of the 2003 International Symposium on}
@@ -734,8 +800,18 @@
       \field{year}{2003}
       \field{pages}{II\bibrangedash 691}
     \endentry
+    \entry{paparazzi}{online}{}
+      \field{sortinit}{W}
+      \field{labeltitle}{Wiki PaparazziUAV}
+      \field{title}{Wiki PaparazziUAV}
+      \field{urlday}{14}
+      \field{urlmonth}{07}
+      \field{urlyear}{2016}
+      \verb{url}
+      \verb https://wiki.paparazziuav.org/wiki/Main_Page
+      \endverb
+    \endentry
   \endsortlist
-  \missing{kendall2015posenet}
 \endrefsection
 \endinput
 
