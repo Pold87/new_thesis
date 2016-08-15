@@ -514,6 +514,27 @@
       \field{year}{2009}
       \field{pages}{2878\bibrangedash 2883}
     \endentry
+    \entry{guyon2006introduction}{incollection}{}
+      \name{labelname}{2}{}{%
+        {{hash=284a778b6c8e17f1aae38e288dc06036}{Guyon}{G\bibinitperiod}{Isabelle}{I\bibinitperiod}{}{}{}{}}%
+        {{hash=469f001c7d7a96efb43e8cc4cc28ce16}{Elisseeff}{E\bibinitperiod}{Andr{\'e}}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=284a778b6c8e17f1aae38e288dc06036}{Guyon}{G\bibinitperiod}{Isabelle}{I\bibinitperiod}{}{}{}{}}%
+        {{hash=469f001c7d7a96efb43e8cc4cc28ce16}{Elisseeff}{E\bibinitperiod}{Andr{\'e}}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{e1556a53b433ff03ee66d9c631b120fa}
+      \strng{fullhash}{5abcd5f8b6799511fce6b2185cf9a3e6}
+      \field{sortinit}{G}
+      \field{labeltitle}{An introduction to feature extraction}
+      \field{booktitle}{Feature extraction}
+      \field{title}{An introduction to feature extraction}
+      \field{year}{2006}
+      \field{pages}{1\bibrangedash 25}
+    \endentry
     \entry{hornecker2005using}{inproceedings}{}
       \name{labelname}{2}{}{%
         {{hash=741e06f6dc5044a293d5327c4c66dc65}{Hornecker}{H\bibinitperiod}{Eva}{E\bibinitperiod}{}{}{}{}}%

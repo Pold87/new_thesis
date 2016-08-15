@@ -3,7 +3,7 @@
 \usepackage{parskip}
 \usepackage{titlesec}
 \usepackage{xcolor}
-
+\usepackage{subcaption}
 \usepackage{algorithm}
 \usepackage[noend]{algpseudocode}
 \algnewcommand{\LineComment}[1]{\State \(\triangleright\) #1}
@@ -221,18 +221,17 @@ or recorded images during flight. In the former case, synthetic images
 will be generated from the map image that simulate images taken during
 flight.
 
-It uses a rather simple stimulus-response behavior to estimate the
-position, which circumvents the requirement to store a map in the
-UAV's `mind'. To assign $x,y$-coordinates to images in a training set,
-keypoints in the current image and a map image are detected. This is
-then followed by finding a homography---a perspective
-transformation---between them to locate the current image in the
-map. In the next step, the complexity of these images is reduced by
-\emph{sparse encoding}: images are represented by determining their
-histogram of textons---small characteristic image
-patches~\cite{varma2005statistical}.  New images can then also be
-encoded by texton histograms and matched to images with known
-$x,y$-positions using the $k$-Nearest Neighbors ($k$-NN)
+It uses a stimulus-response behavior to estimate the position, which
+circumvents the requirement to store a map in the UAV's `mind'. To
+assign $x,y$-coordinates to images in a training set, keypoints in the
+current image and a map image are detected. This is then followed by
+finding a homography---a perspective transformation---between them to
+locate the current image in the map. In the next step, the complexity
+of these images is reduced by \emph{sparse encoding}: images are
+represented by determining their histogram of textons---small
+characteristic image patches~\cite{varma2005statistical}.  New images
+can then also be encoded by texton histograms and matched to images
+with known $x,y$-positions using the $k$-Nearest Neighbors ($k$-NN)
 algorithm. The computational effort of the approach can be adjusted by
 modifying the amount of extracted patches, resulting in a trade-off
 between accuracy and execution frequency. While the $k$-NN algorithm
@@ -243,26 +242,53 @@ with an associated confidence allows for neat integration with the
 proposed particle filter. Finally, computational complexity can be
 modified by changing the size of the datasets.
 
-The goal is to estimate $x,y$-coordinates in real-time and on-board of
-the UAV. It is assumed that the UAV flies at an approximately constant
-height, such that the estimation of height is not necessary.  It is
-intended to further reduce the size of MAVs to that of an insect,
-hence necessitating lightweight and scalable position estimation
-algorithms.
+\section{Problem Statement and Research Questions}
+\label{sec:researchquestions}
+
+The goal of this thesis is to develop a fast localization technique
+for MAVs. Therefore, we formulated the following problem statement:
+
+\hspace*{0.5cm}\textbf{Problem statement:} \emph{How to estimate
+  $x,y$-coordinates in real-time and \hspace*{0.5cm}on-board of an
+  MAV?}
+
+It is assumed that the UAV flies at an approximately constant height,
+such that the estimation of height is not necessary. It is intended
+to further reduce the size of MAVs to that of an insect, hence
+necessitating lightweight and scalable position estimation algorithms.
+The problem was addressed by combining computer vision and machine
+learning techniques for achieving real-time position estimates. We
+focus on the following research questions (RQs):
+\begin{itemize}
+\item \textbf{RQ\,1:} ``\emph{Can 2D positions be estimated in real-time using a
+    machine learning approach on a limited processor in a modifiable
+    indoor environment?}''\vspace*{0.05cm}\\
+  Real-time position estimates can pave the way for autonomous flight
+  of MAVs in various indoor environments; pursuing an ``onboard
+  design'' to make the MAV independent of an external ground station
+  is an important step for security and versatility.
+%\item Is accurate real-world localization regression possible when the
+%  training data comprises synthetic data only?
+\item \textbf{RQ\,2:} \emph{``How can we predict the suitability of a
+    given map for the proposed localization approach?''}  \vspace*{0.15cm}\\
+  If a map can be evaluated before actually flying in this
+  environment, the performance of the approach can be predicted and
+  possible dangers prevented.
+\end{itemize}
 
 \section{Contributions}
 \label{sec:contributions}
 
 The first contribution of this thesis is a machine learning-based
 indoor localization system that runs in real-time on board of an MAV,
-paving the way to a fully autonomous system. In contrast to existing
+paving the way to an autonomous system. In contrast to existing
 \emph{active} approaches, the proposed \emph{passive} approach only
 uses a monocular downward-looking camera. Since computer vision-based
 localization approaches yield noisy estimates, a variant of a particle
 filter was developed that aggregates estimates over time to produce
 more accurate predictions. It handles the estimates of the $k$-NN
 algorithm in an integrative way and resolves position ambiguities. The
-method is an absolute position system and does not suffer from error
+method is a global localization system and does not suffer from error
 accumulation over time.
 
 The second contribution is a map evaluation technique that predicts
@@ -281,30 +307,7 @@ filter (ii) software for augmenting an image with synthetic views,
 corresponding $x,y$-positions.
 
 
-\section{Research Questions}
-\label{sec:researchquestions}
-
-The research questions addressed in this thesis are:
-
-\begin{itemize}
-\item ``\emph{Can 2D positions be estimated in real-time using a
-    machine learning approach on a limited processor in a modifiable
-    indoor
-    environment?}''  \vspace*{0.15cm}\\
-  Real-time position estimates can pave the way for autonomous flight
-  of MAVs in various indoor environments; pursuing an ``onboard
-  design'' to make the MAV independent of an external ground station
-  is an important step for security and versatility.
-%\item Is accurate real-world localization regression possible when the
-%  training data comprises synthetic data only?
-\item \emph{``Can we predict the suitability of a given map for the proposed
-  localization approach?''}  \vspace*{0.15cm}\\
-  If a map can be evaluated before actually flying in this
-  environment, the performance of the approach can be predicted and
-  possible dangers prevented.
-\end{itemize}
-
-\section{Outline}
+\section{Thesis Outline}
 \label{sec:outline}
 
 The remainder of this thesis is structured as follows.
@@ -323,8 +326,10 @@ Chapter~\ref{chap:conclusion}.
 \label{chap:relatedwork}
 
 This chapter will discuss advantages and disadvantages of different
-approaches for indoor localization and contrast them to the proposed
-method. While a wide range of methods for indoor localization exists,
+approaches for indoor localization.
+%and contrast them to the proposed
+%method.
+While a wide range of methods for indoor localization exists,
 from laser range scanners over depth cameras to RFID tag based
 localization, only methods that use the same technical and conceptual
 setup---coordinate estimation with a monocular camera---are
@@ -454,9 +459,10 @@ needed for flight control.
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=0.448\columnwidth]{sift}
-\caption{{Perspective transformation between keypoints of the current image (left) and the reference or map image (right).%
-}}
+\includegraphics[width=0.85\columnwidth]{sift}
+\caption{{Perspective transformation between keypoints of the current
+    image (left) and the reference or map image (right).%
+  }}
 \end{center}
 \end{figure}
 
@@ -474,27 +480,28 @@ MAVs~\cite{de2009design}.
 \subsection{Convolutional Neural Networks}
 
 Convolutional neural networks (CNNs) are artificial neural networks
-specialized for image processing~\cite{lecun1998gradient} and have
-outperformed classical approaches in many computer vision
-challenges~\cite{dosovitskiy2014discriminative}. They consist of
-multiple neuron layers, which represent increasing levels of
-abstraction~\cite{lecun1998gradient}. Usually, the training of such
-networks requires a considerable amount of time, in the range of hours
-and days. However, the prediction often takes only few milliseconds,
+specialized for image processing~\cite{lecun1998gradient}. The
+supervised method has outperformed other approaches in many computer
+vision challenges~\cite{dosovitskiy2014discriminative}. CNNs multiple
+neuron layers, which represent increasing levels of
+abstraction~\cite{lecun1998gradient}. While the training is usually
+time-consuming, the prediction often takes only few milliseconds,
 shifting computational effort from the test phase to the training
-phase. CNNs been used as more robust alternative to \textsc{Sift} if
-images are perturbed~\cite{dosovitskiy2014discriminative}, however,
-with larger computation time.
+phase. CNNs have been used as robust alternative for keypoint
+detection and description if images were
+perturbed~\cite{dosovitskiy2014discriminative} but needed more
+computation time than \textsc{Sift}.
 
-In recent work, \citeauthor{kendall2015posenet} present the first
-framework for regressing camera positions based on
-CNNs~\cite{kendall2015posenet}. The authors claim that the approach is
-robust to different lighting settings, motion blur, and varying camera
-intrinsics.  The approach achieves an accuracy of approximately 50\,cm
-in indoor environments with a spatial extent between
-$2 \times 0.5 \times 1\,m^3$ and $4 \times 3 \times 1.5\,m^3$. While
-the approach works remarkably fast on a modern desktop computer, it is
-still computationally too involved for a limited processor.
+In recent work, \citeauthor{kendall2015posenet} present a framework
+for regressing camera positions based on
+CNNs~\cite{kendall2015posenet}. The approach achieves an accuracy of
+approximately 50\,cm in indoor environments with a spatial extent
+between $2 \times 0.5 \times 1\,m^3$ and $4 \times 3 \times
+1.5\,m^3$. The authors claim that the approach is robust to different
+lighting settings, motion blur, and varying camera intrinsics. While
+the approach predicts positions on a modern desktop computer in short
+time, in our tests, the approach was still computationally too
+involved for a limited processor. 
 
 \subsection{Optical Flow}
 \label{sec:opticalflow}
@@ -504,17 +511,16 @@ navigation---taking inspiration from insects and
 birds~\cite{ruffier2003bio}. They estimate the motion based on the
 shift of corresponding image keypoints in successive images. The most
 popular optical flow methods are gradient based approaches and
-keypoint-based methods.
+keypoint-based methods~\cite{chao2013survey}.
 % and more specific methods have been put forth\todo{for example}.
-Optical flow methods belong to the class of local localization
+Optical flow methods belong to the class of \emph{local} localization
 techniques and can only estimate the position relative to an initial
 reference point. The approaches suffer from accumulating errors over
 time and typically do not provide a means for correcting these errors.
 
-\unsure{And conclude
-  what?}\citeauthor{chao2013survey}~\cite{chao2013survey} compare
-different optical flow algorithms for the use with UAV navigation. The
-approaches are computationally rather
+\citeauthor{chao2013survey}~\cite{chao2013survey} compare advantages
+and disadvantages of different optical flow algorithms for the use
+with UAV navigation. Most approaches are computationally rather
 complex~\cite{mcguire2016local}. To render on-board odometry feasible
 for small MAVs, \citeauthor{mcguire2016local}~\cite{mcguire2016local}
 introduce a lightweight optical flow variant. The algorithm uses
@@ -532,12 +538,8 @@ showing that they outperform computationally more complex algorithms,
 like Gabor filters~\cite{varma2005statistical}. For the
 classification, the approach compares texton histograms between a
 training set and the test sample and the class of the closest training
-sample is assigned to the test sample. To extract histograms in the
-\emph{full sampling} setting, a small window---a kernel---is convolved
-over all image positions and the frequency of textons is calculated.
-Instead of convolving a kernel over the entire image, the kernel can
-be applied at randomly sampled image
-position~\cite{de2012sub}. %leading to similar texton histograms
+sample is assigned to the test
+sample. %leading to similar texton histograms
                            %compared to the histograms when full
                            %sampling is used.
 Modifying the number of samples allows for adjusting the computational
@@ -595,11 +597,11 @@ in the respective sections.
       \Call{Calc\_Flow}{$I_t$} \State $\mathcal{X}_t \gets$
       \Call{Particle\_Filter}{$\mathcal{X}_{t-1}, z_t^x, z_t^y, f_t^x,
         f_t^y$} \State $x_t, y_t \gets$
-      \Call{Map\_Estimate}{$\mathcal{X}_t$} \State
-%      \Call{Send\_Pos}{$x_t, y_t$}
+      \Call{Map\_Estimate}{$\mathcal{X}_t$}
       \EndProcedure
     \end{algorithmic}
   \end{algorithm}  
+  % \Call{Send\_Pos}{$x_t, y_t$}
 \section{Hardware and Software of the Platform}
 \label{sec:hardware}
 
@@ -616,13 +618,14 @@ modified the system to execute the localization algorithm directly on
 board of the MAV and not on the additional Odroid processor. To this
 end, the software had to be ported from the high-level language Python
 to the low-level language C without being able to rely on many
-existing software libraries.  Finally, this removed the need for
-additional payload and made flight performance very stable. Also, it
-circumvented the effort of buying and attaching an external processor,
-which can be another point of failure. Another advantages is that the
-framework can be easily ported to any UAV supported by the paparazzi
-software. The major disadvantage is that the on-board processors of
-many MAVs have a lower performance than the Odroid processor.
+existing software libraries.  However, it removed the need for the
+additional payload and made the flight performance very stable. Also,
+it circumvented the effort of buying and attaching an external
+processor, which can be another point of failure. Another advantage
+is that the framework can be easily ported to any UAV supported by the
+paparazzi software. The major disadvantage is that the on-board
+processors of many MAVs have a lower performance than the Odroid
+processor.
 
 We decided to use the quadcopter \emph{Parrot Bebop Drone} as
 prototype for all our tests. Quadcopters allow for navigating in
@@ -664,9 +667,9 @@ processing, monitoring the system during evaluation on a ground
 station is important. Figure~\ref{fig:gcs} shows the default ground
 control station of Paparazzi. For collecting data, real-time
 visualization of the position estimates and enabling future users to
-keep track of the system states, a graphical user interface (GUI) has
-been developed in the scope of this thesis. The GUI is displayed in
-Figure~\ref{fig:gui}.
+keep track of the system states, a graphical user interface (GUI) with
+the Qt GUI Application development framework has been developed in the
+scope of this thesis. The GUI is displayed in Figure~\ref{fig:gui}.
 \begin{figure}[t]
 \begin{center}
 \includegraphics[width=0.7\columnwidth]{Gcs}
@@ -684,7 +687,7 @@ Euclidean distance between the Optitrack and treXton estimates. The
 GUI can be accessed using the \emph{Tool} menu in paparazzi.
 \begin{figure}[t]
 \begin{center}
-\includegraphics[width=0.7\columnwidth]{gui-cut}
+\includegraphics[width=\textwidth]{gui-cut}
 \caption{{\label{fig:gui} Screenshot of the GUI. It displays the
     position estimate of the developed framework, the ground truth
     position based on OptiTrack, the texton histogram, the Euclidean
@@ -703,28 +706,38 @@ GUI can be accessed using the \emph{Tool} menu in paparazzi.
 % effort from the flight phase to a pre-flight phase---paving the way
 % for autonomous flights of MAVs with limited processing power.
 
+
 A main idea of the presented method is to shift computational effort
 to a pre-flight phase. Since the MAV will be used in a fixed
 environment, the results of these pre-calculations can be employed
-during the actual flight phase. In this first step, the goal is to
-label images with the physical $x,y$-position of the UAV at the time
-of taking the image. Therefore, a method for obtaining the physical
-position of the UAV is needed and GPS information is not available in
-the indoor environment. One possible way to create the training set is
-to align the images with high-precision position estimates from a
-motion tracking system.
+during the actual flight phase. Supervised machine learning methods
+need a training set to find a mapping from features to target
+values. In this first step, the goal is to label images with the
+physical $x,y$-position of the UAV at the time of taking the
+image. Therefore, a method for obtaining the physical position of the
+UAV is needed and GPS information is not available in the indoor
+environment. In the presented approach, the image is converted to a
+texton histogram (Section~\ref{sec:textonbasedapproaches}) as feature
+vector. The process for obtaining a texton histogram from an image is
+described in the next section (Section~\ref{sec:textons}).
+
+One possible way to create the data set is to align the images with
+high-precision position estimates from a motion tracking system.  The
+camera forwards $640 \times 480$ pixels images in Y'UV422 color
+space---a three channel color space that encodes gray-scale
+information in the channel Y and color information in the channels U
+and V.
 % Even low quality images can be mapped to the corresponding
 % $x,y$-position.
 The $x,y$-position is broadcast to the UAV via the ground station,
 which is connected to the motion tracking system.  The data set is
 created by saving the image with the corresponding position from the
-motion tracking system on the MAV's hard disk.
-
-The approach yields high-quality training sets since motion tracking
-systems can track rigid bodies at a high frequency within an error of
-few millimeters. The major disadvantages of the approach are that
-motion tracking systems are usually expensive and time-consuming to
-move to different environments.
+motion tracking system on the MAV's hard disk.  The approach yields
+high-quality training sets since motion tracking systems can track
+rigid bodies at a high frequency within an error of few
+millimeters. The major disadvantages of the approach are that motion
+tracking systems are usually expensive and time-consuming to move to
+different environments.
 
 As an alternative, we sought a low-budget and more flexible
 solution. Of the presented approaches in Section~\ref{chap:methods},
@@ -855,24 +868,52 @@ given map.
 \begin{center}
 \includegraphics[width=0.7\columnwidth]{dict}
 \caption{{\label{fig:dictionary} The figures shows a dictionary
-    consisting of 20 grayscale textons. The textons are six pixels
-    high and six pixels wide.%
-  }}
+    consisting of 20 $w \times h = 6 \times 6$ pixels grayscale
+    textons.}}
 \end{center}
 \end{figure}
 
 \subsection{Histogram Extraction}
 \label{sec:histogramextract}
 
-The shift is accomplished by using a light-weight machine learning
-approach instead of a computationally more complex algorithm, like a
-homography-based approach
-(Section~\ref{sec:keypointmatching}). Supervised machine learning
-methods need a training set to find a mapping from features to target
-values. In the presented approach, a training sample consists of a
-texton histogram (Section~\ref{sec:textonbasedapproaches}) as feature
-vector. The process for obtaining a texton histogram from an image is
-described in Section~\ref{sec:textons}.
+% TODO: Think if it is better here or in the related work section
+%To extract histograms in the \emph{full sampling} setting, a small
+%window---a kernel---is convolved over an image and the frequency of
+%textons is calculated. 
+%Instead of convolving a kernel over the entire
+%image, the kernel can be applied at randomly sampled image
+%position~\cite{de2012sub}.
+The images from the preliminary dataset are converted to the final
+training set that consists of texton histograms and $x,y$-values. The
+conversion intents to obtain a more representative and dense
+description of an image, which should facilitate and speed-up
+recognition during the prediction
+step~\cite{guyon2006introduction}. To extract histograms in the
+\emph{full sampling} setting, a small window---a kernel---is convolved
+across the width and height of an image and patches are extracted from
+all positions. Each patch is compared with all textons in the
+dictionary and is labeled with the nearest match based on Euclidean
+distance. The frequency of each label is reported in the corresponding
+``bin'' of the texton histogram. The histogram is normalized by
+dividing the number of cases in each bin by the total number of
+extracted patches, to yield the relative frequency of each texton.
+
+The convolution is a time-intense step, since all possible
+combinations of width and height are considered,
+$(640 - w + 1) \cdot (480 - h + 1) = 301625$ samples are extracted. To
+speed up the time requirements for histogram extraction processing
+time, the kernel can be applied only at randomly sampled image
+position instead~\cite{de2012sub}. This sampling step speeds up the
+creation of the histograms and allows for trading-off speed and
+accuracy. The similarity between histograms in the full sampling step
+and the sub-sampling is analyzed in Section~\ref{sec:numtextons}. One
+can see that the subsampling step introduces random effects into the
+approach. Therefore, for generating the training dataset, no
+subsampling was used to obtain high-quality feature vectors.
+
+% The shift is accomplished by using a light-weight machine learning
+% approach instead of a computationally more complex algorithm, like a
+% homography-based approach (Section~\ref{sec:keypointmatching}).
 
 \subsection{$k$-Nearest Neighbors ($k$-NN) algorithm}
 \label{sec:knn}
@@ -883,48 +924,6 @@ learning-core'' of the developed algorithm. Taking a texton histogram
 as input, the algorithm measures the distance of this histogram to all
 histograms in the training dataset and outputs the $k$ most similar
 training histograms and the corresponding $x,y$-positions.
-
-% The similarity measure is a function that takes two samples as input
-% and outputs a real value. We used the cosine similarity as
-% similarity function, since it is bounded between 0 and 1. While
-% other similarity measurements exists, the basic similarity
-% measures---such as Euclidean distance---do not have a large impact
-% on the results (Figure xxx). The choice of $k$ was based on the
-% heuristic that XXX (TODO: write something like the sqrt of N or
-% whatever) and on cross-validation.
-
-The naive approach in $k$-NN regression calculates the mean of the $k$
-outputs; we decided to use a more complex method to capture
-\emph{multimodal distributions}. This motivation is visualized in
-Figure~\ref{fig:Kalman}: If $k=2$ and the output values are apart from
-each other, averaging them would yield a value in the center between
-them, which likely not the correct position. Over time, however, the
-ambiguity, can be resolved, when both estimates of the $k$-NN model
-fall together. Compared to the Kalman filter, a full Bayesian filter
-could immediately find the correct position
-(Figure~\ref{fig:bayesianfilter}). Since a full Bayesian filter is
-computationally complex, a variant that is based on Monte Carlo
-sampling was used: the particle filter. A detailed description of the
-filtering technique can be found in the next section.
-\begin{figure}[t]
-\label{fig:Kalman}
-\begin{center}
-\includegraphics[width=0.7\columnwidth]{kalman-crop}
-\caption{ Four time steps of a Kalman filter.%
-}
-\end{center}
-\end{figure}
-\begin{figure}[t]
-\label{fig:bayesianfilter}
-\begin{center}
-\includegraphics[width=0.7\columnwidth]{particle-crop}
-\caption{ Four time steps of a Bayesian filter.}
-\end{center}
-\end{figure}
-% TODO: Compare particle filter with Kalman filter!!   
-Importantly, for generating the training dataset, no subsampling was
-used. Therefore, the training dataset will not show any variance, if
-the same images were used.
 
 While the $k$-NN algorithm is one of the simplest machine learning
 algorithms, it offers several advantages: it is non-parametric,
@@ -941,21 +940,31 @@ than 1000 images, resulting in short prediction times, time complexity
 can be reduced by storing and searching the training examples in an
 efficient manner, for example, with tree
 structures~\cite{bhatia2010survey}.
+
+% The similarity measure is a function that takes two samples as input
+% and outputs a real value. We used the cosine similarity as
+% similarity function, since it is bounded between 0 and 1. While
+% other similarity measurements exists, the basic similarity
+% measures---such as Euclidean distance---do not have a large impact
+% on the results (Figure xxx). The choice of $k$ was based on the
+% heuristic that XXX (TODO: write something like the sqrt of N or
+% whatever) and on cross-validation.
+
+
 % based on a list structure.
-
-\begin{algorithm}
-\caption{Initialize texton framework}
-\label{alg:trexton_init}
-  \begin{algorithmic}[1]
-    \Procedure{Init\_TreXton}{}
-    \State $t \gets 0$ 
-    %\State textons $\gets$ \Call{csv\_read\_textons}{}
-    %\State ann $\gets$ \Call{load\_neural\_network}{}
-    \State $\mathcal{X}_0 \gets$ \Call{init\_particles}{}
-    \EndProcedure
-  \end{algorithmic}
-\end{algorithm}
-
+\begin{comment}
+  \begin{algorithm}
+    \caption{Initialize texton framework}
+    \label{alg:trexton_init}
+    \begin{algorithmic}[1]
+      \Procedure{Init\_TreXton}{} \State $t \gets 0$
+      % \State textons $\gets$ \Call{csv\_read\_textons}{}
+      % \State ann $\gets$ \Call{load\_neural\_network}{}
+      \State $\mathcal{X}_0 \gets$ \Call{init\_particles}{}
+      \EndProcedure
+    \end{algorithmic}
+  \end{algorithm}
+\end{comment}
 %\unsure{comment in pseudocode again}
 \begin{comment}
   \begin{figure}[h!]
@@ -995,21 +1004,50 @@ structures~\cite{bhatia2010survey}.
 \label{sec:filtering}
 
 Computer vision-based estimations are usually noisy or ambiguous, and
-so is the proposed system: beginning with the estimations of the
-homographies, the ground truth is already based on possibly faulty
-estimates. Texton histograms obtained during flight will not perfectly
-match the ones in the training data set: blur, lighting settings,
-viewing angles and other variables change the shape of the texton
-histograms.
+so is the proposed system. Texton histograms obtained during flight
+will not perfectly match the ones in the training data set: blur,
+lighting settings, viewing angles and other variables change the shape
+of the texton histograms.
 
 To filter out outliers and smooth the estimations, a popular filter
 choice is the Kalman filter. However, the Kalman filter is not able to
 represent multimodal probability distributions. This makes it rather
-unsuitable for the presented approach: if the $k$-NN model outputs two
-predictions, one would need to use average of these predictions and
-feed this value to the Kalman Filter. This approach can lead to biased
-predictions, especially, if the model outputs belong to distant
-locations due to similar texton distributions at these positions.
+unsuitable for the presented approach. The naive approach in $k$-NN
+regression calculates the mean of the $k$ outputs; we decided to use a
+more complex method to capture \emph{multimodal distributions}. This
+motivation is visualized in Figure~\ref{fig:Kalman}: If $k=2$ and the
+output values are apart from each other, averaging them would yield a
+value in the center between them, which is likely not the correct
+position. Ff the $k$-NN model outputs two predictions, one would need
+to use average of these predictions and feed this value to the Kalman
+Filter. This approach can lead to biased predictions, especially, if
+the model outputs belong to distant locations due to similar texton
+distributions at these positions.
+
+Over time, however, the positional ambiguity, can be resolved, when
+both estimates of the $k$-NN model fall together. Compared to the
+Kalman filter, a full Bayesian filter could immediately find the
+correct position (Figure~\ref{fig:bayesianfilter}). Since a full
+Bayesian filter is computationally complex, a variant that is based on
+Monte Carlo sampling was used: the particle filter. A detailed
+description of the filtering technique can be found in the next
+section.
+\begin{figure}[t]
+\label{fig:Kalman}
+\begin{center}
+\includegraphics[width=0.7\columnwidth]{kalman-crop}
+\caption{ Four time steps of a Kalman filter.%
+}
+\end{center}
+\end{figure}
+\begin{figure}[t]
+\label{fig:bayesianfilter}
+\begin{center}
+\includegraphics[width=0.7\columnwidth]{particle-crop}
+\caption{ Four time steps of a Bayesian filter.}
+\end{center}
+\end{figure}
+
 
 Instead, a more powerful general Bayesian filter can simultaneously
 keep account of both possible locations and resolve the ambiguity as
@@ -1033,9 +1071,10 @@ the variables cannot be measured directly, therefore the situation can
 be described using a hidden Markov model. Instead, noisy or ambiguous
 data can be obtained through the proposed algorithm.
 
-In the following pseudo code, $M$ represents the number of particles,
-$z_t^x$ the output of the texton framework at time $t$, and $f_t^x$
-the estimated flow at time $t$.
+The algorithm of the developed particle filter is presented in the
+following pseudo code (Algorithm~\ref{alg:particle_filter}). $M$
+represents the number of particles, $z_t^x$ the output of the texton
+framework at time $t$, and $f_t^x$ the estimated flow at time $t$.
 \begin{algorithm}
 \caption{Particle filter update}
 \label{alg:particle_filter}
@@ -1080,11 +1119,11 @@ the estimated flow at time $t$.
 Particle filters have several advantages. First, one can represent
 uncertainty by the variance of the state variables of the
 particles. Second, the particle filter allows for \emph{sensor
-  fusion}, and can integrate IMU data or optical flow into the
-position estimation.  A major disadvantage is the rather high
-computational complexity. This can be circumvented by reducing the
-amount of particles (trading off speed and accuracy)---allowing for
-adapting the computational payload to the used processor.
+  fusion}, and can integrate data from the inertial measurement unit
+(IMU) or optical flow into the position estimation. A major
+disadvantage is the rather high computational complexity. This can be
+circumvented by reducing the amount of particles---trading off speed
+and accuracy to adapt the computational payload to the used processor.
 
 The used particle filter is initialized with $M = 100$ particles at
 random $x, y$-positions. To incorporate the distances, the sensor
@@ -1093,32 +1132,33 @@ $\textbf{x} = ((x_1, y_1), (x_2, y_2), \ldots, (x_k, y_k))^T$. A
 two-dimensional Gaussian model was used for each point. The parameters
 of the Gaussian have been determined by comparing of the positions
 based on the motion tracking system with the predictions of the
-proposed system. This results in values for the variances in $x$ and
-$y$, the correlation $\rho$ between $x$ and $y$. The mean values $\mu$
-were set to zero (no systematic
-bias). Figure~\ref{fig:measurementmodel} shows the results of one such
-evaluation.
+proposed system (Figure~\ref{fig:measurementmodel}). This results in
+values for the variances in $x$ and $y$, the correlation $\rho$
+between $x$ and $y$. The mean values $\mu$ were set to zero (no
+systematic bias).
 
-\begin{figure}[h!]
-\begin{center}
-  \includegraphics[width=0.448\columnwidth]{dependency_dist_error_x}
-  \caption{{\label{fig:cor_sim_confi} Dependence structure between
-      similarity of histograms and measurement error.  TODO: Check if
-      it is the distance or the similarity and if I used cosine
-      similarity or Euclidean distance.%
-    }}
-\end{center}
+
+\begin{figure}
+  \label{fig:cor_sim_confi}
+  \centering
+  \begin{subfigure}[b]{0.5\textwidth}
+  \includegraphics[width=1\textwidth]{dependency_dist_error_x}
+    %\captionof{figure}{$POS_x$}
+  \label{fig:cosinesim}
+  \end{subfigure}%
+~
+  \begin{subfigure}[b]{0.5\textwidth}
+  \includegraphics[width=1\textwidth]{dependency_dist_error_y}
+   % \captionof{figure}{$POS_y$}
+  \label{fig:cosinesd}
+  \end{subfigure}
+  \caption{Measurement error in $x$-direction (\emph{Left}) and
+    $y$-direction (\emph{Right}) as a function of the distance to the
+    closest training sample.}
+\label{fig:cosine}
 \end{figure}
-
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[width=0.448\columnwidth]{dependency_dist_error_y}
-\caption{{\label{fig:cor_sim_confi_y}
-Dependence structure between similarity of histograms and measurement error in $y$-direction%
-}}
-\end{center}
-\end{figure}
-
+\unsure{uiui, should edit the labels of the y axis and uses crosses in
+both cases}
 \begin{figure}[h!]
 \label{fig:measurementmodel}
 \begin{center}
@@ -1129,25 +1169,23 @@ TODO: Add Gaussian approximation!%
 }}
 \end{center}
 \end{figure}
-
-This allows for using the information of all $k$ neighbors and keep
-track of a multimodal distribution. While keeping track of a
-multimodal distribution allows for incorporating several possible
-states of the system, the system needs one best position estimate for
-guidance and stabilization after each iteration. Using a weighted
-average of the modes would again introduce the problem, that the
-weighted average could fall into a low density region. Therefore, the
-maximum a posteriori estimate, as described by
+The particle filter allows for using the information of all $k$
+neighbors and keep track of a multimodal distribution. While keeping
+track of a multimodal distribution allows for incorporating several
+possible states of the system, the system needs one best position
+estimate for guidance and stabilization after each iteration. Using a
+weighted average of the modes would again introduce the problem that
+the weighted average could fall into a low density region. Therefore,
+the maximum a posteriori estimate, as described by
 \citeauthor{driessen2008map} was used~\cite{driessen2008map}. This
 approach uses the following formula to obtain the MAP estimate:
-
-Therefore, the final position estimate is equal to the position of one
-of the particles.
 
 \begin{align}
   s_k^{MAP}  &= \text{arg}\max_{s_k}{p(s_k \mid Z_k)}\\
              &= \text{arg}\max_{s_k}{p(z_k \mid s_k) p(s_k \mid Z_{k-1})} 
 \end{align}
+Therefore, the final position estimate is equal to the position of one
+of the particles.
 
 Therefore, the MAP estimator in our case is
 \begin{align}
@@ -1186,30 +1224,45 @@ Initially, we planned to include the similarity between the current
 histograms and each of the $k$ neighbors as confidence value, thus
 reducing the measurement noise if a high similarity between current
 histogram and a training histogram is achieved. However, we found no
-correlation between these variables. Figures~\ref{fig:cor_sim_confi}
-and \ref{fig:cor_sim_confi_y} displays the dependence structure.
+correlation between these variables (Figure~\ref{fig:cor_sim_confi}).
 
-Another idea---if the homography-based approach is used for
-labeling---was to use the amount of detected keypoints ($K$) as
-confidence value for the quality of the sample in the training
-set. Again, no linear relationship between $K$ and the error in
-$x$-direction ($X$) and the error in $y$-direction ($Y$) could be
-found (Figure~\ref{fig:cor_sim_confi}): $\rho_{K, X} = 0.10$,
+We also tried to use the amount of detected keypoints ($K$) as
+confidence value for the quality of the sample in the training set if
+the homography-based approach is used for labeling. Again, no linear
+relationship between $K$ and the error in $x$-direction ($X$) and the
+error in $y$-direction ($Y$) could be found
+(Figure~\ref{fig:cor_keypoints}): $\rho_{K, X} = 0.10$,
 $\rho_{K, Y} = 0.01$.
 
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[width=0.448\columnwidth]{keypoints_error_x1}
-\caption{{Dependence between number of keypoints and error in $x$-direction.%
-}}
-\end{center}
+\begin{figure}
+  \label{fig:cor_keypoints}
+  \centering
+  \begin{subfigure}[b]{0.5\textwidth}
+  \includegraphics[width=1\textwidth]{keypoints_error_x1}
+    %\captionof{figure}{$POS_x$}
+  \label{fig:cosinesim}
+  \end{subfigure}%
+~
+  \begin{subfigure}[b]{0.5\textwidth}
+  \includegraphics[width=1\textwidth]{keypoints_error_y}
+   % \captionof{figure}{$POS_y$}
+  \label{fig:cosinesd}
+  \end{subfigure}
+  \caption{Measurement error in $x$-direction (\emph{Left}) and
+    $y$-direction (\emph{Right}) as a function of the number of
+    keypoints found by \textsc{Sift}.}
+\label{fig:cosine}
 \end{figure}
 
+\unsure{uiui, should edit the labels of the y axis and uses crosses in
+both cases}
 \begin{figure}[h!]
+\label{fig:measurementmodel}
 \begin{center}
-\includegraphics[width=0.448\columnwidth]{keypoints_error_y}
-\caption{{Dependence between number of keypoints and error in $y$-direction.%
-}}
+\includegraphics[width=0.448\columnwidth]{measurement_model}
+\caption{{Dependence between number of keypoints and error in
+    $x$-direction (\emph{Left}) and $y$-direction (\emph{Left}).%
+  }}
 \end{center}
 \end{figure}
 
@@ -1277,13 +1330,12 @@ Figure~\ref{fig:montage}. The application allows for comparing and
 predicting the performance of different maps. The software is written
 in C++ and OpenCV~3.0.0.
 
-The software is able to generate a specified amount of image patches
-using random values for rotational angles, translational shifts, as
-well as blur, contrast and brightness intensity. The values are
-sampled from different probability distributions, see
-Table~\ref{tab:distributions} for a summary. An additional graphical
-user interface (GUI) displays the result of applied transformations
-and saves the generated images.
+The software generates a specified amount of image patches using random
+values for rotational angles, translational shifts, as well as blur,
+contrast and brightness intensity. The values are sampled from
+different probability distributions, see Table~\ref{tab:distributions}
+for a summary. An additional graphical user interface (GUI) displays
+the result of applied transformations and saves the generated images.
 
 To simulate camera movements in 3D space, a 2D to 3D projection of the
 image is performed first. Then, by building separate rotation matrices
@@ -1341,18 +1393,17 @@ Six images generated by the synthetic data generation tool.%
 \label{sec:evaluationscheme}
 
 The performance of the proposed method depends on the environment it
-is used in: obviously, a texture-rich environment without repeating
-patterns will be better suited than an uniformly colored
-environment. Ideally, one would like to know if the proposed method is
-able to work in a given environment. Therefore, we propose an
-evaluation scheme for given maps. This scheme assigns a global fitness
-value to a given map, proportional to the expected accuracy it is
-expected to achieve in the physical world. The evaluation scheme
-allows to inspect the given map and to detect regions that are
-responsible for the overall fitness value. The evaluation of a map is
-difficult, since the obtained histograms during a real flight depend
-on many factors: motion blur, distance to the map and rotations
-proportional to the map.
+is used in: a texture-rich environment without repeating patterns will
+be better suited than an uniformly colored environment. Ideally, one
+would like to know if the proposed method is able to work in a given
+environment. Therefore, we propose an evaluation scheme for given
+maps. This scheme assigns a global fitness value to a given map,
+proportional to the expected accuracy it is expected to achieve in the
+physical world. The evaluation scheme allows to inspect the given map
+and to detect regions that are responsible for the overall fitness
+value. The evaluation of a map is difficult, since the obtained
+histograms during a real flight depend on many factors: motion blur,
+distance to the map and rotations proportional to the map.
 
 In the first step of the map evaluation procedure, $N$ different
 patches of a given map are generated using the tool \emph{draug}
@@ -1423,21 +1474,32 @@ presented. We examine different parameter choices in Experiment~1 to 6
 in on-ground experiments using recorded data. Afterward, the found
 parameters are used to show the validity during flight in
 Experiments~7 and 8. The experiments were conducted in TU Delft's
-CyberZoo---an indoor flight arena of size
-$w \times l \times h = 10\,m \times10\,m \times 7\,m$, with relatively
-constant lighting settings due to primarily artificial lighting.
+indoor flight arena, the ``CyberZoo''
+(Figure~\ref{fig:cyberzoo}).
+%The
+%arena has relatively constant lighting settings due to primarily
+%artificial lighting.
+%\begin{figure}[t]
+%  \centering
+% \includegraphics{cyberzoo} 
+%  \caption{The indoor flight arena at the TU Delft: the ``CyberZoo.''
+%  }
+%    \label{fig:cyberzoo}
+%\end{figure}
+%
+There are no generally optimal parameters for the presented framework:
+Setting the number of textons, the number of images patches, or the
+number of neighbors is dependent on the environment and the size of the
+training dataset. The parameters have to be adapted to the particular
+environment.
+%since the proposed algorithm is intended for known
+%environments, this is always possible.
 
-The choice of the parameters is dependent on the environment and the
-size of the training dataset. Therefore, there is no general optimal
-parameter. Instead, the parameters have to be adapted to the
-particular environment. Since the proposed algorithm is intended for
-known environments, this is always possible.
-
-\section{Analysis -- Determining the Number of Textons}
+\section{Analysis -- Determining the Number of Image Patches}
 \label{sec:numtextons}
 
-The developed framework allows to tune the computational complexity by
-modifying the number of extracted image samples. To increase the speed
+The developed framework modifies it computational complexity by
+changing the number of extracted image samples. To increase the speed
 of the algorithm, the goal is to use as few samples as possible. To
 determine a suitable number of extracted samples, in this experiment,
 the average cosine similarity between $D = 20$ datasets of histograms
@@ -1452,7 +1514,6 @@ determined as well as the standard deviation of the cosine similarity
 was measured. Comparing the cosine similarity between the histograms
 has the advantage that the number of samples can be determined
 independent of a specific task.
-
 
 Figure~\ref{fig:cosine} displays the cosine similarity of histograms
 as a function of the number of samples and the corresponding standard
@@ -1478,22 +1539,9 @@ deviations.
 In a standard setting, the training error $\epsilon_t$ of a
 $k$=1-nearest neighbor algorithm is $\epsilon_t = 0$ because the
 nearest neighbor of the sample will be the sample itself, given that
-each feature vector is unique. However, in this scenario, we deal with
-random sampling such that each image will be represented by a slightly
-different histogram each time the histogram is extracted.
-
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[width=0.7\columnwidth]{map_rotated}
-\caption{{\label{fig:mapexp} The created map that was stitched
-    together using 445 images. A non-mapped area in the middle of the
-    map can be seen, which is a result of the set flight path. An
-    image distortion can be seen at the right-hand side, where the
-    landing spot sign appears twice, while in reality, only one circle
-    was visible.%
-  }}
-\end{center}
-\end{figure}
+each feature vector is unique. However, in the presented framework,
+the random sampling in the histogram extraction step leads to varying
+histograms.
 
 \begin{figure}[h!]
 \begin{center}
@@ -1567,6 +1615,20 @@ obtained from the motion tracking system.
 In this experiment, the training dataset was created using the
 homography-finding method. Apart from that, the settings are the same
 as in Experiment~\ref{sec:experiment-real}.
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.7\columnwidth]{map_rotated}
+\caption{{\label{fig:mapexp} The created map that was stitched
+    together using 445 images. A non-mapped area in the middle of the
+    map can be seen, which is a result of the set flight path. An
+    image distortion can be seen at the right-hand side, where the
+    landing spot sign appears twice, while in reality, only one circle
+    was visible.%
+  }}
+\end{center}
+\end{figure}
+
 
 \section{Experiment -- Triggered Landing}
 \label{sec:triggered}
@@ -1860,36 +1922,36 @@ histograms, make predictions and run the particle filter.
 
 This thesis presented a novel approach for lightweight indoor
 localization of MAVs. We pursued an onboard design without the need of
-an additional ground station to foster flexibility and autonomy. The
-conducted on-ground and in-flight experiments underline the real-world
-applicability of the system. Promising results were obtained for
-waypoint navigation, accurate landing, and stable hovering in the
-indoor environment. The
-used approach is based on three pillars.\\
-The first pillar shifts computational effort from the flight phase to
-an offline preprocessing step. This provides the advantages of
-sophisticated algorithms, without affecting performance during flight.
-The second pillar states that during flight the MAV lightweight
-algorithms should run with low-performing processors. These algorithms
-should be able to trade off speed with accuracy. This allows to use
-them on a wide range of models, from pico-drones to MAVs with a
-wing-span of over one meter. Examples of these adaptable algorithms
-are the particle filter and the texton-based approach.  The third
-pillar is the known---and possibly---modifiable environment. This
-knowledge and flexibility allows to predict the quality of the used
-approach. In contrast to SLAM frameworks, in which the task is to
-simultaneous mapping and localization, the proposed approach is
-intended for various repetitive indoor activities.
+an additional ground station to foster real-world use. The conducted
+on-ground and in-flight experiments underline the applicability of the
+system. Promising results were obtained for position estimates and
+accurate landing in the indoor environment.
 
+The approach is based on three pillars that we identified for indoor
+localization for MAVs. The first pillar shifts computational effort
+from the flight phase to an offline preprocessing step. This provides
+the advantages of sophisticated algorithms, without affecting
+performance during flight. The second pillar states that during flight
+algorithms should be used that can trade off speed with accuracy. This
+allows their use on a wide range of models, from pico-drones to MAVs
+with a wing-span of over one meter. Examples of these adaptable
+algorithms are the texton-based approach and the particle filter. The
+third pillar is a known---and possibly---modifiable environment. This
+knowledge and flexibility allows for predicting and improving the
+quality of the approach.
+%In contrast to \textsc{slam} frameworks, in
+%which the task is to simultaneous mapping and localization, the
+%presented approach is intended for various repetitive indoor
+%activities.
 
-The developed algorithms set the stage for absolute localization in
+The developed algorithms set the stage for global localization in
 various GPS-denied environments, such as homes, offices, or factory
 buildings. While the used platform for this project was the Parrot
 Bebop Drone, the characteristics of the proposed system generalize to
-smaller MAVs in a flexible and innovative way.  We hope that our
-indoor localization approach will pave the way for various
-applications, such as delivery, search and rescue, or surveillance to
-support human operators in everyday life.
+smaller MAVs in a flexible and innovative way. We hope that our indoor
+localization approach will pave the way for various applications,
+including delivery, search and rescue, or surveillance to support
+human operators in everyday life.
 
 \printbibliography
 

@@ -2003,13 +2003,13 @@
     <bcf:citekey order="32">ruffier2003bio</bcf:citekey>
     <bcf:citekey order="33">chao2013survey</bcf:citekey>
     <bcf:citekey order="34">chao2013survey</bcf:citekey>
-    <bcf:citekey order="35">mcguire2016local</bcf:citekey>
+    <bcf:citekey order="35">chao2013survey</bcf:citekey>
     <bcf:citekey order="36">mcguire2016local</bcf:citekey>
     <bcf:citekey order="37">mcguire2016local</bcf:citekey>
-    <bcf:citekey order="38">varma2005statistical</bcf:citekey>
+    <bcf:citekey order="38">mcguire2016local</bcf:citekey>
     <bcf:citekey order="39">varma2005statistical</bcf:citekey>
     <bcf:citekey order="40">varma2005statistical</bcf:citekey>
-    <bcf:citekey order="41">de2012sub</bcf:citekey>
+    <bcf:citekey order="41">varma2005statistical</bcf:citekey>
     <bcf:citekey order="42">de2009design</bcf:citekey>
     <bcf:citekey order="43">de2009design</bcf:citekey>
     <bcf:citekey order="44">de2012appearance</bcf:citekey>
@@ -2022,10 +2022,12 @@
     <bcf:citekey order="51">lowe1999object</bcf:citekey>
     <bcf:citekey order="52">varma2003texture</bcf:citekey>
     <bcf:citekey order="53">kohonen1990self</bcf:citekey>
-    <bcf:citekey order="54">knn</bcf:citekey>
-    <bcf:citekey order="55">bhatia2010survey</bcf:citekey>
-    <bcf:citekey order="56">driessen2008map</bcf:citekey>
-    <bcf:citekey order="57">driessen2008map</bcf:citekey>
+    <bcf:citekey order="54">guyon2006introduction</bcf:citekey>
+    <bcf:citekey order="55">de2012sub</bcf:citekey>
+    <bcf:citekey order="56">knn</bcf:citekey>
+    <bcf:citekey order="57">bhatia2010survey</bcf:citekey>
+    <bcf:citekey order="58">driessen2008map</bcf:citekey>
+    <bcf:citekey order="59">driessen2008map</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="nty">
   <bcf:sorting>
