@@ -173,6 +173,31 @@
       \field{year}{2010}
       \field{pages}{21\bibrangedash 28}
     \endentry
+    \entry{boers2010particle}{inproceedings}{}
+      \name{labelname}{4}{}{%
+        {{hash=9c8eca8cd56918e766a37590aa57ee2b}{Boers}{B\bibinitperiod}{Yvo}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=624a48dafbc1b3cd84a2b10615bc3f02}{Driessen}{D\bibinitperiod}{Hans}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=a16250ffe985d2e153a2e3315ea42b84}{Bagchi}{B\bibinitperiod}{Arunabha}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=a20f1c0b22d513527321ec1bc38e53e6}{Mandal}{M\bibinitperiod}{Pranab}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=9c8eca8cd56918e766a37590aa57ee2b}{Boers}{B\bibinitperiod}{Yvo}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=624a48dafbc1b3cd84a2b10615bc3f02}{Driessen}{D\bibinitperiod}{Hans}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=a16250ffe985d2e153a2e3315ea42b84}{Bagchi}{B\bibinitperiod}{Arunabha}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=a20f1c0b22d513527321ec1bc38e53e6}{Mandal}{M\bibinitperiod}{Pranab}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{470cc9e39af474685d54e97021fd5e7e}
+      \strng{fullhash}{d0656e903cde1467964510bf3bb28a13}
+      \field{sortinit}{B}
+      \field{labeltitle}{Particle filter based entropy}
+      \field{booktitle}{13th Conference on Information Fusion (FUSION), 2010.}
+      \field{title}{Particle filter based entropy}
+      \field{year}{2010}
+      \field{pages}{1\bibrangedash 8}
+    \endentry
     \entry{brisset2006paparazzi}{inproceedings}{}
       \name{labelname}{5}{}{%
         {{hash=43244206b361848ef6be19acfa7357b1}{Brisset}{B\bibinitperiod}{Pascal}{P\bibinitperiod}{}{}{}{}}%
@@ -382,6 +407,32 @@
       \field{volume}{28}
       \field{year}{2012}
       \field{pages}{529\bibrangedash 534}
+    \endentry
+    \entry{dellaert1999monte}{inproceedings}{}
+      \name{labelname}{4}{}{%
+        {{hash=44074d3cb57c174a8b15ccc9a576ac0d}{Dellaert}{D\bibinitperiod}{Frank}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=93b0c4a7857a82a8f94e256475887c74}{Fox}{F\bibinitperiod}{Dieter}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=98f4ab1bc2ac191d8f8a0651315ce9c0}{Burgard}{B\bibinitperiod}{Wolfram}{W\bibinitperiod}{}{}{}{}}%
+        {{hash=5112ea130eadef0764fce0145b8b9f91}{Thrun}{T\bibinitperiod}{Sebastian}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=44074d3cb57c174a8b15ccc9a576ac0d}{Dellaert}{D\bibinitperiod}{Frank}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=93b0c4a7857a82a8f94e256475887c74}{Fox}{F\bibinitperiod}{Dieter}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=98f4ab1bc2ac191d8f8a0651315ce9c0}{Burgard}{B\bibinitperiod}{Wolfram}{W\bibinitperiod}{}{}{}{}}%
+        {{hash=5112ea130eadef0764fce0145b8b9f91}{Thrun}{T\bibinitperiod}{Sebastian}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{d3ff0b2aada6d177943ebd9abcc871de}
+      \strng{fullhash}{fb7b462d2cb96f0c5470e3d882b4d7a8}
+      \field{sortinit}{D}
+      \field{labeltitle}{Monte carlo localization for mobile robots}
+      \field{booktitle}{IEEE International Conference on Robotics and Automation, 1999.}
+      \field{title}{Monte carlo localization for mobile robots}
+      \field{volume}{2}
+      \field{year}{1999}
+      \field{pages}{1322\bibrangedash 1328}
     \endentry
     \entry{dosovitskiy2014discriminative}{inproceedings}{}
       \name{labelname}{4}{}{%

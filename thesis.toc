@@ -2,52 +2,70 @@
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Introduction}{2}
+\contentsline {chapter}{\numberline {1}Introduction}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Problem Statement and Research Questions}{4}
+\contentsline {section}{\numberline {1.1}Problem Statement and Research Questions}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Contributions}{5}
+\contentsline {section}{\numberline {1.2}Contributions}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Thesis Outline}{6}
+\contentsline {section}{\numberline {1.3}Thesis Outline}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Related Work}{7}
+\contentsline {chapter}{\numberline {2}Related Work}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Vision-based Localization Methods}{8}
+\contentsline {section}{\numberline {2.1}Vision-based Localization Methods}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Fiducial Markers}{8}
+\contentsline {subsection}{\numberline {2.1.1}Fiducial Markers}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Homography Determination \& Keypoint Matching}{9}
+\contentsline {subsection}{\numberline {2.1.2}Homography Determination \& Keypoint Matching}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.3}Convolutional Neural Networks}{10}
+\contentsline {subsection}{\numberline {2.1.3}Convolutional Neural Networks}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.4}Optical Flow}{11}
+\contentsline {subsection}{\numberline {2.1.4}Optical Flow}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Texton-based Methods}{11}
+\contentsline {section}{\numberline {2.2}Texton-based Methods}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Methods}{13}
+\contentsline {chapter}{\numberline {3}Methods}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Hardware and Software}{14}
+\contentsline {section}{\numberline {3.1}Hardware and Software}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Preliminary Dataset Generation}{16}
+\contentsline {section}{\numberline {3.2}Preliminary Dataset Generation}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Machine Learning-based Approach and Filtering}{19}
+\contentsline {section}{\numberline {3.3}Machine Learning-based Approach and Filtering}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Texton Dictionary Generation}{20}
+\contentsline {subsection}{\numberline {3.3.1}Texton Dictionary Generation}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Histogram Extraction}{21}
+\contentsline {subsection}{\numberline {3.3.2}Histogram Extraction}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}$k$-Nearest Neighbors ($k$-NN) algorithm}{22}
+\contentsline {subsection}{\numberline {3.3.3}$k$-Nearest Neighbors ($k$-NN) algorithm}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.4}Training Set based on Homography-finding Method}{23}
+\contentsline {subsection}{\numberline {3.3.4}Filtering}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Experiment -- Triggered Landing}{23}
+\contentsline {section}{\numberline {3.4}Pillar III: Map evaluation}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Experiment -- Determining the Frequency}{24}
+\contentsline {subsection}{\numberline {3.4.1}Evaluation Scheme}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Experiment -- Comparing different possible maps}{24}
+\contentsline {subsection}{\numberline {3.4.2}Synthetic Data Generation}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Discussion}{26}
+\contentsline {chapter}{\numberline {4}Analysis}{33}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}General Discussion}{27}
+\contentsline {section}{\numberline {4.1}Analysis -- Determining the Number of Image Patches}{33}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{31}
+\contentsline {section}{\numberline {4.2}Analysis -- Setting the Baseline for $k$-NN and determining $k$}{34}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Experiment -- Motion tracking system for Stabilization, Texton-based Approach for estimation}{35}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.1}Training Set based on Motion Tracking System}{35}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.2}Training Set based on Homography-finding Method}{36}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Experiment -- Triggered Landing}{36}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Experiment -- Determining the Frequency}{37}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.6}Experiment -- Comparing different possible maps}{37}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Discussion}{39}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}General Discussion}{40}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Conclusion}{44}

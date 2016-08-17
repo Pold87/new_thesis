@@ -89,7 +89,7 @@
   % Promising results were obtained for all tasks: waypoint
   % navigation, accurate landing, and stable hovering in the indoor
   % environment.
-  To predict the performance of the proposed algorithm in different
+  To predict the performance of the algorithm in different
   environments an evaluation technique is developed. It compares
   actual texton histogram similarities to ideal histogram similarities
   based on the distance between the underlying $x,y$-positions. The
@@ -129,7 +129,7 @@
   computationally complex steps, (ii) lightweight and adaptable
   algorithms to ensure real-time performance and portability to
   different platforms, (iii) modifiable environments that can be
-  tailored to the proposed algorithm. These pillars can build a
+  tailored to the presented algorithm. These pillars can build a
   foundation for efficient localization in various GPS-denied
   environments.
 \end{abstract}
@@ -184,7 +184,7 @@ minimizes points of failure.
 \begin{center}
 \includegraphics[width=0.75\columnwidth]{nutshell}
 \caption{{\label{fig:highleveloverview} The figure illustrates the
-    proposed system from a high-level perspective. A feature
+    developed system from a high-level perspective. A feature
     vector---the texton histogram---is extracted from the current
     camera image of the UAV. The feature vector is forwarded to a
     machine learning model that uses a $k$-Nearest Neighbors algorithm
@@ -245,15 +245,15 @@ contrast to visual SLAM frameworks, this project considers scenarios
 in which the environment is known beforehand or can be even actively
 modified. The environment is non-dynamic and planar, therefore, the
 UAV will make use of texture on the bottom or ceiling of the
-environment. This opens the door for improving the proposed algorithm
-by changing the map. On the basis of desired characteristics of a
-given map, an evaluation technique was developed that determines the
-suitability of an environment for the proposed approach. This
-technique allows for spotting distant regions with similar image
-features, which could lead to deteriorated performance. The evaluation
-can be performed using a given map image or recorded images during
-flight. In the former case, synthetic images will be generated from
-the map image that simulate images taken during flight.
+environment. This opens the door for improving the accuracy of the
+algorithm by changing the map. On the basis of desired characteristics
+of a given map, an evaluation technique was developed that determines
+the suitability of an environment for the presented approach. This technique
+allows for spotting distant regions with similar image features, which
+could lead to deteriorated performance. The evaluation can be
+performed using a given map image or recorded images during flight. In
+the former case, synthetic images will be generated from the map image
+that simulate images taken during flight.
 
 
 \section{Problem Statement and Research Questions}
@@ -595,9 +595,8 @@ its height during an experiment. In another work,
 estimating the proximity to objects~\cite{de2012appearance}.
 % Since closer objects should have less variation, these objects
 % should appear less varied.
-Using this method, the MAV is able to avoid obstacles in a
-$5m \times 5m$ office space and achieves an AUC of up to .97 on rather
-distorted images.
+Using this method, the MAV achieves a high accuracy for collision
+detection and can avoid obstacles in a $5m \times 5m$ office space.
 
 In the scope of this thesis, an efficient \emph{global} localization
 was developed that draws upon the lightweight character of
@@ -629,7 +628,9 @@ the pillars will be given in separate sections.
       % \State textons $\gets$ \Call{csv\_read\_textons}{}
       % \State ann $\gets$ \Call{load\_neural\_network}{}
       \State $\mathcal{X}_0 \gets$ \Call{init\_particles}{}
-      \Procedure{Run\_Texton\_Framework}{} \State $t \gets t+1$ \State
+      \While {true}
+      %\Procedure{Run\_Texton\_Framework}{}
+      \State $t \gets t+1$ \State
       $I_t \gets$ \Call{Receive\_Img\_from\_Camera}{} \State
 %      $\widetilde{I_t} \gets$ \Call{Standardize\_Image}{$I_t$} \State
       $\mathcal{H}_t \gets$ \Call{Get\_Texton\_Histogram}{$I_t$}
@@ -639,7 +640,9 @@ the pillars will be given in separate sections.
       \State $\mathcal{X}_t \gets$
       \Call{Particle\_Filter}{$\mathcal{X}_{t-1}, \mathbf{z}_t$}
       \State $x_t, y_t \gets$ \Call{Maximum\_a\_Posteriori\_Estimate}{$\mathcal{X}_t$}
-      \EndProcedure
+%      \EndProcedure
+      \EndWhile
+\State \textbf{end}
     \end{algorithmic}
   \end{algorithm}  
   % \Call{Send\_Pos}{$x_t, y_t$}
@@ -952,8 +955,8 @@ dictionary. From each image, 1000 randomly selected image patches of
 size $w \times h = 6 \times 6$ pixels were extracted, yielding
 $N = 100\,000$ image patches in total that were clustered. An example
 of a learned dictionary of grayscale textons can be found in
-Figure~\ref{fig:dictionary}. We applied the same dictionary generation
-procedure to the color channels U and V to obtain colored textons.
+Figure~\ref{fig:dictionary}. For our approach, we also used the color
+channels U and V to obtain color textons.
 
 Different maps and environmental settings require different texton
 dictionaries. If one would use the same dictionary for each map, it
@@ -1004,12 +1007,13 @@ extracted. To speed up the time requirements of the histogram
 extraction step, the kernel can be applied only to randomly sampled
 image position instead~\cite{de2012sub}. This sampling step speeds up
 the creation of the histograms and permits a trade-off between speed
-and accuracy. The similarity between histograms in the full sampling
-step and the random sampling is analyzed in
-Section~\ref{sec:numtextons}. One can see that the random sampling
-step introduces random effects into the approach. Therefore, for
-generating the training dataset, no random sampling was used to obtain
-high-quality feature vectors.
+and accuracy.
+%The similarity between histograms in the full sampling
+%step and the random sampling is analyzed in
+%Section~\ref{sec:numtextons}.
+One can see that the random sampling step introduces random effects
+into the approach. Therefore, for generating the training dataset, no
+random sampling was used to obtain high-quality feature vectors.
 
 % The shift is accomplished by using a light-weight machine learning
 % approach instead of a computationally more complex algorithm, like a
@@ -1050,60 +1054,45 @@ manner, for example, with tree structures~\cite{bhatia2010survey}.
 % whatever) and on cross-validation.
 
 
-% based on a list structure.
-\begin{comment}
-  \begin{algorithm}
-    \caption{Initialize texton framework}
-    \label{alg:trexton_init}
-    \begin{algorithmic}[1]
-      \Procedure{Init\_TreXton}{} \State $t \gets 0$
-      % \State textons $\gets$ \Call{csv\_read\_textons}{}
-      % \State ann $\gets$ \Call{load\_neural\_network}{}
-      \State $\mathcal{X}_0 \gets$ \Call{init\_particles}{}
-      \EndProcedure
-    \end{algorithmic}
-  \end{algorithm}
-\end{comment}
-
-\begin{comment}
-
 \subsection{Filtering}
 \label{sec:filtering}
 
-Computer vision-based estimations are usually noisy or
-ambiguous. Texton histograms obtained during flight will not perfectly
-match the ones in the training dataset: blur, lighting settings,
-viewing angles, and, other variables change the shape of the
-histograms.
+Computer vision-based estimations are often noisy or ambiguous. Texton
+histograms obtained during flight will not perfectly match the ones in
+the training dataset: blur, lighting settings, viewing angles, and,
+other variables change the shape of the histograms.
+
+To filter out outliers and smooth estimates, a popular filter choice
+is the Kalman filter. However, the Kalman filter is not able to
+represent multimodal probability
+distributions~\cite{dellaert1999monte}. This makes it rather
+unsuitable for the presented \emph{global} localization approach. The
+``naive'' approach in $k$-NN regression calculates the mean of the $k$
+outputs and forwards this value to the Kalman Filter. However, if the
+output values are spaced out, averaging them would yield a value in
+the center between them, which is not likely to be the correct
+position (Figure~\ref{fig:kali}). This approach can lead to biased
+predictions, especially, if the model outputs belong to distant
+locations due to similar texton distributions at these positions.
 
 \begin{figure}[t]
 \begin{center}
 \includegraphics[width=0.7\columnwidth]{kalman-crop}
 \caption[Kalman Filter.]{{\label{fig:kali} Four time steps of a Kalman
-    filter for two-dimensional position estimates. The colors
-    represent the probability of an $x,y$-position (red: high
-    probability; blue: low probability). In timestep $t = 1$, the
-    filter is initialized with an uniformed prior and each position
-    has equal probability. The likelihood is calculated by the outputs
-    of the $k$-NN algorithm, taking measurement error into
-    account. The posterior results from the multiplication of the
-    prior with the likelihood and indicates the position estimates
-    after one timestep. In the next timestep, the previous posterior
-    gets updates with process noise and becomes the new prior.}}
+    filter demonstrating a motion model for two-dimensional position
+    estimates. The colors represent the probability of an
+    $x,y$-position (red: high probability; blue: low probability). In
+    timestep $t = 1$, the filter is initialized with an uniformed
+    prior and each position has equal probability. To incorporate
+    measurement error, the likelihood is calculated using a Gaussian
+    distribution that is centered around the mean of the $k$
+    predictions from $k$-NN algorithm. The posterior results from the
+    multiplication of the prior with the likelihood and indicates the
+    position estimates after one timestep. In the next timestep, the
+    previous posterior gets updated by introducing process noise and
+    becomes the new prior.}}
 \end{center}
 \end{figure}
-
-To filter out outliers and smooth estimates, a popular filter choice
-is the Kalman filter. However, the Kalman filter is not able to
-represent multimodal probability distributions. This makes it rather
-unsuitable for the presented approach. The naive approach in $k$-NN
-regression calculates the mean of the $k$ outputs and forwards this
-value to the Kalman Filter. However, if the output values are spaced
-out, averaging them would yield a value in the center between them,
-which is not likely to be the correct position
-(Figure~\ref{fig:kali}). This approach can lead to biased
-predictions, especially, if the model outputs belong to distant
-locations due to similar texton distributions at these positions.
 
 %Over time, however, the positional ambiguity, can be resolved, when
 %both estimates of the $k$-NN model fall together. Compared to the
@@ -1114,33 +1103,41 @@ locations due to similar texton distributions at these positions.
 %description of the filtering technique can be found in the next
 %section.
 
-
 We decided to use a more sophisticated method to capture
-\emph{multimodal distributions}.  A general Bayesian filter can
-simultaneously maintain possible locations and resolve the ambiguity
-as soon as one location can be favored (Figure~\ref{fig:bayes}). In
-this case, the predictions of the $k$ neighbors can be directly fed
-into the filter without averaging them first. The filter is able to
-smooth the estimations, handle uncertainty, and simultaneously keep
-track of several competing position estimations. Since a general
-Bayesian filter is computationally complex, a variant that is based on
-random sampling was used: the particle filter.
+\emph{multimodal distributions}. Given an adequate measurement model,
+a general Bayesian filter can simultaneously maintain possible
+locations and resolve the ambiguity as soon as one location can be
+favored (Figure~\ref{fig:bayes}). In this case, the predictions of the
+$k$ neighbors can be directly fed into the filter without averaging
+them first. The filter is able to smooth the estimations, handle
+uncertainty, and simultaneously keep track of several position
+estimates. However, a general Bayesian filter is computationally
+complex. Therefore, a variant that is based on random sampling was
+used: the particle filter. While its computational complexity compared
+to a Kalman filter is still high, one can modify the amount of
+particles to trade off speed and accuracy and adapt the computational
+payload to the used processor.
+
 
 \begin{figure}[t]
 \begin{center}
 \includegraphics[width=0.7\columnwidth]{particle-crop}
 \caption[Bayesian Filter.]{{\label{fig:bayes} Four time steps of a
     Bayesian filter. The colors represent the probability of an
-    $x,y$-position (red: high probability; blue: low probability).}}
+    $x,y$-position (red: high probability; blue: low probability). In
+    contrast to the Kalman filter, the likelihood is calculated using
+    a \emph{mixture} of Gaussian distributions centered around the
+    outputs of the $k$-NN algorithm.}}
 \end{center}
 \end{figure}
 
-The weighted particles are a discrete approximation of the posterior
-probability function ($pdf$) of the state vector ($x,y$-position of
-the MAV). Estimating the position of the UAV can be described as
+
+The weighted particles are a discrete approximation of the probability
+density function ($pdf$) of the state vector ($x,y$-position of the
+MAV). Estimating the filtered position of the MAV can be described as
 $p(X_t \mid Z_t)$, where $X_t$ is the state vector at time $t$ and
-$Z_t = \mathbf{z}_1, ..., \mathbf{z}_t$ are all outputs up to time $t$
-from the $k$-NN algorithm, where each $\mathbf{z}_i$ represents the
+$Z_t = \mathbf{z}_1, ..., \mathbf{z}_t$ are all outputs of the $k$-NN
+algorithm up to time $t$ , where each $\mathbf{z}_i$ represents the
 $k$ $x,y$-outputs of the algorithm at time $i$.
 % The state vector is \emph{hidden}, since the variables cannot be
 % measured directly, therefore the situation can be described with a
@@ -1154,7 +1151,7 @@ represents the number of particles.
 \label{alg:particle_filter}
 \begin{algorithmic}[1]
   \Procedure{Particle\_Filter}{$\mathcal{X}_{t-1}, z_t$}
-  \Comment $q$ is process noise, $r$ is measurement noise
+  %\Comment $q$ is process noise, $r$ is measurement noise
   %\State $q_x^2 = 15$, $q_y^2 = 15$, $r_x^2 = 100$, $r_y^2 = 100$
   \LineComment{Particle update}
   \For{$m = 1$ to $M$}
@@ -1174,12 +1171,13 @@ represents the number of particles.
   \EndProcedure
 \end{algorithmic}
 \end{algorithm}
+
 The ``resampling wheel''~\cite{thrun}
 (Algorithm~\ref{alg:resampling_wheel}) prevents that particles with a
 low weight ``collapse''; instead, these particles are replaced by new
 particles that are selected with a probability proportional to their
-weight. The employed motion model is solely based on Gaussian noise
-and does not consider velocity estimates are headings.
+weight. 
+
 \begin{algorithm}
 \caption{Resampling wheel}
 \label{alg:resampling_wheel}
@@ -1200,29 +1198,43 @@ and does not consider velocity estimates are headings.
 \end{algorithmic}
 \end{algorithm}
 
-Particle filters have several advantages. First, one can represent
-uncertainty with the variance of the state variables of the
-particles. Second, the particle filter permits \emph{sensor fusion},
-and can integrate data from the inertial measurement unit (IMU) or
-optical flow into the position estimation. A major disadvantage is the
-rather high computational complexity. This can be circumvented by
-reducing the amount of particles---trading off speed and accuracy to
-adapt the computational payload to the used processor.
-
 The used particle filter is initialized with $M = 100$ particles at
-random $x, y$-positions. To incorporate the noise of the estimates of
-the $k$-NN algorithm a two-dimensional Gaussian Mixture Model (GMM) was used. 
+random $x, y$-positions. To incorporate the measurement noise for each
+of the $k$ estimates from the $k$-NN algorithm, we developed a
+two-dimensional Gaussian Mixture Model (GMM) as measurement model. The
+parameters of the GMM are obtained by comparing the ground truth
+positions (random variable $T$) from the motion tracking system to the
+estimates from the $k$-NN algorithm (random variable $P_j$) in a
+recorded dataset. The GMM is specified by mean values~$\mu_j$ and
+variances~$\Sigma_j, j \in \{1, \ldots, k\}$ that are dependent on the
+rank $j$ of the prediction of the $k$-NN algorithm (for example,
+$j = 2$ is the second nearest neighbor). The value $\mu_j$ represents
+the average deviation from the ground truth for the $j$th prediction
+of the $k$-NN algorithm; the variance matrix $\Sigma_j$ specifies the
+variances of the deviations in $x$-direction and $y$-direction and the
+correlation $\rho$ between the deviations.
 %$p(z \mid x) = \frac{p(x \mid z)p(z)}{p(x)}$ is used, where
 %$\textbf{x} = ((x_1, y_1), (x_2, y_2), \ldots, (x_k, y_k))^T$. A
 %a two-dimensional Gaussian sensor model was used for each resulting in
 %a Gaussian Mixture Model.
-The parameters of the Gaussian have been determined by comparing the
-positions based on the motion tracking system with the predictions of
-the texton-based system.
+The values for $\mu_j$ and $\Sigma_j$ were determined by applying the
+variance operator $\text{Var}$ and expectation operator $\text{E}$ to
+the differences between the ground truth $T$ and the predictions $P_j$
+of the $k$-NN algorithm: $\Sigma_j := \text{Var}(T-P_j)$ and
+$\mu_j := \text{E}[T-P_j]$.\\
+In contrast to the measurement model, the used \emph{motion model} is
+simple. It is solely based on Gaussian process noise and does not
+consider velocity estimates, headings, or control inputs. Its mean
+$\mu$ and variance $\Sigma$ are dependent on the expected velocity of
+the MAV. We used the forward difference $T_t - T_{t-1}$ to estimate
+the average movement and its variance-covariance matrix between
+timestep $t$ and $t-1$. While the employed motion model is simple, the
+developed software provides functionality for including an
+odometry-based motion model based on optical flow.
+%The mean values $\mu$ were set to zero (no systematic
+%bias).
 %(Figure~\ref{fig:measurementmodel}).
-This results in values for the variances in $x$ and $y$, the
-correlation $\rho$ between $x$ and $y$. The mean values $\mu$ were set
-to zero (no systematic bias).
+
 
 %\begin{figure}
 %  \label{fig:cor_sim_confi}
@@ -1254,16 +1266,17 @@ to zero (no systematic bias).
 %\end{center}
 %\end{figure}
 %\unsure{TODO: Add Gaussian approximation!}
-The particle filter allows for using the information of all $k$
-neighbors and keep track of a multimodal distribution. While keeping
-track of a multimodal distribution allows for incorporating several
-possible states of the system, the system needs one best position
-estimate for guidance and stabilization after each iteration. Using a
-weighted average of the modes would again introduce the problem that
-the weighted average could fall into a low density region. Therefore,
-the maximum a posteriori estimate, as described by
-\citeauthor{driessen2008map} was used~\cite{driessen2008map}. This
-approach uses the following formula to obtain the MAP estimate:
+With the GMM, the information of all $k$ neighbors can be used,
+yielding a possibly multimodal distribution. While a multimodal
+distribution allows for keeping track of several possible positions,
+certain subsystems---for example a control loop---often need
+\emph{one} point estimate. Using a weighted average of the particles
+would again introduce the problem that it could fall into a low
+density region (an unlikely position). Instead, we used a maximum a
+posteriori (MAP) estimate, as described by
+\citeauthor{driessen2008map}~\cite{driessen2008map}. This approach
+uses the following formula to obtain the MAP estimate
+$s_k^{MAP}$---the ``final'' $x,y$-position:
 \begin{align}
   s_k^{MAP}  &= \text{arg}\max_{s_k}{p(s_k \mid Z_k)}\\
              &= \text{arg}\max_{s_k}{p(z_k \mid s_k) p(s_k \mid Z_{k-1})} 
@@ -1287,7 +1300,7 @@ $s_k$ given the current measurement $z_k$. In our setting, this
 probability is equal to the weight of the particle $z_k$, therefore
 $p(z_k \mid s_k) = w^i_k$.
 
-The estimation of \emph{uncertainty} is a core part of the proposed
+The estimation of \emph{uncertainty} is a core part of the developed
 approach, due to its importance for safety and accuracy. Therefore,
 uncertainty was modeled using the spread of the particles---as
 expressed by their variance in $x$-direction and $y$-direction.
@@ -1298,17 +1311,20 @@ expressed by their variance in $x$-direction and $y$-direction.
 %predictions. Therefore, the predictions could `jump' to locations due
 %to prediction errors. The particle filter is used to combine the
 %advantages of both methods and eliminate the disadvantages.
-Initially, we planned to include the similarity between the current
-histograms and each of the $k$ neighbors as confidence value, thus
-reducing the measurement noise if a high similarity between current
-histogram and a training histogram is achieved. However, we found no
-correlation between these variables.
+Initially, we planned to include the distance between the current
+histogram obtained from the camera image and each of the $k$ neighbors
+from the training set as confidence value, thus reducing the
+measurement noise if a high similarity between the current histogram
+and a training histogram is achieved. However, we found no correlation
+between these variables.
 % (Figure~\ref{fig:cor_sim_confi})
-We also tried to use the amount of detected keypoints ($K$) as
-confidence value for the quality of the sample in the training set if
-the homography-based approach is used for labeling. Again, no linear
-relationship between $K$ and the error in $x$-direction ($X$) and the
-error in $y$-direction ($Y$) could be found
+Still, we provide the functionality for incorporating the distance in
+the developed software. We also tried to use the amount of detected
+keypoints ($K$) as confidence value for the quality of the sample in
+the training set if the homography-based approach is used for
+labeling. Again, no linear relationship between $K$ and the error in
+$x$-direction ($X$) and the error in $y$-direction ($Y$) could be
+found
 %(Figure~\ref{fig:cor_keypoints})
 : $\rho_{K, X} = 0.10$,
 $\rho_{K, Y} = 0.01$.
@@ -1349,6 +1365,86 @@ $\rho_{K, Y} = 0.01$.
 \section{Pillar III: Map evaluation}
 \label{sec:mapeval}
 
+\subsection{Evaluation Scheme}
+\label{sec:evaluationscheme}
+
+The performance of the developed method depends on the environment: a
+texture-rich environment without repeating patterns will be better
+suited than a texture-poor environment. Ideally, one would like to
+know if the algorithm is able to work in a given
+environment. Therefore, we propose an evaluation scheme that compares
+different environments and areas within an environment. This scheme
+assigns a global fitness value between 0 and 1 to a given map,
+proportional to the accuracy it is expected to achieve in the physical
+world. It allows for inspecting the given map and detecting regions
+within the map that are responsible for the overall fitness value.
+%The
+%evaluation of a map is difficult, since the obtained histograms during
+%a real flight depend on many factors: motion blur, distance to the map
+%and rotations proportional to the map.
+
+The idea behind the global loss function $L$ is that histograms in
+closeby areas should be similar and the similarity should decrease the
+further apart two positions are. Therefore, the approach is based on
+the difference between \emph{actual} and \emph{ideal} texton histogram
+similarities in a dataset. The ideal texton similarity distribution is
+modeled as a 2-dimensional Gaussian distribution. Its variance is
+dependent on the desired accuracy ($\rho$): the lower the variance,
+the more punctuated a certain location is but also the higher the risk
+that a totally wrong measurement occurs.
+
+The cosine similarity has the convenient property that its values are
+bounded between $-1$ and $1$. In the present case, since the elements
+of $h_i$ and $h_j$ are non-negative, it is even bounded between $0$
+and $1$. The function $f_x$ describes the non-normalized probability
+density function of the normal distribution:
+$f_X(x) = e^{- \frac{(x - \mu)^2}{2 \sigma ^ 2}}$. This function is
+also bounded between $0$ and $1$, which makes the functions $f_X$ and
+$CS$ easily comparable.
+
+In summary, we propose the following global loss function ($L$) for
+evaluating a given map ($\mathcal{M}$):
+\begin{align}
+  L(\mathcal{M}) &= \sum_{i = 1}^{N} \sum_{j = 1}^{N} \ell(d_a(h_i, h_j), d_e(h_i, h_j))
+\end{align}
+\begin{align}
+  \ell(x, y) &= x - y\\
+  d_a(h_i, h_j) &= \text{CS}(h_i, h_j)\\
+  d_e(h_i, h_j) &= f_X(pos_i \mid \mu, \Sigma) = f_X(x_i, y_i \mid \mu, \Sigma)\\
+\end{align}
+\begin{align}
+\mu = pos_j = (x_j, y_j)\\
+\Sigma =
+  \begin{bmatrix}
+    \rho & 0\\
+    0 & \rho\\
+  \end{bmatrix}
+\end{align}
+The cosine similarity (CS) is:
+\begin{align}
+CS(h_i, h_j) = \frac{h_i^Th_j}{||h_i||\,||h_j||}
+\end{align}
+
+\unsure{include global loss image}
+
+It also allows to show the similarities for a fixed position and the
+loss for a fixed positions based on the expected similarity and the
+actual similarity.
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=1\columnwidth]{local_loss}
+\caption{{Heatmap colors show losses per region (smoothed using a
+    Gaussian filter). Ideal histogram similarity for a given
+    position. Histograms taken at positions close to
+    $\textbf{x} = (400, 300)$ should be similar to this histogram. The
+    further away the position of a certain histogram, the lower the
+    ideal similarity should be.%
+  }}
+\end{center}
+\end{figure}
+
+
 \subsection{Synthetic Data Generation}
 \label{sec:syntheticdatageneration}
 
@@ -1358,7 +1454,7 @@ image patches based on perspective transformations of a map
 image. Examples of generated images are displayed in
 Figure~\ref{fig:montage}. The application allows for comparing and
 predicting the performance of different maps. The software is written
-in C++ and OpenCV~3.0.0.  It generates a specified amount of image
+in C++ and OpenCV~3.0.0. It generates a specified amount of image
 patches using random values for rotational angles, translational
 shifts, as well as blur, contrast, and brightness intensity. The
 values are sampled from different probability distributions
@@ -1417,82 +1513,6 @@ Six images generated by the synthetic data generation tool.%
 \end{center}
 \end{figure}
 
-\subsection{Evaluation Scheme}
-\label{sec:evaluationscheme}
-
-The performance of the proposed method depends on the environment: a
-texture-rich environment without repeating patterns will be better
-suited than a texture-poor environment. Ideally, one would like to
-know if the proposed method is able to work in a given
-environment. Therefore, we propose an evaluation scheme for maps. This
-scheme assigns a global fitness value to a given map, proportional to
-the accuracy it is expected to achieve in the physical world. The
-evaluation scheme allows to inspect the given map and to detect
-regions that are responsible for the overall fitness value. The
-evaluation of a map is difficult, since the obtained histograms during
-a real flight depend on many factors: motion blur, distance to the map
-and rotations proportional to the map.
-
-In the first step of the map evaluation procedure, $N$ different
-patches of a given map are generated using the synthetic data
-generation tool (Section~\ref{sec:syntheticdatageneration}). We
-propose the following global loss function ($L$) for evaluating a
-given map ($\mathcal{M}$):
-\begin{align}
-  L(\mathcal{M}) &= \sum_{i = 1}^{N} \sum_{j = 1}^{N} \ell(d_a(h_i, h_j), d_e(h_i, h_j))
-\end{align}
-\begin{align}
-  \ell(x, y) &= x - y\\
-  d_a(h_i, h_j) &= \text{CS}(h_i, h_j)\\
-  d_e(h_i, h_j) &= f_X(pos_i \mid \mu, \Sigma) = f_X(x_i, y_i \mid \mu, \Sigma)\\
-\end{align}
-\begin{align}
-\mu = pos_j = (x_j, y_j)\\
-\Sigma =
-  \begin{bmatrix}
-    \rho & 0\\
-    0 & \rho\\
-  \end{bmatrix}
-\end{align}
-The cosine similarity (CS) is:
-\begin{align}
-CS(h_i, h_j) = \frac{h_i^Th_j}{||h_i||\,||h_j||}
-\end{align}
-The cosine similarity has the convenient property that its values are
-bounded between $-1$ and $1$. In the present case, since the elements
-of $h_i$ and $h_j$ are non-negative, it is even bounded between $0$
-and $1$. The function $f_x$ describes the non-normalized probability
-density function of the normal distribution:
-$f_X(x) = e^{- \frac{(x - \mu)^2}{2 \sigma ^ 2}}$. This function is
-also bounded between $0$ and $1$, which makes the functions $f_X$ and
-$CS$ easily comparable.
-
-The idea behind the global loss function $L$ is that histograms in
-closeby areas should be similar and the similarity should decrease the
-further apart two positions are. This is modeled as a 2-dimensional
-Gaussian with zero covariance. The variance is dependent on the
-desired accuracy ($\rho$): the lower the variance, the more punctuated
-a certain location is but also the higher the risk that a totally
-wrong measurement occurs.
-
-In future research, the ``bad regions'' could be optimized using an
-optimization approach such as an evolutionary algorithm. It also
-allows to show the similarities for a fixed position and the loss for
-a fixed positions based on the expected similarity and the actual
-similarity.
-
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[width=1\columnwidth]{local_loss}
-\caption{{Heatmap colors show losses per region (smoothed using a
-    Gaussian filter). Ideal histogram similarity for a given
-    position. Histograms taken at positions close to
-    $\textbf{x} = (400, 300)$ should be similar to this histogram. The
-    further away the position of a certain histogram, the lower the
-    ideal similarity should be.%
-  }}
-\end{center}
-\end{figure}
 
 \chapter{Analysis}
 \label{chap:analysis}
@@ -1909,16 +1929,17 @@ to test the ability of the particle filter on synthetic flights.
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=0.448\columnwidth]{realitygap}
-\caption{{\label{fig:realitygap}
-Exemplifying the reality gap. \emph{Top left}: image patch generated using draug. \emph{Top
-      right}: image patch taken with the MAV's camera after printing
-    the patch. \emph{Below left}: texton image of the synthetic
-    image. \emph{Below right}: Texton image of the real image. The
-    texton images shows that corresponding regions get classified into
-    different textons, resulting in different histograms. This makes
-    the transfer from the synthetic data to the real world difficult.%
-}}
+\includegraphics[width=0.65\columnwidth]{realitygap}
+\caption{{\label{fig:realitygap} Exemplifying the reality
+    gap. \emph{Top left}: image patch generated using the synthetic
+    data generation tool. \emph{Top right}: image patch taken with the
+    MAV's camera after printing the patch. \emph{Below left}: texton
+    image of the synthetic image. \emph{Below right}: Texton image of
+    the real image. The texton images shows that corresponding regions
+    get classified into different textons, resulting in different
+    histograms. This makes the transfer from the synthetic data to the
+    real world difficult.%
+  }}
 \end{center}
 \end{figure}
 
@@ -1945,7 +1966,6 @@ histograms, make predictions and run the particle filter.
 
 % Currently, the computationally most complex part is the XXX.
 
-\end{comment}
 \chapter{Conclusion}
 \label{chap:conclusion}
 
