@@ -1,0 +1,37 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.1}{\ignorespaces { The figure illustrates the proposed system from a high-level perspective. A feature vector---the texton histogram---is extracted from the current camera image of the UAV. The feature vector is forwarded to a machine learning model that uses a $k$-Nearest Neighbors algorithm to output $x,y$-position estimates. These estimates are passed to a particle filter, which filters position estimates over time and outputs a final position estimate (red point). The expected loss shows regions in the map where a lower localization accuracy is expected. The average expected loss can be used as ``fitness value'' of a given map.}\relax }}{7}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces { Examples of fiducial markers of the ArUco library.}\relax }}{12}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces {Perspective transformation between keypoints of the current image (left) and the reference or map image (right).}\relax }}{14}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces { Comparison of an unmodified Parrot AR.Drone.2.0 (left) and a modified version (right). The modified one was equipped with an Odroid XU-4 single board computer, a Logitech C525 HD camera, a WiFi module, and a USB connection between the Odroid board and the AR.Drone.2.0 flight controller.}\relax }}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces { The ground control station of the Paparazzi software. It displays information about the status of the UAV and provides functions for controlling the vehicle (from PaparazziUAV wiki \cite {paparazzi}).}\relax }}{20}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces {Training dataset generation if the motion tracking system is used. The texton histograms of the camera images during flight are extracted and aligned with the highly accurate position estimates of the motion tracking system. The result is a high-quality training set of texton histograms and corresponding $x,y$-positions.}\relax }}{21}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces { The figure illustrates the workflow of the approach when applying the homography-based dataset generation. Images from an initial flight are stitched together to create an orthomap. The same images are used to detect and describe their keypoints using \textsc {Sift}, followed by finding a homography between the keypoints of the flight images and the orthomap to obtain $x, y$-coordinates per image for creating the training set. Each image of the initial flight dataset can be used and a fixed amount of small $6\times 6$ pixel image patches is extracted. These are labeled with the nearest texton, using the Euclidean distance. Finally, the $k$-NN algorithm uses the texton histogram as feature vector and the corresponding $x, y$ coordinate as target value. This process allows shifting computational burden of the keypoint detection and homography finding to a faster machine learning approach.}\relax }}{23}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces { This figure shows the created orthomap of a texture-rich floor. It is stitched together using 100 single images and represents a real world area of approximately $8\times 8$ meters. Image distortions, non-mapped areas, and slightly skewed seams at several points are visible.}\relax }}{24}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces { The figures shows a dictionary consisting of 20 grayscale textons ($w \times h = 6 \times 6$ pixels).}\relax }}{25}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces { The created map that was stitched together using 445 images. A non-mapped area in the middle of the map can be seen, which is a result of the set flight path. An image distortion can be seen at the right-hand side, where the landing spot sign appears twice, while in reality, only one circle was visible.}\relax }}{27}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.8}{\ignorespaces { Image with the lowest loss value; \emph {Right}: Image with the highest loss value}\relax }}{29}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces { Exemplifying the reality gap. \emph {Top left}: image patch generated using draug. \emph {Top right}: image patch taken with the MAV's camera after printing the patch. \emph {Below left}: texton image of the synthetic image. \emph {Below right}: Texton image of the real image. The texton images shows that corresponding regions get classified into different textons, resulting in different histograms. This makes the transfer from the synthetic data to the real world difficult.}\relax }}{33}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }

@@ -173,6 +173,29 @@
       \field{year}{2010}
       \field{pages}{21\bibrangedash 28}
     \endentry
+    \entry{brisset2006paparazzi}{inproceedings}{}
+      \name{labelname}{5}{}{%
+        {{hash=43244206b361848ef6be19acfa7357b1}{Brisset}{B\bibinitperiod}{Pascal}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=f93c1d4308701799fb1e7f38077557aa}{Drouin}{D\bibinitperiod}{Antoine}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=637447204a3963d1e07074264cb710c0}{Gorraz}{G\bibinitperiod}{Michel}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=2e310461ceefcbe605f49d98a2ade9de}{Huard}{H\bibinitperiod}{Pierre-Selim}{P\bibinithyphendelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=759d70c148f2068a3d08d1e4e2817a09}{Tyler}{T\bibinitperiod}{Jeremy}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{hash=43244206b361848ef6be19acfa7357b1}{Brisset}{B\bibinitperiod}{Pascal}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=f93c1d4308701799fb1e7f38077557aa}{Drouin}{D\bibinitperiod}{Antoine}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=637447204a3963d1e07074264cb710c0}{Gorraz}{G\bibinitperiod}{Michel}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=2e310461ceefcbe605f49d98a2ade9de}{Huard}{H\bibinitperiod}{Pierre-Selim}{P\bibinithyphendelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=759d70c148f2068a3d08d1e4e2817a09}{Tyler}{T\bibinitperiod}{Jeremy}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{46c4ee5a18dde3119465d2fa36a8c7d9}
+      \strng{fullhash}{baf508b6efe396993c0318ba94174df2}
+      \field{sortinit}{B}
+      \field{labeltitle}{The {P}aparazzi solution}
+      \field{booktitle}{2nd US-European Competition and Workshop on Micro Air Vehicles 2006}
+      \field{title}{The {P}aparazzi solution}
+      \field{year}{2006}
+    \endentry
     \entry{chao2013survey}{inproceedings}{}
       \name{labelname}{3}{}{%
         {{hash=0552f640e555baba20d74f2ca6612db7}{Chao}{C\bibinitperiod}{Haiyang}{H\bibinitperiod}{}{}{}{}}%
@@ -223,6 +246,26 @@
       \field{year}{2013}
       \field{pages}{217}
     \endentry
+    \entry{collobert2011torch7}{inproceedings}{}
+      \name{labelname}{3}{}{%
+        {{hash=133261178beda1dc3991e0e1dfd5a791}{Collobert}{C\bibinitperiod}{Ronan}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=481308b301166b521c74fde6566e97e6}{Kavukcuoglu}{K\bibinitperiod}{Koray}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=e7e5b30858513cf8e96fcc9b7eb3d76a}{Farabet}{F\bibinitperiod}{Cl{\'e}ment}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=133261178beda1dc3991e0e1dfd5a791}{Collobert}{C\bibinitperiod}{Ronan}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=481308b301166b521c74fde6566e97e6}{Kavukcuoglu}{K\bibinitperiod}{Koray}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=e7e5b30858513cf8e96fcc9b7eb3d76a}{Farabet}{F\bibinitperiod}{Cl{\'e}ment}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d12381cfb1e47a6c365b9375e84171c5}
+      \strng{fullhash}{a0248792ba3d6eddfb50623b5d276a4a}
+      \field{sortinit}{C}
+      \field{labeltitle}{Torch7: A matlab-like environment for machine learning}
+      \field{booktitle}{BigLearn, NIPS Workshop}
+      \field{number}{EPFL-CONF-192376}
+      \field{title}{Torch7: A matlab-like environment for machine learning}
+      \field{year}{2011}
+    \endentry
     \entry{knn}{online}{}
       \field{sortinit}{C}
       \field{labeltitle}{CPSC 340: Machine Learning and Data Mining}
@@ -232,6 +275,27 @@
       \field{urlyear}{2016}
       \verb{url}
       \verb https://www.cs.ubc.ca/~schmidtm/Courses/340-F15/L7.pdf
+      \endverb
+    \endentry
+    \entry{hugin}{online}{}
+      \true{morelabelname}
+      \name{labelname}{1}{}{%
+        {{hash=7a962316604453491e35c8971f2dd28a}{d'Angelo}{d\bibinitperiod}{Pablo}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \true{moreauthor}
+      \name{author}{1}{}{%
+        {{hash=7a962316604453491e35c8971f2dd28a}{d'Angelo}{d\bibinitperiod}{Pablo}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{5f04fdf41836945fa7ecc939fee8acfa}
+      \strng{fullhash}{5f04fdf41836945fa7ecc939fee8acfa}
+      \field{sortinit}{d}
+      \field{labeltitle}{Hugin - Panorama photo stitcher}
+      \field{title}{Hugin - Panorama photo stitcher}
+      \field{urlday}{10}
+      \field{urlmonth}{08}
+      \field{urlyear}{2016}
+      \verb{url}
+      \verb http://hugin.sourceforge.net/
       \endverb
     \endentry
     \entry{de2009design}{article}{}
@@ -618,6 +682,29 @@
       \field{year}{1990}
       \field{pages}{1464\bibrangedash 1480}
     \endentry
+    \entry{kordos2010we}{inproceedings}{}
+      \name{labelname}{3}{}{%
+        {{hash=77e4e99bb1cde76b4b8dd3ee52e47ef1}{Kordos}{K\bibinitperiod}{Miros{\l}aw}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=b3bdaa96c69b90a697bb29a4396c8f67}{Blachnik}{B\bibinitperiod}{Marcin}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=e5324b6d4e269b72e80a58604ec8c337}{Strzempa}{S\bibinitperiod}{Dawid}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=77e4e99bb1cde76b4b8dd3ee52e47ef1}{Kordos}{K\bibinitperiod}{Miros{\l}aw}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=b3bdaa96c69b90a697bb29a4396c8f67}{Blachnik}{B\bibinitperiod}{Marcin}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=e5324b6d4e269b72e80a58604ec8c337}{Strzempa}{S\bibinitperiod}{Dawid}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{1238ee32c0a6f0fd8cb785e918c76357}
+      \strng{fullhash}{ba7c264925a6133a614cba195b9716de}
+      \field{sortinit}{K}
+      \field{labeltitle}{Do we need whatever more than k-{NN}?}
+      \field{booktitle}{International Conference on Artificial Intelligence and Soft Computing}
+      \field{title}{Do we need whatever more than k-{NN}?}
+      \field{year}{2010}
+      \field{pages}{414\bibrangedash 421}
+    \endentry
     \entry{lecun1998gradient}{article}{}
       \name{labelname}{4}{}{%
         {{hash=6a1aa6b7eab12b931ca7c7e3f927231d}{LeCun}{L\bibinitperiod}{Yann}{Y\bibinitperiod}{}{}{}{}}%
@@ -701,17 +788,6 @@
       \verb http://research.microsoft.com/en-us/um/redmond/projects/ice/
       \endverb
     \endentry
-    \entry{microsoft}{online}{}
-      \field{sortinit}{M}
-      \field{labeltitle}{Microsoft Indoor Localization Competition}
-      \field{title}{Microsoft Indoor Localization Competition}
-      \field{urlday}{02}
-      \field{urlmonth}{08}
-      \field{urlyear}{2016}
-      \verb{url}
-      \verb https://www.microsoft.com/en-us/research/event/microsoft-indoor-localization-competition-ipsn-2016/
-      \endverb
-    \endentry
     \entry{bebop2015}{online}{}
       \name{labelname}{1}{}{%
         {{hash=e7cb1e977e896954fec46d2ea7832072}{Parrot}{P\bibinitperiod}{}{}{}{}{}{}}%
@@ -792,6 +868,25 @@
       \field{volume}{1}
       \field{year}{2002}
       \field{pages}{226\bibrangedash 231}
+    \endentry
+    \entry{thrun}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=29ee2ab72460d2bb8cf06365e2f3a243}{Thrun}{T\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=29ee2ab72460d2bb8cf06365e2f3a243}{Thrun}{T\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{29ee2ab72460d2bb8cf06365e2f3a243}
+      \strng{fullhash}{29ee2ab72460d2bb8cf06365e2f3a243}
+      \field{sortinit}{T}
+      \field{labeltitle}{Artificial intelligence for robotics}
+      \field{title}{Artificial intelligence for robotics}
+      \field{urlday}{10}
+      \field{urlmonth}{03}
+      \field{urlyear}{2016}
+      \verb{url}
+      \verb https://www.udacity.com/course/artificial-intelligence-for-robotics--cs373
+      \endverb
     \endentry
     \entry{varma2005statistical}{article}{}
       \name{labelname}{2}{}{%
