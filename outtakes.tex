@@ -7,3 +7,27 @@ presented algorithm, except for height control, which was based on the
 sonar measurements. A predefined route was created beforehand and the
 difference between the desired path and actual path was determined,
 using the motion tracking system for recording the data.
+
+
+\begin{align}
+  s_k^{MAP}  &= \text{arg}\max_{s_k}{p(s_k \mid Z_k)}\\
+             &= \text{arg}\max_{s_k}{p(z_k \mid s_k) p(s_k \mid Z_{k-1})} 
+\end{align}
+Therefore, the final position estimate is equal to the position of one
+of the particles. The MAP estimator in our case is
+\begin{align}
+s_k^{MAP} = \text{arg}\max_{s_k} \lambda^M(s_k)
+\end{align}
+with
+\begin{align}
+\lambda^M(s_k) = p(z_k \mid s_k) \sum_{j=1}^Mp(s_k \mid s_{k-1}^j)w^j_{k-1}
+\end{align}
+This function is now only evaluated at a finite, chosen number of
+states, the particles, using
+\begin{align}
+\hat{s}_k^{MAP} = \text{arg}\_{s_k \in \{s_k^i \mid i=1,\ldots,N\}} \lambda^M(s_k)
+\end{align}
+In this formula, $p(z_k \mid s_k)$ is the likelihood of the particle
+$s_k$ given the current measurement $z_k$. In our setting, this
+probability is equal to the weight of the particle $z_k$, therefore
+$p(z_k \mid s_k) = w^i_k$.

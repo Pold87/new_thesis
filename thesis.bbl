@@ -173,31 +173,6 @@
       \field{year}{2010}
       \field{pages}{21\bibrangedash 28}
     \endentry
-    \entry{boers2010particle}{inproceedings}{}
-      \name{labelname}{4}{}{%
-        {{hash=9c8eca8cd56918e766a37590aa57ee2b}{Boers}{B\bibinitperiod}{Yvo}{Y\bibinitperiod}{}{}{}{}}%
-        {{hash=624a48dafbc1b3cd84a2b10615bc3f02}{Driessen}{D\bibinitperiod}{Hans}{H\bibinitperiod}{}{}{}{}}%
-        {{hash=a16250ffe985d2e153a2e3315ea42b84}{Bagchi}{B\bibinitperiod}{Arunabha}{A\bibinitperiod}{}{}{}{}}%
-        {{hash=a20f1c0b22d513527321ec1bc38e53e6}{Mandal}{M\bibinitperiod}{Pranab}{P\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{4}{}{%
-        {{hash=9c8eca8cd56918e766a37590aa57ee2b}{Boers}{B\bibinitperiod}{Yvo}{Y\bibinitperiod}{}{}{}{}}%
-        {{hash=624a48dafbc1b3cd84a2b10615bc3f02}{Driessen}{D\bibinitperiod}{Hans}{H\bibinitperiod}{}{}{}{}}%
-        {{hash=a16250ffe985d2e153a2e3315ea42b84}{Bagchi}{B\bibinitperiod}{Arunabha}{A\bibinitperiod}{}{}{}{}}%
-        {{hash=a20f1c0b22d513527321ec1bc38e53e6}{Mandal}{M\bibinitperiod}{Pranab}{P\bibinitperiod}{}{}{}{}}%
-      }
-      \list{organization}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{470cc9e39af474685d54e97021fd5e7e}
-      \strng{fullhash}{d0656e903cde1467964510bf3bb28a13}
-      \field{sortinit}{B}
-      \field{labeltitle}{Particle filter based entropy}
-      \field{booktitle}{13th Conference on Information Fusion (FUSION), 2010.}
-      \field{title}{Particle filter based entropy}
-      \field{year}{2010}
-      \field{pages}{1\bibrangedash 8}
-    \endentry
     \entry{brisset2006paparazzi}{inproceedings}{}
       \name{labelname}{5}{}{%
         {{hash=43244206b361848ef6be19acfa7357b1}{Brisset}{B\bibinitperiod}{Pascal}{P\bibinitperiod}{}{}{}{}}%
@@ -650,6 +625,25 @@
       \field{year}{2006}
       \field{pages}{1\bibrangedash 25}
     \endentry
+    \entry{hartley2003multiple}{book}{}
+      \name{labelname}{2}{}{%
+        {{hash=a0cea72f57464ff654a3f8362e58503d}{Hartley}{H\bibinitperiod}{Richard}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=c72fc39e94030f67717052309266a44d}{Zisserman}{Z\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=a0cea72f57464ff654a3f8362e58503d}{Hartley}{H\bibinitperiod}{Richard}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=c72fc39e94030f67717052309266a44d}{Zisserman}{Z\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge university press}%
+      }
+      \strng{namehash}{8e7a03190a02019e6b707a2cb770fbb2}
+      \strng{fullhash}{0e3dfde06144cdf8ac37a2746457797e}
+      \field{sortinit}{H}
+      \field{labeltitle}{Multiple view geometry in computer vision}
+      \field{title}{Multiple view geometry in computer vision}
+      \field{year}{2003}
+    \endentry
     \entry{hornecker2005using}{inproceedings}{}
       \name{labelname}{2}{}{%
         {{hash=741e06f6dc5044a293d5327c4c66dc65}{Hornecker}{H\bibinitperiod}{Eva}{E\bibinitperiod}{}{}{}{}}%
@@ -670,6 +664,25 @@
       \field{title}{Using {ARToolKit} markers to build tangible prototypes and simulate other technologies}
       \field{year}{2005}
       \field{pages}{30\bibrangedash 42}
+    \endentry
+    \entry{jepson}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=7f1c4e47b553e40159a9220e9c358239}{Jepson}{J\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=7f1c4e47b553e40159a9220e9c358239}{Jepson}{J\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7f1c4e47b553e40159a9220e9c358239}
+      \strng{fullhash}{7f1c4e47b553e40159a9220e9c358239}
+      \field{sortinit}{J}
+      \field{labeltitle}{Rotation in 3D using {OpenCV}'s warpPerspective}
+      \field{title}{Rotation in 3D using {OpenCV}'s warpPerspective}
+      \field{urlday}{10}
+      \field{urlmonth}{12}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://jepsonsblog.blogspot.nl/2012/11/rotation-in-3d-using-opencvs.html
+      \endverb
     \endentry
     \entry{kato1999marker}{inproceedings}{}
       \name{labelname}{2}{}{%

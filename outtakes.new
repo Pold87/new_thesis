@@ -1,0 +1,16 @@
+The 3D translational vector $t$ is multiplied by the transposed
+rotation matrix to rotate the camera model and not the image itself:
+\begin{align*}
+  \tilde{t} = -R' \cdot t
+\end{align*}
+Since the inverse rotation matrix negates the translation vector, it
+is negated again. The matrix $\tilde{T}$ allows for specifying the
+operation using matrix operations:
+\begin{align*}
+  \tilde{T} = \begin{bmatrix}
+  1 & 0 & 0 & \tilde{t}_1        \\
+  1 & 1 & 0 & \tilde{t}_2        \\
+  1 & 0 & 1 & \tilde{t}_3        \\
+  1 & 0 & 0 & 1        \\
+  \end{bmatrix}
+\end{align*}
