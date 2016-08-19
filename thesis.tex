@@ -1370,15 +1370,7 @@ error in $y$-direction ($Y$) could be found.
 %
 %\unsure{uiui, should edit the labels of the y axis and uses crosses in
 %both cases}
-%\begin{figure}[h!]
-%\label{fig:measurementmodel}
-%\begin{center}
-%\includegraphics[width=0.448\columnwidth]{measurement_model}
-%\caption{{Dependence between number of keypoints and error in
-%    $x$-direction (\emph{Left}) and $y$-direction (\emph{Left}).%
-%  }}
-%\end{center}
-%\end{figure}
+
 %
 
 \section{Map evaluation}
@@ -1683,37 +1675,37 @@ specifies the sampled values from the random distributions per patch.
 \chapter{Analysis}
 \label{chap:analysis}
 In this chapter, the setup of the experiments is presented and the
-results are described. We conducted several flight tests to
-demonstrate real-world applicability of our approach.
+results are described. %We conducted both 
+%We conducted several flight tests to
+%demonstrate real-world applicability of our approach.
 % We examine different parameter choices in Experiment~1 to 6 in
 % on-ground experiments using recorded data. Afterward, the found
 % parameters are used to show the validity during flight in
 % Experiments~7 and 8.
-The tests were carried out in an indoor flight arena of the Delft
-University of Technology: the ``CyberZoo.'' To compare estimates from
-the developed framework to a ground truth, we employed the motion
-tracking system OptiTrack~\cite{opti}. This system uses an array of
-cameras and reflective markers attached to the body of the MAV. This
-way, OptiTrack can track MAVs at a high frequency within an error of
-few millimeters. We used it as MAV guidance system for autonomous
-flight, yielding accurate and stable control.
+The flight tests were carried out in an indoor flight arena of the
+Delft University of Technology: the ``CyberZoo''
+(Figure~\ref{fig:cyberzoo}). The arena has relatively constant
+lighting settings due to primarily artificial lighting. To compare
+estimates from the developed framework to a ground truth, we employed
+the motion tracking system OptiTrack~\cite{opti}. This system uses an
+array of cameras and reflective markers attached to the body of the
+MAV. This way, OptiTrack can track MAVs at a high frequency within an
+error of few millimeters. We used it as MAV guidance system for
+autonomous flight, yielding accurate and stable control.
 
 We begin with a comparison of settings for the developed framework to
 show the trade-off between run-time and accuracy and demonstrate the
 scalability of the approach.
 
-%(Figure~\ref{fig:cyberzoo}).
-%The
-%arena has relatively constant lighting settings due to primarily
-%artificial lighting.
-%\begin{figure}[t]
-%  \centering
-% \includegraphics{cyberzoo} 
-%  \caption{The indoor flight arena at the TU Delft: the ``CyberZoo.''
-%  }
-%    \label{fig:cyberzoo}
-%\end{figure}
-%
+
+\begin{figure}[t]
+  \centering
+ \includegraphics[width=0.8\textwidth]{cyberzoo} 
+  \caption{The indoor flight arena at the Delft University of Technology
+  }
+    \label{fig:cyberzoo}
+\end{figure}
+
 
 %since the proposed algorithm is intended for known
 %environments, this is always possible.
@@ -1723,13 +1715,17 @@ scalability of the approach.
 
 The computational complexity of the developed framework can be
 modified by changing the number of extracted image samples in the
-\emph{random sampling} step of the texton histograms creation. The
-goal is to use as few samples as possible, while still obtaining an
-adequate localization accuracy. Due to the random sampling of the
-extracted image patches, the histograms of each datasets
-differ. Comparing the cosine similarity between the histograms has the
+\emph{random sampling} step of the texton histograms creation. Due to
+the random sampling of the extracted image patches, the histograms
+differ.
+
+Comparing the cosine similarity between the histograms has the
 advantage that the number of samples can be estimates independently of
 the specific use case.
+
+
+The goal is to use as few samples as possible, while still obtaining
+an adequate localization accuracy.
 
 To determine a suitable number of extracted samples, we compared the
 influence of random sampling via the cosine similarity between
@@ -1770,9 +1766,52 @@ the random sampling in the histogram extraction step leads to varying
 histograms.
 
 
-\section{Correlation between histogram distance and Measurement Error}
+\section{Measurement model for the Particle Filter}
+\label{sec:measurementmodel}
 
-Figure~\ref{fig:cor_sim_confi})
+Figure~\ref{fig:measurementmodel} shows the determined measurement
+model for the particle filter.
+
+\begin{figure}[h!]
+\label{fig:measurementmodel}
+\begin{center}
+\includegraphics[width=0.7\columnwidth]{measurement_model}
+\caption{{Variance and dependence between error in $x$-direction
+    (\emph{Left}) and $y$-direction (\emph{Left}).%
+  }}
+\end{center}
+\end{figure}
+
+
+\section{Correlation between Histogram Distance and Measurement Error}
+
+Figure~\ref{fig:cor_sim_confi} shows the correlation between histogram
+distance and measurement error.
+
+\begin{figure}
+  \centering
+  \begin{subfigure}[b]{0.5\textwidth}
+  \includegraphics[width=1\textwidth]{dependency_dist_error_x}
+    %\captionof{figure}{$POS_x$}
+  \label{fig:cosinesim}
+  \end{subfigure}%
+~
+  \begin{subfigure}[b]{0.5\textwidth}
+  \includegraphics[width=1\textwidth]{dependency_dist_error_y}
+   % \captionof{figure}{$POS_y$}
+  \label{fig:cosinesd}
+  \end{subfigure}
+  \caption{Measurement error in $x$-direction (\emph{Left}) and
+    $y$-direction (\emph{Right}) as a function of the distance to the
+    closest training sample.}
+\label{fig:cor_sim_confi}
+\end{figure}
+
+\section{Correlation between number of keypoints and Quality of the
+  Homography}
+
+Figure~\ref{fig:cosine} shows the correlation between number of
+keypoints and the quality of the homography.
 
 \begin{figure}
   \label{fig:cor_keypoints}
@@ -1869,6 +1908,8 @@ In this experiment, the training dataset was created using the
 homography-finding method. Apart from that, the settings are the same
 as in Experiment~\ref{sec:experiment-real}.
 
+
+
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[width=0.7\columnwidth]{map_rotated}
@@ -1882,15 +1923,14 @@ as in Experiment~\ref{sec:experiment-real}.
 \end{center}
 \end{figure}
 
-
 \section{Experiment -- Triggered Landing}
 \label{sec:triggered}
 
-In the triggered landing experiment, the MAV was programmed to land as
-soon as its position estimates are in a ``landing zone.'' The landing
-zone is an arbitrary $x,y$-position as specified in the flight
-plan. For the experiment, the zone was set to six random positions in
-the map.
+In the triggered landing experiment, we added a function the MAV was
+programmed soon as its position estimates are in a ``landing zone.''
+The landing zone is an arbitrary $x,y$-position as specified in the
+flight plan. For the experiment, the zone was set to six random
+positions in the map.
 
 The same dataset as in Experiment~\ref{sec:experiment-real} was
 used. The landing zone was defined as a circle with a radius of
@@ -1904,25 +1944,26 @@ The experiment was conducted on a $5m \times 5m$ map and the ground
 truth was based on the position data from the motion tracking
 system. 
 
+%Table~\ref{tab:targetlanding} shows the results of the triggered
+%landings.
 
-
-Table~\ref{tab:targetlanding} shows the results of the triggered
-landings. Four out of six landings were correctly performed in the
-landing area. The mean distance of outliers was 16\,cm.
-\begin{table}[H]
-  \centering
-  \begin{tabular}{lrrr}
-    \toprule
-    & x-position & y-position\\
-    \midrule
-    Error in $cm$ & TODO & TODO\\
-    STD in $cm$ & TODO & TODO\\
-    \bottomrule
-  \end{tabular}
-  \caption[Triggered landings]{Results of the triggered landings}
-  \label{tab:targetlanding}
-
-\end{table}
+Four out of six landings were correctly performed in the landing
+area. The mean distance of the two outliers was 16\,cm measured as
+distance to the circumference of the landing area.
+%\begin{table}[H]
+%  \centering
+%  \begin{tabular}{lrrr}
+%    \toprule
+%    & x-position & y-position\\
+%    \midrule
+%    Error in $cm$ & TODO & TODO\\
+%    STD in $cm$ & TODO & TODO\\
+%    \bottomrule
+%  \end{tabular}
+%  \caption[Triggered landings]{Results of the triggered landings}
+%  \label{tab:targetlanding}%
+%
+%\end{table}
 
 \section{Experiment -- Determining the Frequency}
 
@@ -1933,6 +1974,11 @@ following parameters:
 %\item number of textons
 \item number of particles of the particle filter.
 \end{itemize}
+
+While there are further tune-able parameters, they did not have a
+large influence on the run-time and were, therefore, not analyzed in
+detail.
+%Their contribution to the run-time can be neglected.
 
 \section{Experiment -- Comparing different possible maps}
 
