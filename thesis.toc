@@ -40,7 +40,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.4}Filtering}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Pillar III: Map evaluation}{29}
+\contentsline {section}{\numberline {3.4}Map evaluation}{29}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4.1}Evaluation Scheme}{29}
 \defcounter {refsection}{0}\relax 
@@ -48,24 +48,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Analysis}{36}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Analysis -- Determining the Number of Image Patches}{36}
+\contentsline {section}{\numberline {4.1}Determining the Number of Image Patches}{36}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Analysis -- Setting the Baseline for $k$-NN and determining $k$}{37}
+\contentsline {section}{\numberline {4.2}Determining $k$ in the $k$-NN algorithm}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Experiment -- Motion tracking system for Stabilization, Texton-based Approach for estimation}{38}
+\contentsline {section}{\numberline {4.3}Correlation between histogram distance and Measurement Error}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Training Set based on Motion Tracking System}{38}
+\contentsline {section}{\numberline {4.4}Continuous Coordinate Estimation}{39}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Training Set based on Homography-finding Method}{39}
+\contentsline {subsection}{\numberline {4.4.1}Training Set based on Motion Tracking System}{39}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Experiment -- Triggered Landing}{39}
+\contentsline {subsection}{\numberline {4.4.2}Training Set based on Homography-finding Method}{39}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Experiment -- Determining the Frequency}{40}
+\contentsline {section}{\numberline {4.5}Experiment -- Triggered Landing}{40}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Experiment -- Comparing different possible maps}{40}
+\contentsline {section}{\numberline {4.6}Experiment -- Determining the Frequency}{41}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Discussion}{42}
+\contentsline {section}{\numberline {4.7}Experiment -- Comparing different possible maps}{42}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}General Discussion}{43}
+\contentsline {chapter}{\numberline {5}Discussion}{43}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion}{47}
+\contentsline {section}{\numberline {5.1}General Discussion}{44}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Conclusion}{48}

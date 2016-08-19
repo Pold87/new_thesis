@@ -947,11 +947,11 @@ texton $d_r$ is the ``winner.'' This texton is then adapted to be more
 similar to the current patch by calculating the difference in pixel
 values between the current image patch and the texton and updating the
 texton with a learning rate of $\alpha = 0.02$:
-\begin{align}
+\begin{align*}
   d_r := d_r + \alpha (x - d_r)
-\end{align}
+\end{align*}
 The first 100 images of each dataset were used to generate the
-dictionary. From each image, 1000 randomly selected image patches of
+dictionary. From each image, 1\,000 randomly selected image patches of
 size $w \times h = 6 \times 6$ pixels were extracted, yielding
 $N = 100\,000$ image patches in total that were clustered. An example
 of a learned dictionary of grayscale textons can be found in
@@ -1312,10 +1312,10 @@ posteriori (MAP) estimate, as described by
 a discrete approximation of the true MAP~\cite{driessen2008map}. It
 uses the following formula to obtain the MAP estimate
 $X_t^{\text{MAP}}$---the ``final'' $x,y$-position:
-\begin{align}
+\begin{align*}
 X_t^{\text{MAP}} = \argmax_{x_t^{[i]} \in \{i=1,\ldots,M\}} \sum_{j =
   1}^{M}f(x_t^{[i]} ; x_{t-1}^{[j]},\Sigma_{\text{process}})w_{t-1}^{[j]}
-\end{align}
+\end{align*}
 Therefore, the final position estimate is equal to the position of one
 of the particles.
 
@@ -1381,7 +1381,7 @@ error in $y$-direction ($Y$) could be found.
 %\end{figure}
 %
 
-\section{Pillar III: Map evaluation}
+\section{Map evaluation}
 \label{sec:mapeval}
 
 \subsection{Evaluation Scheme}
@@ -1440,34 +1440,34 @@ illustrated in Figure~\ref{fig:globalloss}.
 \end{figure}
 
 The method uses the cosine similarity ($CS$) to compare histograms:
-\begin{align}
+\begin{align*}
 CS(h_i, h_j) = \frac{h_i^Th_j}{||h_i||\,||h_j||}
-\end{align}
+\end{align*}
 The cosine similarity has the convenient property that its values are
 bounded between $-1$ and $1$. In the present case, since the elements
 of the histograms are non-negative, it is even bounded between $0$ and
 $1$. Let the function $f$ describe the non-normalized one-dimensional
 Gaussian probability density function:
-\begin{align}
+\begin{align*}
   f(x; \mu, \sigma) = e^{- \frac{(x - \mu)^2}{2 \sigma ^ 2}}  
-\end{align}
+\end{align*}
 Since we assume that the ideal similarity in $x$-position is
 independent of the $y$-position, the ideal two-dimensional similarity
 function $d_e(\text{pos}_i, \text{pos}_j; \Sigma)$ can be modeled as
 the product of the respective one-dimensional function~$f$:
-\begin{align}
+\begin{align*}
 d_e(\text{pos}_i, \text{pos}_j; \Sigma) = f(x_i; x_j, \sigma_x) \cdot f(y_i;
 y_j, \sigma_y)
-\end{align}
+\end{align*}
 This function is also bounded between $0$ and $1$, which makes the
 functions $d_e$ and $CS$---ideal similarity and actual
 similarity---easily comparable. In summary, we propose the following
 global loss function ($L$) for evaluating a given dataset
 ($\mathcal{D}$):
-\begin{align}
+\begin{align*}
   L(\mathcal{D}) &= \frac{1}{N^2}\sum_{i = 1}^{N} \sum_{j = 1}^{N}
                    CS(h_i, h_j) - f(x_i; x_j, \sigma_x) \cdot f(y_i; y_j, \sigma_y)                  
-\end{align}
+\end{align*}
 The simple difference---in contrast to least absolute deviations or
 least square errors---ensures that similarities that are \emph{less}
 similar than the ideal similarity \emph{reduce} the loss. Therefore, a
@@ -1613,16 +1613,16 @@ R_x =
 \end{align*}
 Now, a rotation followed by translation can be specified by matrix
 $H$:
-\begin{align}
+\begin{align*}
   H = T \cdot R
-\end{align}
+\end{align*}
 However, this matrix $H$ describes how the world is transformed
 relative to the camera coordinates, while the position of the camera
 is fixed. Instead, we would like to specify the camera movement
 relative to a fixed world. To this end, the inverse of $H$ is needed:
-\begin{align}
+\begin{align*}
   H' = (T \cdot R)^{-1} = R^{-1} \cdot T^{-1}
-\end{align}
+\end{align*}
 The transposed rotation matrix is equal to its inverse: $R' =
 R^{-1}$. The inverse of $T$ negates the translations:
 \begin{align*}
@@ -1682,12 +1682,26 @@ specifies the sampled values from the random distributions per patch.
 
 \chapter{Analysis}
 \label{chap:analysis}
-In this chapter, the setup of the conducted experiments is
-presented. We examine different parameter choices in Experiment~1 to 6
-in on-ground experiments using recorded data. Afterward, the found
-parameters are used to show the validity during flight in
-Experiments~7 and 8. The experiments were conducted in TU Delft's
-indoor flight arena, the ``CyberZoo.''
+In this chapter, the setup of the experiments is presented and the
+results are described. We conducted several flight tests to
+demonstrate real-world applicability of our approach.
+% We examine different parameter choices in Experiment~1 to 6 in
+% on-ground experiments using recorded data. Afterward, the found
+% parameters are used to show the validity during flight in
+% Experiments~7 and 8.
+The tests were carried out in an indoor flight arena of the Delft
+University of Technology: the ``CyberZoo.'' To compare estimates from
+the developed framework to a ground truth, we employed the motion
+tracking system OptiTrack~\cite{opti}. This system uses an array of
+cameras and reflective markers attached to the body of the MAV. This
+way, OptiTrack can track MAVs at a high frequency within an error of
+few millimeters. We used it as MAV guidance system for autonomous
+flight, yielding accurate and stable control.
+
+We begin with a comparison of settings for the developed framework to
+show the trade-off between run-time and accuracy and demonstrate the
+scalability of the approach.
+
 %(Figure~\ref{fig:cyberzoo}).
 %The
 %arena has relatively constant lighting settings due to primarily
@@ -1700,43 +1714,43 @@ indoor flight arena, the ``CyberZoo.''
 %    \label{fig:cyberzoo}
 %\end{figure}
 %
-There are no generally optimal parameters for the presented framework:
-Setting the number of textons, the number of images patches, or the
-number of neighbors is dependent on the environment and the size of the
-training dataset. The parameters have to be adapted to the particular
-environment.
+
 %since the proposed algorithm is intended for known
 %environments, this is always possible.
 
-\section{Analysis -- Determining the Number of Image Patches}
+\section{Determining the Number of Image Patches}
 \label{sec:numtextons}
 
-The developed framework modifies it computational complexity by
-changing the number of extracted image samples. To increase the speed
-of the algorithm, the goal is to use as few samples as possible. To
-determine a suitable number of extracted samples, in this experiment,
-the average cosine similarity between $D = 20$ datasets of histograms
-is compared. Each dataset consists of $N = 10300$ histograms. The
-independent variable is the number of extracted image patches $M$. The
-histograms were generated using the same images. Due to the random
-sampling of the extracted image patches, the histograms of each
-datasets will differ. This deviation will be measured using the cosine
-similarity. Therefore, each of the $D$ datasets was compared to all
-the other $D - 10$ datasets and the average cosine similarity was
-determined as well as the standard deviation of the cosine similarity
-was measured. Comparing the cosine similarity between the histograms
-has the advantage that the number of samples can be determined
-independent of a specific task.
+The computational complexity of the developed framework can be
+modified by changing the number of extracted image samples in the
+\emph{random sampling} step of the texton histograms creation. The
+goal is to use as few samples as possible, while still obtaining an
+adequate localization accuracy. Due to the random sampling of the
+extracted image patches, the histograms of each datasets
+differ. Comparing the cosine similarity between the histograms has the
+advantage that the number of samples can be estimates independently of
+the specific use case.
 
-Figure~\ref{fig:cosine} displays the cosine similarity of histograms
-as a function of the number of samples and the corresponding standard
-deviations.
+To determine a suitable number of extracted samples, we compared the
+influence of random sampling via the cosine similarity between
+histograms in a dataset consisting of $N = 2\,000$ images. The
+independent variable is the number of extracted patches $M$ per image.
+We used the cosine similarity to obtain similarity values between $0$
+and $1$. The similarity was measured at 10, 50, 100, 200, 400, and
+1\,000 extracted image patches.
+
+Figure~\ref{fig:cosine} displays the results: the cosine similarity of
+histograms as a function of the number of samples and the
+corresponding standard deviations.
+
+\unsure{add standard deviation}
+\unsure{add accuracy and not only similarity}
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=0.336\columnwidth]{samples_vs_similarity}
+\includegraphics[width=0.7\columnwidth]{samples_vs_similarity}
 \caption{{\label{fig:cosine} Cosine similarity of histograms as a
-    function of the number of samples \emph{Right}: Standard deviation
+    function of the number of extracted samples \emph{Right}: Standard deviation
     of cosine similarity in relation to the number of samples. The
     squares indicate the positions at which the dependency was
     evaluated.%%
@@ -1745,8 +1759,7 @@ deviations.
 \end{figure}
 
 
-\section{Analysis -- Setting the Baseline for $k$-NN and determining
-  $k$}
+\section{Determining $k$ in the $k$-NN algorithm}
 \label{sec:detk}
 
 In a standard setting, the training error $\epsilon_t$ of a
@@ -1756,47 +1769,51 @@ each feature vector is unique. However, in the presented framework,
 the random sampling in the histogram extraction step leads to varying
 histograms.
 
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[width=0.448\columnwidth]{SIFT_vs_OptiTrack}
-\caption{{\label{fig:flightpath} The estimates of the homography
-    method compared to the ground truth of the motion tracking system.
-    TODO: Legend%
-  }}
-\end{center}
+
+\section{Correlation between histogram distance and Measurement Error}
+
+Figure~\ref{fig:cor_sim_confi})
+
+\begin{figure}
+  \label{fig:cor_keypoints}
+  \centering
+  \begin{subfigure}[b]{0.5\textwidth}
+  \includegraphics[width=1\textwidth]{keypoints_error_x1}
+    %\captionof{figure}{$POS_x$}
+  \label{fig:cosinesim}
+  \end{subfigure}%
+~
+  \begin{subfigure}[b]{0.5\textwidth}
+  \includegraphics[width=1\textwidth]{keypoints_error_y}
+   % \captionof{figure}{$POS_y$}
+  \label{fig:cosinesd}
+  \end{subfigure}
+  \caption{Measurement error in $x$-direction (\emph{Left}) and
+    $y$-direction (\emph{Right}) as a function of the number of
+    keypoints found by \textsc{Sift}.}
+\label{fig:cosine}
 \end{figure}
 
-\begin{table}[H]
-  \centering
-  \begin{tabular}{lrrr}
-    \toprule
-    & x-position & y-position\\
-    \midrule
-    Error in $cm$ & 31 & 75\\
-    STD in $cm$ & 73 & 369\\
-    \bottomrule
-  \end{tabular}
-  \caption[Error statistics homography method.]{Error statistics for the homography method.}
-  \label{tab:homoerror}
-\end{table}
-
-
-\section{Experiment -- Motion tracking system for Stabilization,
-  Texton-based Approach for estimation}
+\section{Continuous Coordinate Estimation}
 
 \subsection{Training Set based on Motion Tracking System}
 \label{sec:experiment-real}
 
-In this experiment, a fixed route was set using the ground control
-station. While the stabilization and guidance were performed using the
-motion tracking system, the position estimates were performed on board
-of the MAV using the texton-based approach. The Euclidean distances
-between the estimates of the motion tracking system and the
-texton-based approach were measured separately for the $x$- and
-$y$-direction.  The training dataset was composed of 500 images
-recorded at an height of approximately 1\,m, recorded in a time span
-of one hour before the experiment. The corresponding $x,y$-coordinates
-were obtained from the motion tracking system.
+
+In this experiment, a fixed flight plan was set in the ground control
+station. Stabilization and guidance were performed using the motion
+tracking system OptiTrack. The position estimates were performed on
+board of the MAV using the texton-based approach. The Euclidean
+distances between the estimates of the motion tracking system and the
+texton-based approach were measured in $x$-direction, $y$-direction
+and combined as two-dimensional deviation using Euclidean
+distance.
+
+The training dataset was composed of 500 texton histograms with
+corresponding $x,y$-coordinates that were obtained from the motion
+tracking system. The images were recorded at an height of
+approximately one meter in a time span of one hour before the
+experiment.
 
 \begin{table}[H]
   \centering
@@ -1820,6 +1837,30 @@ were obtained from the motion tracking system.
     \label{fig:route}
   \end{figure}
 \end{comment}
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.7\columnwidth]{SIFT_vs_OptiTrack}
+\caption{{\label{fig:flightpath} The estimates of the homography
+    method compared to the ground truth of the motion tracking system.
+    TODO: Legend%
+  }}
+\end{center}
+\end{figure}
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{lrrr}
+    \toprule
+    & x-position & y-position\\
+    \midrule
+    Error in $cm$ & 31 & 75\\
+    STD in $cm$ & 73 & 369\\
+    \bottomrule
+  \end{tabular}
+  \caption[Error statistics homography method.]{Error statistics for the homography method.}
+  \label{tab:homoerror}
+\end{table}
 
 \subsection{Training Set based on Homography-finding Method}
 \label{sec:traininghomo}
@@ -1845,21 +1886,29 @@ as in Experiment~\ref{sec:experiment-real}.
 \section{Experiment -- Triggered Landing}
 \label{sec:triggered}
 
-In the triggered landing experiment, the UAV was programmed to land as
-soon as its position estimates are in the landing zone. The landing
-zone was defined as a circle with a radius of $60\,cm$. The
-$x,y$-coordinate of the center of the circle was specified in the
-flight plan. A safety criterion based on the variance of particles was
-introduced, such that the landing is only performed if the criterion
-holds. The criterion parameter was set to 60\,cm in both $x-$ and
-$y$-direction. The experiment was conducted on a $5m \times 5m$ map
-and the ground truth was based on the position data from the motion
-tracking system. The training dataset was composed of 500 images
-recorded at an height of approximately 1\,m, recorded in a time span
-of one hour before the experiment. Table~\ref{tab:targetlanding} shows
-the results of the triggered landings. Four out of six landings were
-correctly performed in the landing area. The mean distance of outliers
-was 16\,cm.
+In the triggered landing experiment, the MAV was programmed to land as
+soon as its position estimates are in a ``landing zone.'' The landing
+zone is an arbitrary $x,y$-position as specified in the flight
+plan. For the experiment, the zone was set to six random positions in
+the map.
+
+The same dataset as in Experiment~\ref{sec:experiment-real} was
+used. The landing zone was defined as a circle with a radius of
+$60\,cm$. The $x,y$-coordinate of the center of the circle was
+specified in the flight plan. A safety criterion based on the variance
+of particles was introduced, such that the landing is only performed
+if the criterion holds. The criterion parameter was set to 60\,cm in
+both $x-$ and $y$-direction.
+
+The experiment was conducted on a $5m \times 5m$ map and the ground
+truth was based on the position data from the motion tracking
+system. 
+
+
+
+Table~\ref{tab:targetlanding} shows the results of the triggered
+landings. Four out of six landings were correctly performed in the
+landing area. The mean distance of outliers was 16\,cm.
 \begin{table}[H]
   \centering
   \begin{tabular}{lrrr}
@@ -1875,12 +1924,15 @@ was 16\,cm.
 
 \end{table}
 
-
 \section{Experiment -- Determining the Frequency}
 
 The frequency of the proposed algorithm is determined by varying the
-number of samples in the texton-based approach, the number of textons,
-and the number of particles of the particle filter.
+following parameters:
+\begin{itemize}
+\item number of samples in the texton-based approach
+%\item number of textons
+\item number of particles of the particle filter.
+\end{itemize}
 
 \section{Experiment -- Comparing different possible maps}
 
@@ -1888,15 +1940,15 @@ For the map comparison, 50 possible maps have been collected using the
 search term `wallpaper' in Google's image search. This search term was
 used, since it is (i) a general term, without any specific image
 categories, (ii) wallpapers are likely to have a high resolution, and
-(iii) wallpapers are likely to be visually pleasant since they are
-often used as desktop backgrounds. The criteria for the images were
-that their minimum resolution was $1920 \times 1080$. Images with a
-higher resolution were converted to $1920 \times 1080$.  For each
-image, we generated 1000 random image patches using the simulation
-method described in Section~\ref{sec:syntheticdatageneration},
-followed by the histogram extraction method. This yielded a labeled
-dataset of histograms and corresponding positions. For each map, we
-determined the expected overall loss based on the method described in
+(iii) wallpapers are often visually pleasant. Only images with a
+minimum resolution of $1\,920 \times 1\,080$ pixels were
+chosen. Images with a higher resolution were converted to
+$1\,920 \times 1\,080$ pixels. For each image, we generated $1\,000$
+random image patches using the synthetic data generation tool
+described in Section~\ref{sec:syntheticdatageneration}, followed by
+the histogram extraction. This yielded a labeled dataset of histograms
+and corresponding positions. For each map, we determined the expected
+overall loss based on the method described in
 Section~\ref{sec:syntheticdatageneration}. The compared maps were then
 sorted according to their estimated loss.
 
@@ -1995,101 +2047,124 @@ all over the place and leading to high loss values. This initial
 evidence can be taken to test the predictive power of the evaluation
 algorithm for texton histograms.
 
+There are no generally optimal parameters for the presented framework:
+Setting the number of textons, the number of images patches, or the
+number of neighbors is dependent on the environment and the size of
+the training dataset. The parameters have to be adapted to the
+particular environment.
+
 \section{General Discussion}
 \label{sec:generaldiscussion}
 
-In this chapter, the results will be discussed regarding error
-statistics, execution frequency, robustness, and scalability. To begin
-with, we recapitulate the research questions:
+In this thesis, we addressed the problem of estimating
+$x,y$-coordinates in real-time and on-board of an MAV. We identified a
+computer vision-based approach the be most suitable due to the limited
+payload capacity of MAVs. We recapitulate the research questions
+(RQs):
 
 \begin{itemize}
-\item R1: Can accurate 2D positions be estimated in real-time, using a
-  machine learning-based approach on a limited processor in a
-  modifiable indoor environment?
-\item R2: Is accurate real-world localization regression or classification
-  possible when the training data comprises synthetic data only?
-\item R3: Can we predict the goodness of a given map for the proposed
-  localization approach?
+\item \textbf{RQ\,1:} ``\emph{Can 2D positions be estimated in real-time using a
+    machine learning approach on a limited processor in a modifiable
+    indoor environment?}''
+\item \textbf{RQ\,2:} \emph{``How can we predict and evaluate the suitability of a
+    given map for the developed localization approach?''} 
 \end{itemize}
 
-Regarding R1, the conducted experiments provide supportive evidence
+Regarding RQ\,1, the conducted experiments provide supportive evidence
 that a texton-based machine learning approach is able to accomplish
-real-time indoor localization. The proposed algorithm runs with as
-frequency of 30\,Hz on a single board computer with limited
-CPU. Shifting processing power to an offline training step and relying
-on random sampling are the cornerstones for running the algorithm on
-processors with limited CPU. Despite the small ratio between extracted
-image patches ($s$) and the maximum amount of different image matches
-($s*$), the accuracy is hardly affected, and only slightly improves
-when incorporating more textons.
+real-time indoor localization. The proposed algorithm runs with a
+frequency of 15\,Hz on a single board computer with limited
+CPU. Shifting processing power to an offline training step by creating
+a training set and relying on random sampling are the cornerstones of
+the developed algorithm.
 
-Regarding research question R2, the initial idea---to use the
-synthetically generated images directly as training data---was not
-successful and not further followed up. This might be also the reason
-that only few projects have used synthetic images for real-world
-phenomena. The reality gap between the synthetic data and real-world
-data was huger than expected. Figure~\ref{fig:realitygap} shows an
-example of two image patches, one synthetically generated, one taken
-with the camera of the MAV. While the patches can be easily identified
-as similar for human eyes, the texton maps, where different colors
-represent different textons, are dissimilar. Blur, lighting settings,
-and camera intrinsics modify low-level features of the image to a too
-strong extent. A possible improvement might be to find a mapping from
-histograms of synthetic images to histograms of real images, by
-mapping 'synthetic textons' to 'real-world textons'.
 
-Referring to R3, we found some initial evidence that the proposed map
-evaluation generalizes to the real-world. In contrast to R2, the
-generalization from the synthetic data to real-world data is of a
-different nature in this case. The requirement here is that maps that
-follow the ideal similarity distribution in the synthetically
-generated images also follow this distribution after being recorded
-with a camera. Or stated differently, for maps with a low loss value,
-distant image positions should not have similar histograms using the
-synthetic images nor the real-world images.
+%Despite the small ratio between extracted
+%image patches ($s$) and the maximum amount of different image matches
+%($s*$), the accuracy is hardly affected, and only slightly improves
+%when incorporating more textons.
+
+We still need to find evidence that the proposed map evaluation
+generalizes to the real-world. In contrast to R\,1, the generalization
+from the synthetic data to real-world data is of a different nature in
+this case. The requirement here is that maps that follow the ideal
+similarity distribution in the synthetically generated images also
+follow this distribution after being recorded with a camera. Or stated
+differently, for maps with a low loss value, distant image positions
+should not have similar histograms using the synthetic images nor the
+real-world images. Which is an easier problem.
 
 Despite the overall promising results, we noticed drawbacks of the
-proposed approach during the flight tests and directions for future
-research.
+developed approach during the flight tests and identified several
+directions for future research that are described in what follows. The
+developed method sets the stage for numerous future research
+directions and improvements.
 
 The accuracy---that is the difference between the estimates of the
 motion tracking system and the texton-based approach--- could be
 further improved by incorporating more features, for example histogram
-of oriented gradients. Additional improvements could be obtained by
-investigating further regression techniques, like Gaussian processes
-or Bayesian networks that can inherently handle space and time.
+of oriented gradients.
+%Additional improvements could be obtained by
+%investigating further regression techniques, like Gaussian processes
+%or Bayesian networks that can inherently handle space and time.
 
-The developed method sets the stage for numerous future research
-directions and improvements. The current implementation assumes rather
-constant height up to few centimeters and no yaw rotations of the
-MAV. While a quadroter can move in every direction without performing
-yaw movements, using the algorithm on another vehicle could require
-arbitrary yaw movements. To limit the complexity of the dataset, a
-``derotation'' of the incoming image could be performed to align it
-with the underlying images of the dataset. While the current approach
-normalizes each $5\times5$ image patch to unit mean and zero
-variance---giving robustness to different lighting conditions---this
-procedure could be further extended, for example by using specific
-color models.
+The current implementation assumes rather constant height up to few
+centimeters and no yaw rotations of the MAV. While a quadroter can
+move in every direction without performing yaw movements, other MAVs
+or the use of the front camera for obstacle avoidance could require
+yaw movements. The inclusions of images into the dataset of arbitrary
+yaw movements would possibly inflate the size of the dataset to a too
+great extent. This could lead to a deterioration of the accuracy and
+highly increase the time-complexity of the $k$-NN algorithm. Instead,
+a ``derotation'' of the camera image could be performed to align it
+with the underlying images of the dataset. The required rotation
+could, for example, be done on the basis of data from the inertial
+measurement unit (IMU), which estimates angular displacement of the
+MAV. An initial version of such a system can be found in out GitHub
+repository\footnote{\url{https://github.com/Pold87/derotator}}.
 
 While the current map evaluation approach used existing fixed images,
 it could also serve as a fitness function for an optimization
 approach---for example, an evolutionary algorithm---which modifies a
-given image. This could allow to find a near optimal solution for a
-given regression technique and give insightful view in the underlying
+given image. This could find a near optimal solution for a given
+regression technique and give insightful view in the underlying
 structure of certain regression techniques. While the solution to a
 loss value of zero or near zero might be unique and independent of the
 original image, a higher loss value might change the initial image
 only to a certain extent, yielding an ``improved version of the
-image'', which is better suited for the proposed algorithm.
+image'', which is better suited for the proposed algorithm and still
+visually pleasant.
 
-The presented software \emph{draug} generates image patches based on
-drawing samples from parametric distributions only. This was motivated
-by the fact that an ideal map should be independent of previous
-estimates and based on single images only---ideally requiring no
-filtering. In the future, the possibility to set flight routes by
-setting way points above an image could be included. This would allow
-to test the ability of the particle filter on synthetic flights.
+
+Our initial idea to use the synthetic images
+(Section~\ref{sec:syntheticdatageneration}) directly as training
+data was not successful and not further followed up.
+%This might be
+%also the reason that only few projects have used synthetic images for
+%real-world phenomena.
+The reality gap between the synthetic data and real-world data was too
+large: Figure~\ref{fig:realitygap} shows an example of two image
+patches, one synthetically generated, one taken with the camera of the
+MAV. While the patches can be easily identified as similar for human
+eyes, the texton maps, where different colors represent different
+textons, are dissimilar. Blur, lighting settings, and camera
+intrinsics modify low-level features of the image to a strong extent.
+The texton images in the figure show that corresponding regions get
+classified into different textons, resulting in different
+histograms. This makes the transfer from the synthetic data to the
+real world difficult.
+A possible improvement might be to find a mapping from histograms of
+synthetic images to histograms of real images, by mapping ``synthetic
+textons'' to ``real-world textons.''
+
+The presented synthetic data generation software generates image
+patches based on drawing samples from parametric distributions
+only. This was motivated by the fact that an ideal map should be
+independent of previous estimates and based on single images
+only---ideally requiring no filtering to address the kidnapped robot
+problem. In the future, the synthetic flights could be performed by
+simulating a continuous route above the image. This would allow to
+test the ability of the particle filter on synthetic flights.
 
 \begin{figure}[h!]
 \begin{center}
@@ -2097,20 +2172,18 @@ to test the ability of the particle filter on synthetic flights.
 \caption{{\label{fig:realitygap} Exemplifying the reality
     gap. \emph{Top left}: image patch generated using the synthetic
     data generation tool. \emph{Top right}: image patch taken with the
-    MAV's camera after printing the patch. \emph{Below left}: texton
-    image of the synthetic image. \emph{Below right}: Texton image of
-    the real image. The texton images shows that corresponding regions
-    get classified into different textons, resulting in different
-    histograms. This makes the transfer from the synthetic data to the
-    real world difficult.%
-  }}
+    MAV's camera after printing the patch. \emph{Below left}: Texton
+    image of the synthetic image. In the image, the colors indicate
+    the closest texton (dictionary size: 20 textons) at the respective
+    position. \emph{Below right}: Texton image of the real image.  }}
 \end{center}
 \end{figure}
 
 The shift of the processing power could be further amplified by using
 a different regression technique. In the current implementation using
 $k$-NN regression, larger training data sets are penalized due to a
-greater prediction time. However, the choice of a different regression
+greater prediction time. The $k$-NN algorithm should be best
+performance in our test. However, the choice of a different regression
 technique is not as straightforward as it might seem. The technique
 should be able to output multiple predictions, since certain map
 regions might be ambiguous.
@@ -2122,11 +2195,11 @@ different devices, such as handheld cameras. Still, future
 developments could incorporate data from the inertial measurement unit
 (IMU) in the particle filter's motion model.
 
-Additionally, the time complexity of the algorithm can be further
-reduced with the aim of running the algorithm on fly-sized
-MAVs. Depending on the target platform, parallelization or threading
-could be used on multi-core systems to simultaneously compute texton
-histograms, make predictions and run the particle filter.
+%Additionally, the time complexity of the algorithm can be further
+%reduced. Depending on the target platform, parallelization or
+%threading could be used on multi-core systems to simultaneously
+%compute texton histograms, make predictions and run the particle
+%filter.
 
 % Currently, the computationally most complex part is the XXX.
 

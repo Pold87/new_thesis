@@ -852,6 +852,17 @@
       \verb http://research.microsoft.com/en-us/um/redmond/projects/ice/
       \endverb
     \endentry
+    \entry{opti}{online}{}
+      \field{sortinit}{O}
+      \field{labeltitle}{OptiTrack - Motion Capture Systems}
+      \field{title}{OptiTrack - Motion Capture Systems}
+      \field{urlday}{03}
+      \field{urlmonth}{08}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://optitrack.com/
+      \endverb
+    \endentry
     \entry{bebop2015}{online}{}
       \name{labelname}{1}{}{%
         {{hash=e7cb1e977e896954fec46d2ea7832072}{Parrot}{P\bibinitperiod}{}{}{}{}{}{}}%

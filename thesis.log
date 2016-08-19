@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.21)  18 AUG 2016 18:23
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.21)  19 AUG 2016 15:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -957,7 +957,11 @@ Package biblatex Info: ... file 'english.lbx' found.
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2013/11/25 v2.8a biblatex localization (PK/JW/AB)
 )
-(./thesis.aux)
+(./thesis.aux
+
+LaTeX Warning: Label `fig:cosine' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
@@ -1074,13 +1078,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 81.
- [1] (./thesis.toc
-Overfull \hbox (7.6163pt too wide) in paragraph at lines 55--55
- [][] []\OT1/lmr/m/n/10.95 Experiment -- Mo-tion track-ing sys-tem for Sta-bi-l
-iza-tion, Texton- 
- []
-
-[1
+ [1] (./thesis.toc [1
 
 ])
 \tf@toc=\write6
@@ -1236,122 +1234,159 @@ Package pdftex.def Info: img/camera_model.png used on input line 1548.
 Chapter 4.
 [36
 
-] <img/samples_vs_similarity.pdf, id=532, 505.89pt x 505.89pt>
+]
+
+LaTeX Warning: Marginpar on page 37 moved.
+
+<img/samples_vs_similarity.pdf, id=532, 505.89pt x 505.89pt>
 File: img/samples_vs_similarity.pdf Graphic file (type pdf)
 
 <use img/samples_vs_similarity.pdf>
-Package pdftex.def Info: img/samples_vs_similarity.pdf used on input line 1737.
+Package pdftex.def Info: img/samples_vs_similarity.pdf used on input line 1751.
 
-(pdftex.def)             Requested size: 120.95947pt x 120.96063pt.
+(pdftex.def)             Requested size: 251.9989pt x 252.00262pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 1749.
+(Font)              <14.4> on input line 1762.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 1749.
+(Font)              <10> on input line 1762.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 1749.
+(Font)              <7> on input line 1762.
+ [37 <./img/samples_vs_similarity.pdf>]
+Overfull \hbox (8.53981pt too wide) in paragraph at lines 1773--1773
+[]\OT1/lmr/m/sc/14.4 Correlation be-tween his-togram dis-tance and
+ []
 
-<img/SIFT_vs_OptiTrack.pdf, id=533, 505.89pt x 505.89pt>
+
+LaTeX Warning: Reference `fig:cor_sim_confi' on page 38 undefined on input line
+ 1775.
+
+<img/keypoints_error_x1.pdf, id=541, 505.89pt x 505.89pt>
+File: img/keypoints_error_x1.pdf Graphic file (type pdf)
+
+<use img/keypoints_error_x1.pdf>
+Package pdftex.def Info: img/keypoints_error_x1.pdf used on input line 1781.
+(pdftex.def)             Requested size: 180.0pt x 179.99745pt.
+
+<img/keypoints_error_y.pdf, id=542, 505.89pt x 505.89pt>
+File: img/keypoints_error_y.pdf Graphic file (type pdf)
+
+<use img/keypoints_error_y.pdf>
+Package pdftex.def Info: img/keypoints_error_y.pdf used on input line 1787.
+(pdftex.def)             Requested size: 180.0pt x 179.99745pt.
+
+Overfull \hbox (4.86667pt too wide) in paragraph at lines 1780--1793
+ [][]  [] 
+ []
+
+[38 <./img/keypoints_error_x1.pdf> <./img/keypoints_error_y.pdf>]
+Excluding 'comment' comment.
+<img/SIFT_vs_OptiTrack.pdf, id=558, 505.89pt x 505.89pt>
 File: img/SIFT_vs_OptiTrack.pdf Graphic file (type pdf)
 
 <use img/SIFT_vs_OptiTrack.pdf>
-Package pdftex.def Info: img/SIFT_vs_OptiTrack.pdf used on input line 1761.
-(pdftex.def)             Requested size: 161.2793pt x 161.27827pt.
+Package pdftex.def Info: img/SIFT_vs_OptiTrack.pdf used on input line 1843.
+(pdftex.def)             Requested size: 251.9989pt x 252.00262pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[37 <./img/samples_vs_similarity.pdf>] Excluding 'comment' comment. [38 <./img/
-SIFT_vs_OptiTrack.pdf>]
-<img/map_rotated.png, id=551, 2399.96625pt x 1496.59125pt>
+<img/map_rotated.png, id=559, 2399.96625pt x 1496.59125pt>
 File: img/map_rotated.png Graphic file (type png)
 
 <use img/map_rotated.png>
-Package pdftex.def Info: img/map_rotated.png used on input line 1833.
+Package pdftex.def Info: img/map_rotated.png used on input line 1874.
 (pdftex.def)             Requested size: 251.9989pt x 157.1353pt.
- [39 <./img/map_rotated.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<img/lowest_highest.png, id=556, 427.3566pt x 112.2594pt>
-File: img/lowest_highest.png Graphic file (type png)
-
-<use img/lowest_highest.png>
-Package pdftex.def Info: img/lowest_highest.png used on input line 1935.
-(pdftex.def)             Requested size: 251.9989pt x 66.19649pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[40] [41 <./img/lowest_highest.png>]
+[39] [40 <./img/SIFT_vs_OptiTrack.pdf>] [41 <./img/map_rotated.png>]
+<img/lowest_highest.png, id=577, 427.3566pt x 112.2594pt>
+File: img/lowest_highest.png Graphic file (type png)
+
+<use img/lowest_highest.png>
+Package pdftex.def Info: img/lowest_highest.png used on input line 1983.
+(pdftex.def)             Requested size: 251.9989pt x 66.19649pt.
+ [42 <./img/lowest_highest.png>]
 Chapter 5.
-[42
+[43
 
-] [43] [44] <img/realitygap.png, id=574, 455.301pt x 341.3553pt>
+] [44]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 2120.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 2120.
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 212
+0.
+ (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [45]
+<img/realitygap.png, id=592, 455.301pt x 341.3553pt>
 File: img/realitygap.png Graphic file (type png)
-
-<use img/realitygap.png>
-Package pdftex.def Info: img/realitygap.png used on input line 2096.
+ <use img/realitygap.png>
+Package pdftex.def Info: img/realitygap.png used on input line 2167.
 (pdftex.def)             Requested size: 233.9978pt x 175.43272pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[45] [46 <./img/realitygap.png>]
+[46] [47 <./img/realitygap.png>]
 Chapter 6.
 
-Overfull \hbox (1.44498pt too wide) in paragraph at lines 2158--2166
+Overfull \hbox (1.44498pt too wide) in paragraph at lines 2227--2235
 \OT1/lmr/m/n/10.95 GPS-denied en-vi-ron-ments, such as homes, of-fices, or fac-
 tory build-ings. While
- []
-
-[47
-
-]
-Overfull \hbox (5.9985pt too wide) in paragraph at lines 2168--2168
-\OT1/lmr/m/it/10.95 and au-toma-tion (ICRA), 2011 IEEE in-ter-na-tional con-fer
--ence on\OT1/lmr/m/n/10.95 . IEEE.
  []
 
 [48
 
 ]
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 216
-7.
- (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
-File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [49]
-Overfull \hbox (5.31116pt too wide) in paragraph at lines 2168--2168
+Overfull \hbox (5.9985pt too wide) in paragraph at lines 2237--2237
+\OT1/lmr/m/it/10.95 and au-toma-tion (ICRA), 2011 IEEE in-ter-na-tional con-fer
+-ence on\OT1/lmr/m/n/10.95 . IEEE.
+ []
+
+[49
+
+] [50]
+Overfull \hbox (5.31116pt too wide) in paragraph at lines 2237--2237
 \OT1/lmr/m/it/10.95 tional Con-fer-ence on Robotics and Au-toma-tion, 2009 (ICR
 A'09). \OT1/lmr/m/n/10.95 IEEE.
  []
 
 
-Overfull \hbox (0.9007pt too wide) in paragraph at lines 2168--2168
+Overfull \hbox (0.9007pt too wide) in paragraph at lines 2237--2237
 []\OT1/lmr/m/n/10.95 Michael Jep-son. \OT1/lmr/m/it/10.95 Ro-ta-tion in 3D us-i
 ng OpenCV's warp-Per-spec-tive\OT1/lmr/m/n/10.95 . \OT1/lmr/m/sc/10.95 url\OT1/
 lmr/m/n/10.95 :
  []
 
-[50]
-Overfull \hbox (9.28864pt too wide) in paragraph at lines 2168--2168
+[51]
+Overfull \hbox (9.28864pt too wide) in paragraph at lines 2237--2237
 []\OT1/lmr/m/it/10.95 Microsoft Im-age Com-pos-ite Ed-i-tor\OT1/lmr/m/n/10.95 .
  \OT1/lmr/m/sc/10.95 url\OT1/lmr/m/n/10.95 : $\OT1/lmtt/m/n/10.95 http : / / re
 search . microsoft .
  []
 
-[51] (./thesis.aux)
+[52] (./thesis.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20624 strings out of 493386
- 365118 string characters out of 6142015
+ 20744 strings out of 493386
+ 367486 string characters out of 6142015
  758697 words of memory out of 5000000
- 23629 multiletter control sequences out of 15000+600000
- 89974 words of font info for 79 fonts, out of 8000000 for 9000
+ 23737 multiletter control sequences out of 15000+600000
+ 101440 words of font info for 93 fonts, out of 8000000 for 9000
  912 hyphenation exceptions out of 8191
- 63i,16n,75p,935b,1636s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,16n,76p,935b,1636s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/
 dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr
 /share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips
@@ -1368,11 +1403,12 @@ pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/pu
 blic/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (53 pages, 34126602 bytes).
+e/texmf/fonts/type1/public/lm/lmtt9.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/symbols/msbm10.pfb>
+Output written on thesis.pdf (54 pages, 34165795 bytes).
 PDF statistics:
- 670 PDF objects out of 1000 (max. 8388607)
- 263 compressed objects within 3 object streams
+ 691 PDF objects out of 1000 (max. 8388607)
+ 278 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 123 words of extra memory for PDF output out of 10000 (max. 10000000)
 
