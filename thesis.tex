@@ -1684,14 +1684,16 @@ results are described. %We conducted both
 % Experiments~7 and 8.
 The flight tests were carried out in an indoor flight arena of the
 Delft University of Technology: the ``CyberZoo''
-(Figure~\ref{fig:cyberzoo}). The arena has relatively constant
-lighting settings due to primarily artificial lighting. To compare
-estimates from the developed framework to a ground truth, we employed
-the motion tracking system OptiTrack~\cite{opti}. This system uses an
-array of cameras and reflective markers attached to the body of the
-MAV. This way, OptiTrack can track MAVs at a high frequency within an
-error of few millimeters. We used it as MAV guidance system for
-autonomous flight, yielding accurate and stable control.
+(Figure~\ref{fig:cyberzoo}).
+%The arena has relatively constant
+%lighting settings due to primarily artificial lighting.
+To compare estimates from the developed framework to a ground truth,
+we employed the motion tracking system OptiTrack~\cite{opti}. This
+system uses an array of cameras and reflective markers attached to the
+body of the MAV. This way, OptiTrack can track MAVs at a high
+frequency within an error of few millimeters. We used it as MAV
+guidance system for autonomous flight, yielding accurate and stable
+control.
 
 We begin with a comparison of settings for the developed framework to
 show the trade-off between run-time and accuracy and demonstrate the
@@ -1744,7 +1746,7 @@ corresponding standard deviations.
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=0.7\columnwidth]{samples_vs_similarity}
+\includegraphics[width=0.5\columnwidth]{samples_vs_similarity}
 \caption{{\label{fig:cosine} Cosine similarity of histograms as a
     function of the number of extracted samples \emph{Right}: Standard deviation
     of cosine similarity in relation to the number of samples. The
@@ -1769,24 +1771,28 @@ histograms.
 \section{Measurement model for the Particle Filter}
 \label{sec:measurementmodel}
 
-Figure~\ref{fig:measurementmodel} shows the determined measurement
-model for the particle filter.
+As described in Section~\ref{sec:filtering}, we determined the values
+$\Sigma^{[j]}$ for the Gaussian mixture measurement model by
+calculating the variance-covariance matrix for the difference between
+the ground truth $T$ and the predictions $P_j$ of the $k$-NN
+algorithm. Figure~\ref{fig:measurementmodel} shows the differences
+between these values.
 
 \begin{figure}[h!]
-\label{fig:measurementmodel}
 \begin{center}
 \includegraphics[width=0.7\columnwidth]{measurement_model}
-\caption{{Variance and dependence between error in $x$-direction
+\caption{{\label{fig:measurementmodel}Dependence between error in $x$-direction
     (\emph{Left}) and $y$-direction (\emph{Left}).%
   }}
 \end{center}
 \end{figure}
 
-
 \section{Correlation between Histogram Distance and Measurement Error}
 
-Figure~\ref{fig:cor_sim_confi} shows the correlation between histogram
-distance and measurement error.
+As described in Section~\ref{sec:filtering}, we planned to include to
+distance to the neighbors in the $k$-NN algorithm as confidence value
+for the predictions. Figure~\ref{fig:cor_sim_confi} shows the
+correlation between histogram distance and measurement error.
 
 \begin{figure}
   \centering
@@ -1835,18 +1841,66 @@ keypoints and the quality of the homography.
 
 \section{Continuous Coordinate Estimation}
 
+\subsection{Baseline: Compare SIFT and OptiTrack}
+\label{sec:siftvsoptitrack}
+
+To find a baseline for our approach, we use the homography-based
+approach to estimate $x,y$-coordinates. The required hyperspatial
+image (Figure~\ref{fig:mapexp}) of the environment was stitched
+together using 500 images and the software Microsoft ICE.
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.7\columnwidth]{map_rotated}
+\caption{{\label{fig:mapexp} The created map that was stitched
+    together using 445 images. A non-mapped area in the middle of the
+    map can be seen, which is a result of the set flight path. An
+    image distortion can be seen at the right-hand side, where the
+    landing spot sign appears twice, while in reality, only one circle
+    was visible.%
+  }}
+\end{center}
+\end{figure}
+
+The results can be found in Figure~\ref{fig:siftestimates} and Table~\ref{tab:homoerror}.
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.7\columnwidth]{SIFT_vs_OptiTrack}
+\caption{{\label{fig:siftestimates} The estimates of the homography
+    method compared to the ground truth of the motion tracking system.
+    TODO: Legend%
+  }}
+\end{center}
+\end{figure}
+
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{lrrr}
+    \toprule
+    & x-position & y-position\\
+    \midrule
+    Error in $cm$ & 31 & 75\\
+    STD in $cm$ & 73 & 369\\
+    \bottomrule
+  \end{tabular}
+  \caption[Error statistics homography method.]{Error statistics for the homography method.}
+  \label{tab:homoerror}
+\end{table}
+
+
 \subsection{Training Set based on Motion Tracking System}
 \label{sec:experiment-real}
 
-
 In this experiment, a fixed flight plan was set in the ground control
 station. Stabilization and guidance were performed using the motion
-tracking system OptiTrack. The position estimates were performed on
-board of the MAV using the texton-based approach. The Euclidean
-distances between the estimates of the motion tracking system and the
-texton-based approach were measured in $x$-direction, $y$-direction
-and combined as two-dimensional deviation using Euclidean
-distance.
+tracking system OptiTrack. The position estimates were calculated on
+board of the MAV using the texton-based approach with the particle
+filter. The Euclidean distances between the estimates of the motion
+tracking system and the texton-based approach were measured in
+$x$-direction, $y$-direction and combined as two-dimensional
+deviation.
 
 The training dataset was composed of 500 texton histograms with
 corresponding $x,y$-coordinates that were obtained from the motion
@@ -1868,39 +1922,6 @@ experiment.
   \label{tab:route}
 \end{table}
 
-\begin{comment}
-  \begin{figure}
-    \includegraphics[width=0.7\textwidth]{route}
-    \caption[Estimates of the texton-based approach]{Estimates of the
-      texton-based approach}
-    \label{fig:route}
-  \end{figure}
-\end{comment}
-
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[width=0.7\columnwidth]{SIFT_vs_OptiTrack}
-\caption{{\label{fig:flightpath} The estimates of the homography
-    method compared to the ground truth of the motion tracking system.
-    TODO: Legend%
-  }}
-\end{center}
-\end{figure}
-
-\begin{table}[H]
-  \centering
-  \begin{tabular}{lrrr}
-    \toprule
-    & x-position & y-position\\
-    \midrule
-    Error in $cm$ & 31 & 75\\
-    STD in $cm$ & 73 & 369\\
-    \bottomrule
-  \end{tabular}
-  \caption[Error statistics homography method.]{Error statistics for the homography method.}
-  \label{tab:homoerror}
-\end{table}
-
 \subsection{Training Set based on Homography-finding Method}
 \label{sec:traininghomo}
 
@@ -1908,44 +1929,34 @@ In this experiment, the training dataset was created using the
 homography-finding method. Apart from that, the settings are the same
 as in Experiment~\ref{sec:experiment-real}.
 
-
-
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[width=0.7\columnwidth]{map_rotated}
-\caption{{\label{fig:mapexp} The created map that was stitched
-    together using 445 images. A non-mapped area in the middle of the
-    map can be seen, which is a result of the set flight path. An
-    image distortion can be seen at the right-hand side, where the
-    landing spot sign appears twice, while in reality, only one circle
-    was visible.%
-  }}
-\end{center}
-\end{figure}
+The estimates of the homography-based approach compared to the motion
+tracking system OptiTrack can be found in Figure~\ref{fig:flightpath}. 
 
 \section{Experiment -- Triggered Landing}
 \label{sec:triggered}
 
-In the triggered landing experiment, we added a function the MAV was
-programmed soon as its position estimates are in a ``landing zone.''
-The landing zone is an arbitrary $x,y$-position as specified in the
-flight plan. For the experiment, the zone was set to six random
-positions in the map.
-
-The same dataset as in Experiment~\ref{sec:experiment-real} was
-used. The landing zone was defined as a circle with a radius of
-$60\,cm$. The $x,y$-coordinate of the center of the circle was
-specified in the flight plan. A safety criterion based on the variance
+For the triggered experiment, the MAV was instructed to fly along a
+set of random flight paths, which covered the $5 \times 5$ meters
+area; during the navigation, the MAV was programmed to land as soon as
+its position estimates were in a ``landing zone'': a $x,y$-position
+with a specified radius $r$. A safety criterion based on the variance
 of particles was introduced, such that the landing is only performed
 if the criterion holds. The criterion parameter was set to 60\,cm in
 both $x-$ and $y$-direction.
 
-The experiment was conducted on a $5m \times 5m$ map and the ground
-truth was based on the position data from the motion tracking
-system. 
+For the texton framework, the same training set as in
+Experiment~\ref{sec:experiment-real} was used. The $x,y$-coordinates
+of circle was specified in the flight plan; the radius was set to $r =
+60\,cm$. We performed six triggered landings; after each landing, the
+$x-y$-center of the zone was randomly set another position in the map.
+
+
+%The experiment was conducted on an approximately $5m \times 5m$ map
+%and the ground truth was based on the position data from the motion
+%tracking system.
 
 %Table~\ref{tab:targetlanding} shows the results of the triggered
-%landings.
+% landings.
 
 Four out of six landings were correctly performed in the landing
 area. The mean distance of the two outliers was 16\,cm measured as
@@ -1982,7 +1993,7 @@ detail.
 
 \section{Experiment -- Comparing different possible maps}
 
-For the map comparison, 50 possible maps have been collected using the
+For the map comparison, 46 possible maps have been collected using the
 search term `wallpaper' in Google's image search. This search term was
 used, since it is (i) a general term, without any specific image
 categories, (ii) wallpapers are likely to have a high resolution, and
