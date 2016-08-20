@@ -52,11 +52,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Determining $k$ in the $k$-NN algorithm}{37}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Measurement model for the Particle Filter}{38}
+\contentsline {section}{\numberline {4.3}Measurement model for the Particle Filter}{37}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.4}Correlation between Histogram Distance and Measurement Error}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Correlation between number of keypoints and Quality of the Homography}{39}
+\contentsline {section}{\numberline {4.5}Correlation between number of keypoints and Quality of the Homography}{38}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.6}Continuous Coordinate Estimation}{39}
 \defcounter {refsection}{0}\relax 
@@ -70,10 +70,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.8}Experiment -- Determining the Frequency}{43}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.9}Experiment -- Comparing different possible maps}{43}
+\contentsline {section}{\numberline {4.9}Experiment -- Comparing different possible maps}{44}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Discussion}{45}
+\contentsline {chapter}{\numberline {5}Discussion}{47}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}General Discussion}{46}
+\contentsline {section}{\numberline {5.1}General Discussion}{48}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion}{50}
+\contentsline {chapter}{\numberline {6}Conclusion}{52}

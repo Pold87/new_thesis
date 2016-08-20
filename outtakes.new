@@ -14,3 +14,11 @@ operation using matrix operations:
   1 & 0 & 0 & 1        \\
   \end{bmatrix}
 \end{align*}
+
+
+In a standard setting, the training error $\epsilon_t$ of a
+$k$=1-nearest neighbor algorithm is $\epsilon_t = 0$ because the
+nearest neighbor of the sample will be the sample itself, given that
+each feature vector is unique. However, in the presented framework,
+the random sampling in the histogram extraction step leads to varying
+histograms.
