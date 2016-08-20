@@ -70,7 +70,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.8}Experiment -- Determining the Frequency}{43}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.9}Experiment -- Comparing different possible maps}{44}
+\contentsline {section}{\numberline {4.9}Experiment -- Comparing different possible maps}{43}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Discussion}{45}
 \defcounter {refsection}{0}\relax 
