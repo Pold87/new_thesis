@@ -1984,12 +1984,37 @@ following parameters:
 \item number of samples in the texton-based approach
 %\item number of textons
 \item number of particles of the particle filter.
+\item number of histograms in the training set
 \end{itemize}
 
 While there are further tune-able parameters, they did not have a
 large influence on the run-time and were, therefore, not analyzed in
 detail.
 %Their contribution to the run-time can be neglected.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{samples_vs_freq}
+  \caption{Frequency of the main loop as a function of the number of extracted samples.}
+  \label{fig:freqsam}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+\includegraphics[width=0.7\textwidth]{particles_vs_freq}
+  \caption{Frequency of the main loop as a function of the number of
+    particles in the particle filter.}
+  \label{fig:freqpart}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+\includegraphics[width=0.7\textwidth]{histograms_vs_freq}
+  \caption{Frequency of the main loop as a function of the number of
+    histograms in the training set.}
+  \label{fig:freqpart}
+\end{figure}
+
 
 \section{Experiment -- Comparing different possible maps}
 
@@ -2165,20 +2190,30 @@ of oriented gradients.
 %investigating further regression techniques, like Gaussian processes
 %or Bayesian networks that can inherently handle space and time.
 
+% Write about general rotations
 The current implementation assumes rather constant height up to few
-centimeters and no yaw rotations of the MAV. While a quadroter can
-move in every direction without performing yaw movements, other MAVs
-or the use of the front camera for obstacle avoidance could require
-yaw movements. The inclusions of images into the dataset of arbitrary
-yaw movements would possibly inflate the size of the dataset to a too
+centimeters and no rotations of the MAV. While a quadroter can move in
+every direction without performing yaw movements, other MAVs or the
+use of the front camera for obstacle avoidance could require yaw
+movements. The inclusions of images into the dataset of arbitrary yaw
+movements would possibly inflate the size of the dataset to a too
 great extent. This could lead to a deterioration of the accuracy and
 highly increase the time-complexity of the $k$-NN algorithm. Instead,
 a ``derotation'' of the camera image could be performed to align it
-with the underlying images of the dataset. The required rotation
-could, for example, be done on the basis of data from the inertial
-measurement unit (IMU), which estimates angular displacement of the
-MAV. An initial version of such a system can be found in out GitHub
+with the underlying images of the dataset. We developed a prototype
+for procedure (Figure~\ref{fig:rotation}). The rotation is done on the
+basis of data from the inertial measurement unit (IMU), which is a
+sensor that measures the angular displacement of the MAV. An initial
+version of such a system can be found in out GitHub
 repository\footnote{\url{https://github.com/Pold87/derotator}}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{derotator}
+  \caption{The perspective transformation which is due to the rotated
+    camera has been removed by applying a reverse transformation.}
+  \label{fig:rotation}
+\end{figure}
 
 While the current map evaluation approach used existing fixed images,
 it could also serve as a fitness function for an optimization

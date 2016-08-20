@@ -72,8 +72,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.9}Experiment -- Comparing different possible maps}{44}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Discussion}{45}
+\contentsline {chapter}{\numberline {5}Discussion}{47}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}General Discussion}{46}
+\contentsline {section}{\numberline {5.1}General Discussion}{48}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion}{50}
+\contentsline {chapter}{\numberline {6}Conclusion}{52}
