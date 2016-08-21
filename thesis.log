@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.21)  20 AUG 2016 23:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.10)  21 AUG 2016 18:05
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **\input thesis.tex
 (./thesis.tex (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
@@ -1082,19 +1081,19 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
  [2]
 Chapter 1.
-<img/nutshell.pdf, id=27, 456.2646pt x 346.17331pt>
-File: img/nutshell.pdf Graphic file (type pdf)
- <use img/nutshell.pdf>
-Package pdftex.def Info: img/nutshell.pdf used on input line 190.
-(pdftex.def)             Requested size: 270.0pt x 204.85321pt.
+<img/nutshell.png, id=27, 456.2646pt x 346.1733pt>
+File: img/nutshell.png Graphic file (type png)
+ <use img/nutshell.png>
+Package pdftex.def Info: img/nutshell.png used on input line 187.
+(pdftex.def)             Requested size: 270.0pt x 204.8532pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [3
 
-] [4 <./img/nutshell.pdf>] [5]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 287.
+] [4 <./img/nutshell.png>] [5]
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 284.
 
  (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1103,317 +1102,404 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 Chapter 2.
 [8
 
-] <img/markers.pdf, id=55, 99.7326pt x 84.315pt>
+] <img/markers.pdf, id=51, 99.7326pt x 84.315pt>
 File: img/markers.pdf Graphic file (type pdf)
  <use img/markers.pdf>
-Package pdftex.def Info: img/markers.pdf used on input line 433.
+Package pdftex.def Info: img/markers.pdf used on input line 430.
 (pdftex.def)             Requested size: 108.0011pt x 91.3097pt.
 
-[9 <./img/markers.pdf>] <img/sift.png, id=63, 1284.8pt x 481.8pt>
+[9 <./img/markers.pdf>] <img/sift.png, id=59, 1284.8pt x 481.8pt>
 File: img/sift.png Graphic file (type png)
 
 <use img/sift.png>
-Package pdftex.def Info: img/sift.png used on input line 492.
+Package pdftex.def Info: img/sift.png used on input line 489.
 (pdftex.def)             Requested size: 306.0022pt x 114.75215pt.
  [10] [11 <./img/sift.png>] [12] [13]
 Chapter 3.
 [14
 
-] <img/comparison.pdf, id=85, 3276.24pt x 1846.9pt>
+] <img/comparison.pdf, id=80, 3276.24pt x 1846.9pt>
 File: img/comparison.pdf Graphic file (type pdf)
 
 <use img/comparison.pdf>
-Package pdftex.def Info: img/comparison.pdf used on input line 681.
+Package pdftex.def Info: img/comparison.pdf used on input line 678.
 (pdftex.def)             Requested size: 251.9989pt x 142.0342pt.
  [15 <./img/comparison.pdf>]
-<img/Gcs.png, id=93, 49.03358pt x 37.84216pt>
+<img/Gcs.png, id=88, 49.03358pt x 37.84216pt>
 File: img/Gcs.png Graphic file (type png)
  <use img/Gcs.png>
-Package pdftex.def Info: img/Gcs.png used on input line 732.
+Package pdftex.def Info: img/Gcs.png used on input line 729.
 (pdftex.def)             Requested size: 251.9989pt x 194.4914pt.
  [16]
 
 pdfTeX warning: pdflatex (file ./img/overview_new.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<img/overview_new.pdf, id=98, 396.08276pt x 365.76953pt>
+F version <1.7>, but at most version <1.4> allowed
+<img/overview_new.pdf, id=93, 396.08276pt x 365.76953pt>
 File: img/overview_new.pdf Graphic file (type pdf)
 
 <use img/overview_new.pdf>
-Package pdftex.def Info: img/overview_new.pdf used on input line 814.
+Package pdftex.def Info: img/overview_new.pdf used on input line 811.
 (pdftex.def)             Requested size: 201.59912pt x 186.17163pt.
  [17 <./img/Gcs.png>] [18 <./img/overview_new.pdf>]
-<img/overview_sift.pdf, id=144, 501.16936pt x 539.19945pt>
+
+pdfTeX warning: pdflatex (file ./img/overview_sift.pdf): PDF inclusion: found P
+DF version <1.5>, but at most version <1.4> allowed
+<img/overview_sift.pdf, id=139, 501.16936pt x 539.19945pt>
 File: img/overview_sift.pdf Graphic file (type pdf)
 
 <use img/overview_sift.pdf>
-Package pdftex.def Info: img/overview_sift.pdf used on input line 877.
+Package pdftex.def Info: img/overview_sift.pdf used on input line 874.
 (pdftex.def)             Requested size: 251.9989pt x 271.12115pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/bestmap.png, id=145, 803.0pt x 736.7525pt>
+<img/bestmap.png, id=140, 803.0pt x 736.7525pt>
 File: img/bestmap.png Graphic file (type png)
  <use img/bestmap.png>
-Package pdftex.def Info: img/bestmap.png used on input line 912.
+Package pdftex.def Info: img/bestmap.png used on input line 909.
 (pdftex.def)             Requested size: 216.0022pt x 198.18387pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [19] [20 <./img/overview_sift.pdf>] [21 <./img/bestmap.png>]
-<img/dict.png, id=213, 578.16pt x 433.62pt>
+<img/dict.png, id=207, 578.16pt x 433.62pt>
 File: img/dict.png Graphic file (type png)
  <use img/dict.png>
-Package pdftex.def Info: img/dict.png used on input line 975.
+Package pdftex.def Info: img/dict.png used on input line 972.
 (pdftex.def)             Requested size: 251.9989pt x 188.9937pt.
- [22 <./img/dict.png>] [23] <img/kalman-crop.pdf, id=223, 428.65143pt x 276.554
-2pt>
+ [22 <./img/dict.png>] [23]
+
+pdfTeX warning: pdflatex (file ./img/kalman-crop.pdf): PDF inclusion: found PDF
+ version <1.5>, but at most version <1.4> allowed
+<img/kalman-crop.pdf, id=217, 428.65143pt x 276.5542pt>
 File: img/kalman-crop.pdf Graphic file (type pdf)
 
 <use img/kalman-crop.pdf>
-Package pdftex.def Info: img/kalman-crop.pdf used on input line 1086.
+Package pdftex.def Info: img/kalman-crop.pdf used on input line 1083.
 (pdftex.def)             Requested size: 288.0011pt x 185.81783pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/particle-crop.pdf, id=224, 427.55637pt x 278.81264pt>
+
+
+pdfTeX warning: pdflatex (file ./img/particle-crop.pdf): PDF inclusion: found P
+DF version <1.5>, but at most version <1.4> allowed
+<img/particle-crop.pdf, id=218, 427.55637pt x 278.81264pt>
 File: img/particle-crop.pdf Graphic file (type pdf)
 
 <use img/particle-crop.pdf>
-Package pdftex.def Info: img/particle-crop.pdf used on input line 1135.
+Package pdftex.def Info: img/particle-crop.pdf used on input line 1132.
 (pdftex.def)             Requested size: 288.0011pt x 187.81601pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [24] [25 <./img/kalman-crop.pdf>] [26 <./img/particle-crop.pdf>] [27] [28]
-<img/local_loss.png, id=489, 489.5088pt x 105.7551pt>
+<img/local_loss.png, id=482, 489.5088pt x 105.7551pt>
 File: img/local_loss.png Graphic file (type png)
  <use img/local_loss.png>
-Package pdftex.def Info: img/local_loss.png used on input line 1422.
+Package pdftex.def Info: img/local_loss.png used on input line 1419.
 (pdftex.def)             Requested size: 360.0pt x 77.77666pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[29] <img/global_loss-crop.pdf, id=494, 520.94624pt x 273.02pt>
+[29] <img/global_loss-crop.pdf, id=487, 520.94624pt x 273.02pt>
 File: img/global_loss-crop.pdf Graphic file (type pdf)
 
 <use img/global_loss-crop.pdf>
-Package pdftex.def Info: img/global_loss-crop.pdf used on input line 1481.
+Package pdftex.def Info: img/global_loss-crop.pdf used on input line 1478.
 (pdftex.def)             Requested size: 360.0pt x 188.67145pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [30 <./img/local_loss.png (PNG copy)>]
-<img/samples.png, id=498, 2087.8pt x 1038.88126pt>
+<img/samples.png, id=491, 2087.8pt x 1038.88126pt>
 File: img/samples.png Graphic file (type png)
  <use img/samples.png>
-Package pdftex.def Info: img/samples.png used on input line 1511.
+Package pdftex.def Info: img/samples.png used on input line 1508.
 (pdftex.def)             Requested size: 251.9989pt x 125.38956pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [31 <./img/global_loss-crop.pdf>]
-<img/camera_model.png, id=516, 1249.66875pt x 385.44pt>
+<img/camera_model.png, id=509, 1249.66875pt x 385.44pt>
 File: img/camera_model.png Graphic file (type png)
 
 <use img/camera_model.png>
-Package pdftex.def Info: img/camera_model.png used on input line 1545.
+Package pdftex.def Info: img/camera_model.png used on input line 1542.
 (pdftex.def)             Requested size: 241.91895pt x 74.61647pt.
  [32 <./img/samples.png> <./img/camera_model.png>]
 [33] [34] [35]
 Chapter 4.
-<img/cyberzoo.jpg, id=532, 3276.24pt x 1846.9pt>
+<img/cyberzoo.jpg, id=525, 3276.24pt x 1846.9pt>
 File: img/cyberzoo.jpg Graphic file (type jpg)
  <use img/cyberzoo.jpg>
-Package pdftex.def Info: img/cyberzoo.jpg used on input line 1696.
+Package pdftex.def Info: img/cyberzoo.jpg used on input line 1693.
 (pdftex.def)             Requested size: 288.0011pt x 162.35298pt.
 
 [36
 
-] <img/samplescos.pdf, id=536, 505.89pt x 505.89pt>
+] <img/samplescos.pdf, id=529, 505.89pt x 505.89pt>
 File: img/samplescos.pdf Graphic file (type pdf)
 
 <use img/samplescos.pdf>
-Package pdftex.def Info: img/samplescos.pdf used on input line 1749.
-(pdftex.def)             Requested size: 216.0022pt x 216.00775pt.
- [37 <./img/cyberzoo.jpg>]
+Package pdftex.def Info: img/samplescos.pdf used on input line 1745.
+(pdftex.def)             Requested size: 180.0pt x 179.99745pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 1761.
+(Font)              <14.4> on input line 1757.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 1761.
+(Font)              <10> on input line 1757.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 1761.
+(Font)              <7> on input line 1757.
+ [37 <./img/cyberzoo.jpg> <./img/samplescos.pdf>]
+<img/k_x-crop.pdf, id=538, 362.35374pt x 364.36125pt>
+File: img/k_x-crop.pdf Graphic file (type pdf)
+ <use img/k_x-crop.pdf>
+Package pdftex.def Info: img/k_x-crop.pdf used on input line 1775.
+(pdftex.def)             Requested size: 169.20044pt x 170.13786pt.
 
-Overfull \hbox (14.37686pt too wide) in paragraph at lines 1785--1785
-[]\OT1/lmr/m/sc/14.4 Correlation be-tween His-togram Dis-tance and
+<img/k_y-crop.pdf, id=539, 362.35374pt x 364.36125pt>
+File: img/k_y-crop.pdf Graphic file (type pdf)
+ <use img/k_y-crop.pdf>
+Package pdftex.def Info: img/k_y-crop.pdf used on input line 1780.
+(pdftex.def)             Requested size: 169.20044pt x 170.13786pt.
+
+Overfull \hbox (9.68779pt too wide) in paragraph at lines 1813--1813
+[]\OT1/lmr/m/sc/14.4 Dependence be-tween His-togram Dis-tance and
  []
 
-<img/dependency_dist_error_x.pdf, id=540, 505.89pt x 505.89pt>
-File: img/dependency_dist_error_x.pdf Graphic file (type pdf)
 
-<use img/dependency_dist_error_x.pdf>
-Package pdftex.def Info: img/dependency_dist_error_x.pdf used on input line 179
-5.
-(pdftex.def)             Requested size: 180.0pt x 179.99745pt.
 
-<img/dependency_dist_error_y.pdf, id=541, 505.89pt x 505.89pt>
-File: img/dependency_dist_error_y.pdf Graphic file (type pdf)
+pdfTeX warning: pdflatex (file ./img/dependency_dist_error_x-crop.pdf): PDF inc
+lusion: found PDF version <1.5>, but at most version <1.4> allowed
+<img/dependency_dist_error_x-crop.pdf, id=540, 459.7175pt x 410.53375pt>
+File: img/dependency_dist_error_x-crop.pdf Graphic file (type pdf)
 
-<use img/dependency_dist_error_y.pdf>
-Package pdftex.def Info: img/dependency_dist_error_y.pdf used on input line 180
-1.
-(pdftex.def)             Requested size: 180.0pt x 179.99745pt.
+<use img/dependency_dist_error_x-crop.pdf>
+Package pdftex.def Info: img/dependency_dist_error_x-crop.pdf used on input lin
+e 1825.
+(pdftex.def)             Requested size: 180.0pt x 160.74646pt.
 
-Overfull \hbox (4.86667pt too wide) in paragraph at lines 1794--1807
+
+pdfTeX warning: pdflatex (file ./img/dependency_dist_error_y-crop.pdf): PDF inc
+lusion: found PDF version <1.5>, but at most version <1.4> allowed
+<img/dependency_dist_error_y-crop.pdf, id=541, 458.71375pt x 407.5225pt>
+File: img/dependency_dist_error_y-crop.pdf Graphic file (type pdf)
+
+<use img/dependency_dist_error_y-crop.pdf>
+Package pdftex.def Info: img/dependency_dist_error_y-crop.pdf used on input lin
+e 1831.
+(pdftex.def)             Requested size: 180.0pt x 159.91562pt.
+
+Overfull \hbox (4.86667pt too wide) in paragraph at lines 1824--1838
  [][]  [] 
  []
 
-[38 <./img/samplescos.pdf>]
-<img/map_rotated.png, id=550, 2399.96625pt x 1496.59125pt>
+[38 <./img/k_x-crop.pdf> <./img/k_y-crop.pdf>] [39 <./img/dependency_dist_error
+_x-crop.pdf> <./img/dependency_dist_error_y-crop.pdf>]
+<img/map_rotated.png, id=614, 2399.96625pt x 1496.59125pt>
 File: img/map_rotated.png Graphic file (type png)
 
 <use img/map_rotated.png>
-Package pdftex.def Info: img/map_rotated.png used on input line 1853.
+Package pdftex.def Info: img/map_rotated.png used on input line 1934.
 (pdftex.def)             Requested size: 251.9989pt x 157.1353pt.
- [39 <./img/dependency_dist_error_x.pdf> <./img/dependency_dist_error_y.pdf>]
-<img/SIFT_vs_OptiTrack.pdf, id=601, 505.89pt x 505.89pt>
-File: img/SIFT_vs_OptiTrack.pdf Graphic file (type pdf)
+ [40]
+Overfull \hbox (11.90955pt too wide) in paragraph at lines 1945--1949
+[]\OT1/lmr/m/n/10.95 We es-ti-mated the $\OML/lmm/m/it/10.95 x; y$\OT1/lmr/m/n/
+10.95 -coordinates of the 415 test im-ages us-ing the homography-
+ []
 
-<use img/SIFT_vs_OptiTrack.pdf>
-Package pdftex.def Info: img/SIFT_vs_OptiTrack.pdf used on input line 1868.
-(pdftex.def)             Requested size: 251.9989pt x 252.00262pt.
- [40 <./img/map_rotated.png>] [41 <./img/SIFT_vs_OptiTrack.pdf>] [42] <img/samp
-les_vs_freq.pdf, id=618, 505.89pt x 505.89pt>
-File: img/samples_vs_freq.pdf Graphic file (type pdf)
+[41 <./img/map_rotated.png>] [42]
+<img/Error_x_particles-crop.pdf, id=626, 366.36874pt x 364.36125pt>
+File: img/Error_x_particles-crop.pdf Graphic file (type pdf)
 
-<use img/samples_vs_freq.pdf>
-Package pdftex.def Info: img/samples_vs_freq.pdf used on input line 2023.
-(pdftex.def)             Requested size: 251.9989pt x 252.00262pt.
+<use img/Error_x_particles-crop.pdf>
+Package pdftex.def Info: img/Error_x_particles-crop.pdf used on input line 2084
+.
+(pdftex.def)             Requested size: 161.9989pt x 161.11447pt.
+
+<img/Error_y_particles-crop.pdf, id=627, 366.36874pt x 364.36125pt>
+File: img/Error_y_particles-crop.pdf Graphic file (type pdf)
+
+<use img/Error_y_particles-crop.pdf>
+Package pdftex.def Info: img/Error_y_particles-crop.pdf used on input line 2089
+.
+(pdftex.def)             Requested size: 161.9989pt x 161.11447pt.
+
+<img/SD_x_particles-crop.pdf, id=628, 366.36874pt x 364.36125pt>
+File: img/SD_x_particles-crop.pdf Graphic file (type pdf)
+
+<use img/SD_x_particles-crop.pdf>
+Package pdftex.def Info: img/SD_x_particles-crop.pdf used on input line 2092.
+(pdftex.def)             Requested size: 161.9989pt x 161.11447pt.
+
+<img/SD_y_particles-crop.pdf, id=629, 366.36874pt x 364.36125pt>
+File: img/SD_y_particles-crop.pdf Graphic file (type pdf)
+
+<use img/SD_y_particles-crop.pdf>
+Package pdftex.def Info: img/SD_y_particles-crop.pdf used on input line 2096.
+(pdftex.def)             Requested size: 161.9989pt x 161.11447pt.
+
+<img/particles_vs_freq-crop.pdf, id=630, 366.36874pt x 364.36125pt>
+File: img/particles_vs_freq-crop.pdf Graphic file (type pdf)
+
+<use img/particles_vs_freq-crop.pdf>
+Package pdftex.def Info: img/particles_vs_freq-crop.pdf used on input line 2100
+.
+(pdftex.def)             Requested size: 161.9989pt x 161.11447pt.
+ [43]
+Overfull \vbox (21.43138pt too high) has occurred while \output is active []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+[44 <./img/Error_x_particles-crop.pdf> <./img/Error_y_particles-crop.pdf> <./im
+g/SD_x_particles-crop.pdf> <./img/SD_y_particles-crop.pdf> <./img/particles_vs_
+freq-crop.pdf>]
+<img/Error_x_samples-crop.pdf, id=672, 371.3875pt x 364.36125pt>
+File: img/Error_x_samples-crop.pdf Graphic file (type pdf)
 
-<img/particles_vs_freq.pdf, id=619, 505.89pt x 505.89pt>
-File: img/particles_vs_freq.pdf Graphic file (type pdf)
+<use img/Error_x_samples-crop.pdf>
+Package pdftex.def Info: img/Error_x_samples-crop.pdf used on input line 2113.
+(pdftex.def)             Requested size: 161.9989pt x 158.93507pt.
 
-<use img/particles_vs_freq.pdf>
-Package pdftex.def Info: img/particles_vs_freq.pdf used on input line 2030.
-(pdftex.def)             Requested size: 251.9989pt x 252.00262pt.
+<img/Error_y_samples-crop.pdf, id=673, 371.3875pt x 364.36125pt>
+File: img/Error_y_samples-crop.pdf Graphic file (type pdf)
+
+<use img/Error_y_samples-crop.pdf>
+Package pdftex.def Info: img/Error_y_samples-crop.pdf used on input line 2118.
+(pdftex.def)             Requested size: 161.9989pt x 158.93507pt.
+
+<img/SD_x_samples-crop.pdf, id=674, 371.3875pt x 364.36125pt>
+File: img/SD_x_samples-crop.pdf Graphic file (type pdf)
+
+<use img/SD_x_samples-crop.pdf>
+Package pdftex.def Info: img/SD_x_samples-crop.pdf used on input line 2121.
+(pdftex.def)             Requested size: 161.9989pt x 158.93507pt.
+
+<img/SD_y_samples-crop.pdf, id=675, 371.3875pt x 364.36125pt>
+File: img/SD_y_samples-crop.pdf Graphic file (type pdf)
+
+<use img/SD_y_samples-crop.pdf>
+Package pdftex.def Info: img/SD_y_samples-crop.pdf used on input line 2125.
+(pdftex.def)             Requested size: 161.9989pt x 158.93507pt.
+
+<img/samples_vs_freq-crop.pdf, id=676, 371.3875pt x 364.36125pt>
+File: img/samples_vs_freq-crop.pdf Graphic file (type pdf)
+
+<use img/samples_vs_freq-crop.pdf>
+Package pdftex.def Info: img/samples_vs_freq-crop.pdf used on input line 2129.
+(pdftex.def)             Requested size: 161.9989pt x 158.93507pt.
+
+Overfull \vbox (14.89319pt too high) has occurred while \output is active []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+[45 <./img/Error_x_samples-crop.pdf> <./img/Error_y_samples-crop.pdf> <./img/SD
+_x_samples-crop.pdf> <./img/SD_y_samples-crop.pdf> <./img/samples_vs_freq-crop.
+pdf>] <img/histograms_vs_freq-crop.pdf, id=715, 371.3875pt x 364.36125pt>
+File: img/histograms_vs_freq-crop.pdf Graphic file (type pdf)
 
-<img/histograms_vs_freq.pdf, id=620, 505.89pt x 505.89pt>
-File: img/histograms_vs_freq.pdf Graphic file (type pdf)
-
-<use img/histograms_vs_freq.pdf>
-Package pdftex.def Info: img/histograms_vs_freq.pdf used on input line 2038.
-(pdftex.def)             Requested size: 251.9989pt x 252.00262pt.
+<use img/histograms_vs_freq-crop.pdf>
+Package pdftex.def Info: img/histograms_vs_freq-crop.pdf used on input line 214
+1.
+(pdftex.def)             Requested size: 180.0pt x 176.59824pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[43] [44 <./img/samples_vs_freq.pdf>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<img/lowest_highest.png, id=632, 427.3566pt x 112.2594pt>
+<img/lowest_highest.png, id=716, 427.3566pt x 112.2594pt>
 File: img/lowest_highest.png Graphic file (type png)
 
 <use img/lowest_highest.png>
-Package pdftex.def Info: img/lowest_highest.png used on input line 2094.
+Package pdftex.def Info: img/lowest_highest.png used on input line 2197.
 (pdftex.def)             Requested size: 251.9989pt x 66.19649pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[45 <./img/particles_vs_freq.pdf>] [46 <./img/histograms_vs_freq.pdf> <./img/lo
-west_highest.png>]
+[46 <./img/histograms_vs_freq-crop.pdf>] [47 <./img/lowest_highest.png>]
 Chapter 5.
-[47
+[48
 
-] [48]
+]
+Overfull \hbox (13.29247pt too wide) in paragraph at lines 2290--2315
+\OT1/lmr/m/n/10.95 time in-door lo-cal-iza-tion. The de-vel-oped al-go-rithm ru
+ns with a high frequency---
+ []
+
+[49]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 2236.
+(Font)              <9> on input line 2348.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 2236.
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 223
-6.
+(Font)              <5> on input line 2348.
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 234
+8.
  (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-<img/derotator.png, id=658, 1371.1225pt x 770.88pt>
-File: img/derotator.png Graphic file (type png)
- <use img/derotator.png>
-Package pdftex.def Info: img/derotator.png used on input line 2240.
-(pdftex.def)             Requested size: 288.0011pt x 161.9131pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[49] [50 <./img/derotator.png>]
-<img/realitygap.png, id=666, 455.301pt x 341.3553pt>
+) [50]
+<img/realitygap.png, id=741, 455.301pt x 341.3553pt>
 File: img/realitygap.png Graphic file (type png)
  <use img/realitygap.png>
-Package pdftex.def Info: img/realitygap.png used on input line 2291.
+Package pdftex.def Info: img/realitygap.png used on input line 2403.
 (pdftex.def)             Requested size: 233.9978pt x 175.43272pt.
 
-[51 <./img/realitygap.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[51] [52 <./img/realitygap.png>]
 Chapter 6.
 
-Overfull \hbox (1.44498pt too wide) in paragraph at lines 2351--2359
+Overfull \hbox (1.44498pt too wide) in paragraph at lines 2459--2467
 \OT1/lmr/m/n/10.95 GPS-denied en-vi-ron-ments, such as homes, of-fices, or fac-
 tory build-ings. While
  []
 
-[52
+[53
 
 ]
-Overfull \hbox (5.9985pt too wide) in paragraph at lines 2361--2361
+Overfull \hbox (5.9985pt too wide) in paragraph at lines 2469--2469
 \OT1/lmr/m/it/10.95 and au-toma-tion (ICRA), 2011 IEEE in-ter-na-tional con-fer
 -ence on\OT1/lmr/m/n/10.95 . IEEE.
  []
 
-[53
+[54
 
-] [54]
-Overfull \hbox (5.31116pt too wide) in paragraph at lines 2361--2361
+] [55]
+Overfull \hbox (5.31116pt too wide) in paragraph at lines 2469--2469
 \OT1/lmr/m/it/10.95 tional Con-fer-ence on Robotics and Au-toma-tion, 2009 (ICR
 A'09). \OT1/lmr/m/n/10.95 IEEE.
  []
 
 
-Overfull \hbox (0.9007pt too wide) in paragraph at lines 2361--2361
+Overfull \hbox (0.9007pt too wide) in paragraph at lines 2469--2469
 []\OT1/lmr/m/n/10.95 Michael Jep-son. \OT1/lmr/m/it/10.95 Ro-ta-tion in 3D us-i
 ng OpenCV's warp-Per-spec-tive\OT1/lmr/m/n/10.95 . \OT1/lmr/m/sc/10.95 url\OT1/
 lmr/m/n/10.95 :
  []
 
-[55]
-Overfull \hbox (9.28864pt too wide) in paragraph at lines 2361--2361
+[56]
+Overfull \hbox (9.28864pt too wide) in paragraph at lines 2469--2469
 []\OT1/lmr/m/it/10.95 Microsoft Im-age Com-pos-ite Ed-i-tor\OT1/lmr/m/n/10.95 .
  \OT1/lmr/m/sc/10.95 url\OT1/lmr/m/n/10.95 : $\OT1/lmtt/m/n/10.95 http : / / re
 search . microsoft .
  []
 
-[56] (./thesis.aux)
+[57] (./thesis.aux)
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20697 strings out of 493386
- 366485 string characters out of 6142015
- 758697 words of memory out of 5000000
- 23690 multiletter control sequences out of 15000+600000
+ 20729 strings out of 493308
+ 367602 string characters out of 6140092
+ 758991 words of memory out of 5000000
+ 23730 multiletter control sequences out of 15000+600000
  101440 words of font info for 93 fonts, out of 8000000 for 9000
- 912 hyphenation exceptions out of 8191
+ 957 hyphenation exceptions out of 8191
  63i,16n,75p,935b,1636s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/
 dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr
@@ -1432,12 +1518,10 @@ pe1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/pu
 blic/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/shar
 e/texmf/fonts/type1/public/lm/lmtt9.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/tex
--gyre/qhvr.pfb>
-Output written on thesis.pdf (59 pages, 37555656 bytes).
+pe1/public/amsfonts/symbols/msbm10.pfb>
+Output written on thesis.pdf (60 pages, 36292368 bytes).
 PDF statistics:
- 763 PDF objects out of 1000 (max. 8388607)
- 316 compressed objects within 4 object streams
+ 839 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 148 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 188 words of extra memory for PDF output out of 10000 (max. 10000000)
 
