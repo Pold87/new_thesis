@@ -1704,15 +1704,14 @@ Delft University of Technology: the ``CyberZoo''
 To compare estimates from the developed framework to a ground truth,
 we employed the motion tracking system OptiTrack~\cite{opti}. This
 system uses an array of cameras and reflective markers attached to the
-body of the MAV. This way, OptiTrack can track MAVs at a high
-frequency within an error of few millimeters. We used it as MAV
-guidance system for autonomous flight, yielding accurate and stable
-control. The \emph{Parrot Bebop Drone} was the prototype for all
-flight tests.
+body of the MAV to track the MAVs at a high frequency within an error
+of few millimeters. We used OptiTrack as MAV guidance system for
+autonomous flight, yielding accurate and stable control. The
+\emph{Parrot Bebop Drone} was the prototype for all flight tests.
 
-We begin with a comparison of settings for the developed framework to
-show the trade-off between run-time and accuracy and demonstrate the
-scalability of the approach.
+%We begin with a comparison of settings for the developed framework to
+%show the trade-off between run-time and accuracy and demonstrate the
+%scalability of the approach.
 
 
 %since the proposed algorithm is intended for known
@@ -1733,8 +1732,9 @@ advantage that the number of samples can be estimated independently of
 the specific use case.
 
 To determine a suitable number of extracted samples, we compared the
-influence of random sampling via the cosine similarity between
-histograms in a dataset consisting of $N = 2\,000$ images. The
+influence of random sampling by measuring the cosine similarity
+between histograms based on \emph{random sampling} and the histogram
+obtained by \emph{full sampling} based on $N = 2\,000$ images. The
 independent variable is the number of extracted patches $M$ per image.
 We used the cosine similarity to obtain similarity values between $0$
 and $1$. The similarity was measured at 10, 50, 100, 200, 400, and
@@ -1744,9 +1744,7 @@ Figure~\ref{fig:cosine} displays the results: the cosine similarity of
 histograms as a function of the number of samples and the
 corresponding standard deviations.
 
-\unsure{add accuracy and not only similarity}
-
-\begin{figure}[h!]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.6\columnwidth]{samplescos}
 \caption{{\label{fig:cosine} Cosine similarity between histograms
@@ -1764,25 +1762,25 @@ corresponding standard deviations.
 \label{sec:detk}
 
 
-\section{Measurement model for the Particle Filter}
-\label{sec:measurementmodel}
-
-As described in Section~\ref{sec:filtering}, we determined the values
-$\Sigma^{[j]}$ for the Gaussian mixture measurement model by
-calculating the variance-covariance matrix for the difference between
-the ground truth $T$ and the predictions $P_j$ of the $k$-NN
-algorithm. Figure~\ref{fig:measurementmodel} shows the differences
-between the $x$ coordinate of the nearest neighbor (j = 1) and the
-ground truth.
-
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[width=0.7\columnwidth]{measurement_model}
-\caption{{\label{fig:measurementmodel}Dependence between error in $x$-direction
-    (\emph{Left}) and $y$-direction (\emph{Left}).%
-  }}
-\end{center}
-\end{figure}
+%\section{Measurement model for the Particle Filter}
+%\label{sec:measurementmodel}
+%
+%As described in Section~\ref{sec:filtering}, we determined the values
+%$\Sigma^{[j]}$ for the Gaussian mixture measurement model by
+%calculating the variance-covariance matrix for the difference between
+%the ground truth $T$ and the predictions $P_j$ of the $k$-NN
+%algorithm. Figure~\ref{fig:measurementmodel} shows the differences
+%between the $x$ coordinate of the nearest neighbor (j = 1) and the
+%ground truth.
+%
+%\begin{figure}[h!]
+%\begin{center}
+%\includegraphics[width=0.7\columnwidth]{measurement_model}
+%\caption{{\label{fig:measurementmodel}Dependence between error in $x$-direction
+%    (\emph{Left}) and $y$-direction (\emph{Left}).%
+%  }}
+%\end{center}
+%\end{figure}
 
 \section{Correlation between Histogram Distance and Measurement Error}
 
@@ -1791,7 +1789,7 @@ distance to the neighbors in the $k$-NN algorithm as confidence value
 for the predictions. Figure~\ref{fig:cor_sim_confi} shows the
 correlation between histogram distance and measurement error.
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.5\textwidth}
   \includegraphics[width=1\textwidth]{dependency_dist_error_x}
@@ -1810,36 +1808,36 @@ correlation between histogram distance and measurement error.
 \label{fig:cor_sim_confi}
 \end{figure}
 
-\section{Correlation between number of keypoints and Quality of the
-  Homography}
+%\section{Correlation between number of keypoints and Quality of the
+%  Homography}
 
-As explained in Section~\ref{sec:filtering}, we evaluated the
-correlation between the number of keypoints of SIFT and the quality of
-the homography.
+%As explained in Section~\ref{sec:filtering}, we evaluated the
+%correlation between the number of keypoints of SIFT and the quality of
+%the homography.
 
-Figure~\ref{fig:keypoints} shows the correlation between number of
-keypoints and the quality of the homography.
+%Figure~\ref{fig:keypoints} shows the correlation between number of
+%keypoints and the quality of the homography.
 
-\begin{figure}
-  \label{fig:cor_keypoints}
-  \centering
-  \begin{subfigure}[b]{0.5\textwidth}
-  \includegraphics[width=1\textwidth]{keypoints_error_x1}
-    %\captionof{figure}{$POS_x$}
-  \label{fig:cosinesim}
-  \end{subfigure}%
-~
-  \begin{subfigure}[b]{0.5\textwidth}
-  \includegraphics[width=1\textwidth]{keypoints_error_y}
-   % \captionof{figure}{$POS_y$}
-  \label{fig:cosinesd}
-  \end{subfigure}
-  \caption{Measurement error in $x$-direction (\emph{Left}) and
-    $y$-direction (\emph{Right}) as a function of the number of
-    keypoints found by \textsc{Sift}.}
-\label{fig:keypoints}
-\end{figure}
-
+%\begin{figure}
+%  \label{fig:cor_keypoints}
+%  \centering
+%  \begin{subfigure}[b]{0.5\textwidth}
+%  \includegraphics[width=1\textwidth]{keypoints_error_x1}
+%    %\captionof{figure}{$POS_x$}
+%  \label{fig:cosinesim}
+%  \end{subfigure}%
+%~
+%  \begin{subfigure}[b]{0.5\textwidth}
+%  \includegraphics[width=1\textwidth]{keypoints_error_y}
+%   % \captionof{figure}{$POS_y$}
+%  \label{fig:cosinesd}
+%  \end{subfigure}
+%  \caption{Measurement error in $x$-direction (\emph{Left}) and
+%    $y$-direction (\emph{Right}) as a function of the number of
+%    keypoints found by \textsc{Sift}.}
+%\label{fig:keypoints}
+%\end{figure}
+%
 \section{Continuous Coordinate Estimation}
 
 \subsection{Baseline: Compare SIFT and OptiTrack}
@@ -1850,7 +1848,7 @@ approach to estimate $x,y$-coordinates. The required hyperspatial
 image (Figure~\ref{fig:mapexp}) of the environment was stitched
 together using 500 images and the software Microsoft ICE.
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.7\columnwidth]{map_rotated}
 \caption{{\label{fig:mapexp} The created map that was stitched
@@ -1865,7 +1863,7 @@ together using 500 images and the software Microsoft ICE.
 
 The results can be found in Figure~\ref{fig:siftestimates} and Table~\ref{tab:homoerror}.
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.7\columnwidth]{SIFT_vs_OptiTrack}
 \caption{{\label{fig:siftestimates} The estimates of the homography
@@ -1893,18 +1891,21 @@ The results can be found in Figure~\ref{fig:siftestimates} and Table~\ref{tab:ho
 \label{sec:experiment-real}
 
 In this experiment, a fixed flight plan was set in the ground control
-station. The position estimates were calculated on
-board of the MAV using the texton-based approach with the particle
-filter. The Euclidean distances between the estimates of the motion
-tracking system and the texton-based approach were measured in
-$x$-direction, $y$-direction and combined as two-dimensional
-deviation.
+station. The position estimates were calculated on board of the MAV
+using the texton-based approach with the particle filter. The
+Euclidean distances between the estimates of the motion tracking
+system and the texton-based approach were measured in $x$-direction
+and $y$-direction.
 
 The training dataset was composed of 500 texton histograms with
 corresponding $x,y$-coordinates that were obtained from the motion
 tracking system. The images were recorded at an height of
 approximately one meter in a time span of one hour before the
 experiment.
+
+The results can be found in Table~\ref{tab:route}. They are based on
+445 images, which corresponds to a flight time of approximately 35
+seconds.
 
 \begin{table}[H]
   \centering
@@ -1916,7 +1917,10 @@ experiment.
     STD in $cm$ & 56 & 71\\
     \bottomrule
   \end{tabular}
-  \caption[Estimates of the texton-based approach]{Estimates of the texton-based approach}
+  \caption[Estimates of the texton-based approach]{Differences between
+    ground truth and the developed framework in $x$-direction and
+    $y$-direction. The used training set was based on the position
+    esimates of the motion tracking system (Section~\ref{sec:mapping}).}
   \label{tab:route}
 \end{table}
 
@@ -1927,6 +1931,26 @@ In this experiment, the training dataset was created using the
 homography-finding method. Apart from that, the settings are the same
 as in Experiment~\ref{sec:experiment-real}.
 
+The obtained results are shown in Table~\ref{tab:routehomo}. They are based on
+445 images, which corresponds to a flight time of approximately 35
+seconds.
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{lrrr}
+    \toprule
+    & x-position & y-position\\
+    \midrule
+    Error in $cm$ & TODO & TODO\\
+    STD in $cm$ & TODO & TODO\\
+    \bottomrule
+  \end{tabular}
+  \caption[Estimates of the texton-based approach]{Differences between
+    ground truth and the developed framework in $x$-direction and
+    $y$-direction. The used training set was based on the position
+    esimates of the motion tracking system (Section~\ref{sec:mapping}).}
+  \label{tab:routehomo}
+\end{table}
 
 \section{Experiment -- Triggered Landing}
 \label{sec:triggered}
@@ -2041,7 +2065,6 @@ maps were then sorted according to their estimated loss.
 %performing---were printed on A0 paper to test the performance in the
 %real world.
 
-
 In Table~\ref{tab:mapeval}, the results of the map evaluation
 procedure for the $N = 46$ maps are shown.
 
@@ -2051,11 +2074,11 @@ procedure for the $N = 46$ maps are shown.
     \toprule
     Statistic & Value\\
     \midrule
-    mean & 0.57\\
-    median & 0.55\\
-    standard deviation & 0.14\\
-    max & 0.99\\
-    min & 0.24\\    
+    mean & 0.81\\
+    median & 0.79\\
+    standard deviation & 0.10\\
+    max & 0.98\\
+    min & 0.58\\    
     \bottomrule
   \end{tabular}
   \caption[Map evaluation procedure on synthetic data]{Results of the map evaluation procedure on synthetic data}
@@ -2159,9 +2182,9 @@ payload capacity of MAVs. We recapitulate the research questions
 Regarding RQ\,1, the conducted experiments provide supportive evidence
 that a texton-based machine learning approach is able to accomplish
 real-time indoor localization. The proposed algorithm runs with a
-frequency of approximately 66\,Hz (15\,ms per iteration) on a single
-board computer with limited CPU. Shifting processing power to an
-offline training step by creating a training set and relying on random
+frequency of more than 60\,Hz (15\,ms per iteration) on a single board
+computer with limited CPU. Shifting processing power to an offline
+training step by creating a training set and relying on random
 sampling are the cornerstones of the developed algorithm.
 
 
@@ -2209,7 +2232,7 @@ with the underlying images of the dataset. We developed a prototype
 for procedure (Figure~\ref{fig:rotation}). The rotation is done on the
 basis of data from the inertial measurement unit (IMU), which is a
 sensor that measures the angular displacement of the MAV. An initial
-version of such a system can be found in out GitHub
+version of such a system can be found in our GitHub
 repository\footnote{\url{https://github.com/Pold87/derotator}}.
 
 \begin{figure}[h]

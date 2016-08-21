@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.21)  20 AUG 2016 16:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.21)  20 AUG 2016 23:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -957,20 +957,7 @@ Package biblatex Info: ... file 'english.lbx' found.
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2013/11/25 v2.8a biblatex localization (PK/JW/AB)
 )
-(./thesis.aux
-
-LaTeX Warning: Label `fig:cosinesim' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:cosinesim' multiply defined.
-
-
-LaTeX Warning: Label `fig:cosinesd' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:cosinesd' multiply defined.
-
-)
+(./thesis.aux)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
@@ -1253,132 +1240,94 @@ Package pdftex.def Info: img/cyberzoo.jpg used on input line 1696.
 File: img/samplescos.pdf Graphic file (type pdf)
 
 <use img/samplescos.pdf>
-Package pdftex.def Info: img/samplescos.pdf used on input line 1751.
+Package pdftex.def Info: img/samplescos.pdf used on input line 1749.
 (pdftex.def)             Requested size: 216.0022pt x 216.00775pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+ [37 <./img/cyberzoo.jpg>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 1763.
+(Font)              <14.4> on input line 1761.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 1763.
+(Font)              <10> on input line 1761.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 1763.
-<img/measurement_model.pdf, id=537, 505.89pt x 505.89pt>
-File: img/measurement_model.pdf Graphic file (type pdf)
+(Font)              <7> on input line 1761.
 
-<use img/measurement_model.pdf>
-Package pdftex.def Info: img/measurement_model.pdf used on input line 1780.
-(pdftex.def)             Requested size: 251.9989pt x 252.00262pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (14.37686pt too wide) in paragraph at lines 1787--1787
+Overfull \hbox (14.37686pt too wide) in paragraph at lines 1785--1785
 []\OT1/lmr/m/sc/14.4 Correlation be-tween His-togram Dis-tance and
  []
 
-[37 <./img/cyberzoo.jpg>]
-<img/dependency_dist_error_x.pdf, id=541, 505.89pt x 505.89pt>
+<img/dependency_dist_error_x.pdf, id=540, 505.89pt x 505.89pt>
 File: img/dependency_dist_error_x.pdf Graphic file (type pdf)
 
 <use img/dependency_dist_error_x.pdf>
 Package pdftex.def Info: img/dependency_dist_error_x.pdf used on input line 179
-7.
+5.
 (pdftex.def)             Requested size: 180.0pt x 179.99745pt.
 
-<img/dependency_dist_error_y.pdf, id=542, 505.89pt x 505.89pt>
+<img/dependency_dist_error_y.pdf, id=541, 505.89pt x 505.89pt>
 File: img/dependency_dist_error_y.pdf Graphic file (type pdf)
 
 <use img/dependency_dist_error_y.pdf>
 Package pdftex.def Info: img/dependency_dist_error_y.pdf used on input line 180
-3.
+1.
 (pdftex.def)             Requested size: 180.0pt x 179.99745pt.
 
-Overfull \hbox (4.86667pt too wide) in paragraph at lines 1796--1809
+Overfull \hbox (4.86667pt too wide) in paragraph at lines 1794--1807
  [][]  [] 
  []
 
 [38 <./img/samplescos.pdf>]
-<img/keypoints_error_x1.pdf, id=551, 505.89pt x 505.89pt>
-File: img/keypoints_error_x1.pdf Graphic file (type pdf)
-
-<use img/keypoints_error_x1.pdf>
-Package pdftex.def Info: img/keypoints_error_x1.pdf used on input line 1827.
-(pdftex.def)             Requested size: 180.0pt x 179.99745pt.
-
-<img/keypoints_error_y.pdf, id=552, 505.89pt x 505.89pt>
-File: img/keypoints_error_y.pdf Graphic file (type pdf)
-
-<use img/keypoints_error_y.pdf>
-Package pdftex.def Info: img/keypoints_error_y.pdf used on input line 1833.
-(pdftex.def)             Requested size: 180.0pt x 179.99745pt.
-
-Overfull \hbox (4.86667pt too wide) in paragraph at lines 1826--1839
- [][]  [] 
- []
-
-<img/map_rotated.png, id=553, 2399.96625pt x 1496.59125pt>
+<img/map_rotated.png, id=550, 2399.96625pt x 1496.59125pt>
 File: img/map_rotated.png Graphic file (type png)
 
 <use img/map_rotated.png>
-Package pdftex.def Info: img/map_rotated.png used on input line 1855.
+Package pdftex.def Info: img/map_rotated.png used on input line 1853.
 (pdftex.def)             Requested size: 251.9989pt x 157.1353pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<img/SIFT_vs_OptiTrack.pdf, id=554, 505.89pt x 505.89pt>
+ [39 <./img/dependency_dist_error_x.pdf> <./img/dependency_dist_error_y.pdf>]
+<img/SIFT_vs_OptiTrack.pdf, id=601, 505.89pt x 505.89pt>
 File: img/SIFT_vs_OptiTrack.pdf Graphic file (type pdf)
 
 <use img/SIFT_vs_OptiTrack.pdf>
-Package pdftex.def Info: img/SIFT_vs_OptiTrack.pdf used on input line 1870.
+Package pdftex.def Info: img/SIFT_vs_OptiTrack.pdf used on input line 1868.
 (pdftex.def)             Requested size: 251.9989pt x 252.00262pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[39 <./img/measurement_model.pdf>] [40 <./img/dependency_dist_error_x.pdf> <./i
-mg/dependency_dist_error_y.pdf> <./img/keypoints_error_x1.pdf> <./img/keypoints
-_error_y.pdf>] [41 <./img/map_rotated.png>] [42 <./img/SIFT_vs_OptiTrack.pdf>]
-[43] <img/samples_vs_freq.pdf, id=606, 505.89pt x 505.89pt>
+ [40 <./img/map_rotated.png>] [41 <./img/SIFT_vs_OptiTrack.pdf>] [42] <img/samp
+les_vs_freq.pdf, id=618, 505.89pt x 505.89pt>
 File: img/samples_vs_freq.pdf Graphic file (type pdf)
 
 <use img/samples_vs_freq.pdf>
-Package pdftex.def Info: img/samples_vs_freq.pdf used on input line 1999.
+Package pdftex.def Info: img/samples_vs_freq.pdf used on input line 2023.
 (pdftex.def)             Requested size: 251.9989pt x 252.00262pt.
 
-<img/particles_vs_freq.pdf, id=607, 505.89pt x 505.89pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/particles_vs_freq.pdf, id=619, 505.89pt x 505.89pt>
 File: img/particles_vs_freq.pdf Graphic file (type pdf)
 
 <use img/particles_vs_freq.pdf>
-Package pdftex.def Info: img/particles_vs_freq.pdf used on input line 2006.
+Package pdftex.def Info: img/particles_vs_freq.pdf used on input line 2030.
 (pdftex.def)             Requested size: 251.9989pt x 252.00262pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/histograms_vs_freq.pdf, id=608, 505.89pt x 505.89pt>
+<img/histograms_vs_freq.pdf, id=620, 505.89pt x 505.89pt>
 File: img/histograms_vs_freq.pdf Graphic file (type pdf)
 
 <use img/histograms_vs_freq.pdf>
-Package pdftex.def Info: img/histograms_vs_freq.pdf used on input line 2014.
+Package pdftex.def Info: img/histograms_vs_freq.pdf used on input line 2038.
 (pdftex.def)             Requested size: 251.9989pt x 252.00262pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[44 <./img/samples_vs_freq.pdf>]
+[43] [44 <./img/samples_vs_freq.pdf>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/lowest_highest.png, id=617, 427.3566pt x 112.2594pt>
+<img/lowest_highest.png, id=632, 427.3566pt x 112.2594pt>
 File: img/lowest_highest.png Graphic file (type png)
 
 <use img/lowest_highest.png>
-Package pdftex.def Info: img/lowest_highest.png used on input line 2071.
+Package pdftex.def Info: img/lowest_highest.png used on input line 2094.
 (pdftex.def)             Requested size: 251.9989pt x 66.19649pt.
 
 
@@ -1391,34 +1340,34 @@ Chapter 5.
 
 ] [48]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 2213.
+(Font)              <9> on input line 2236.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 2213.
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 221
-3.
+(Font)              <5> on input line 2236.
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 223
+6.
  (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<img/derotator.png, id=643, 1371.1225pt x 770.88pt>
+<img/derotator.png, id=658, 1371.1225pt x 770.88pt>
 File: img/derotator.png Graphic file (type png)
  <use img/derotator.png>
-Package pdftex.def Info: img/derotator.png used on input line 2217.
+Package pdftex.def Info: img/derotator.png used on input line 2240.
 (pdftex.def)             Requested size: 288.0011pt x 161.9131pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [49] [50 <./img/derotator.png>]
-<img/realitygap.png, id=651, 455.301pt x 341.3553pt>
+<img/realitygap.png, id=666, 455.301pt x 341.3553pt>
 File: img/realitygap.png Graphic file (type png)
  <use img/realitygap.png>
-Package pdftex.def Info: img/realitygap.png used on input line 2268.
+Package pdftex.def Info: img/realitygap.png used on input line 2291.
 (pdftex.def)             Requested size: 233.9978pt x 175.43272pt.
 
 [51 <./img/realitygap.png>]
 Chapter 6.
 
-Overfull \hbox (1.44498pt too wide) in paragraph at lines 2328--2336
+Overfull \hbox (1.44498pt too wide) in paragraph at lines 2351--2359
 \OT1/lmr/m/n/10.95 GPS-denied en-vi-ron-ments, such as homes, of-fices, or fac-
 tory build-ings. While
  []
@@ -1426,7 +1375,7 @@ tory build-ings. While
 [52
 
 ]
-Overfull \hbox (5.9985pt too wide) in paragraph at lines 2338--2338
+Overfull \hbox (5.9985pt too wide) in paragraph at lines 2361--2361
 \OT1/lmr/m/it/10.95 and au-toma-tion (ICRA), 2011 IEEE in-ter-na-tional con-fer
 -ence on\OT1/lmr/m/n/10.95 . IEEE.
  []
@@ -1434,41 +1383,38 @@ Overfull \hbox (5.9985pt too wide) in paragraph at lines 2338--2338
 [53
 
 ] [54]
-Overfull \hbox (5.31116pt too wide) in paragraph at lines 2338--2338
+Overfull \hbox (5.31116pt too wide) in paragraph at lines 2361--2361
 \OT1/lmr/m/it/10.95 tional Con-fer-ence on Robotics and Au-toma-tion, 2009 (ICR
 A'09). \OT1/lmr/m/n/10.95 IEEE.
  []
 
 
-Overfull \hbox (0.9007pt too wide) in paragraph at lines 2338--2338
+Overfull \hbox (0.9007pt too wide) in paragraph at lines 2361--2361
 []\OT1/lmr/m/n/10.95 Michael Jep-son. \OT1/lmr/m/it/10.95 Ro-ta-tion in 3D us-i
 ng OpenCV's warp-Per-spec-tive\OT1/lmr/m/n/10.95 . \OT1/lmr/m/sc/10.95 url\OT1/
 lmr/m/n/10.95 :
  []
 
 [55]
-Overfull \hbox (9.28864pt too wide) in paragraph at lines 2338--2338
+Overfull \hbox (9.28864pt too wide) in paragraph at lines 2361--2361
 []\OT1/lmr/m/it/10.95 Microsoft Im-age Com-pos-ite Ed-i-tor\OT1/lmr/m/n/10.95 .
  \OT1/lmr/m/sc/10.95 url\OT1/lmr/m/n/10.95 : $\OT1/lmtt/m/n/10.95 http : / / re
 search . microsoft .
  []
 
 [56] (./thesis.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20781 strings out of 493386
- 368471 string characters out of 6142015
+ 20697 strings out of 493386
+ 366485 string characters out of 6142015
  758697 words of memory out of 5000000
- 23774 multiletter control sequences out of 15000+600000
+ 23690 multiletter control sequences out of 15000+600000
  101440 words of font info for 93 fonts, out of 8000000 for 9000
  912 hyphenation exceptions out of 8191
- 63i,16n,76p,935b,1636s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,16n,75p,935b,1636s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/
 dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr
 /share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips
@@ -1486,11 +1432,12 @@ pe1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/pu
 blic/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/shar
 e/texmf/fonts/type1/public/lm/lmtt9.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (59 pages, 37245300 bytes).
+pe1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/tex
+-gyre/qhvr.pfb>
+Output written on thesis.pdf (59 pages, 37555656 bytes).
 PDF statistics:
- 747 PDF objects out of 1000 (max. 8388607)
- 314 compressed objects within 4 object streams
+ 763 PDF objects out of 1000 (max. 8388607)
+ 316 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 163 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 148 words of extra memory for PDF output out of 10000 (max. 10000000)
 

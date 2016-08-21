@@ -50,27 +50,23 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Determining the Number of Image Patches}{36}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Determining $k$ in the $k$-NN algorithm}{37}
+\contentsline {section}{\numberline {4.2}Determining $k$ in the $k$-NN algorithm}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Measurement model for the Particle Filter}{37}
+\contentsline {section}{\numberline {4.3}Correlation between Histogram Distance and Measurement Error}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Correlation between Histogram Distance and Measurement Error}{38}
+\contentsline {section}{\numberline {4.4}Continuous Coordinate Estimation}{39}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Correlation between number of keypoints and Quality of the Homography}{38}
+\contentsline {subsection}{\numberline {4.4.1}Baseline: Compare SIFT and OptiTrack}{39}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Continuous Coordinate Estimation}{39}
+\contentsline {subsection}{\numberline {4.4.2}Training Set based on Motion Tracking System}{41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.1}Baseline: Compare SIFT and OptiTrack}{39}
+\contentsline {subsection}{\numberline {4.4.3}Training Set based on Homography-finding Method}{42}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.2}Training Set based on Motion Tracking System}{41}
+\contentsline {section}{\numberline {4.5}Experiment -- Triggered Landing}{42}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.3}Training Set based on Homography-finding Method}{42}
+\contentsline {section}{\numberline {4.6}Experiment -- Determining the Frequency}{43}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}Experiment -- Triggered Landing}{43}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.8}Experiment -- Determining the Frequency}{43}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.9}Experiment -- Comparing different possible maps}{44}
+\contentsline {section}{\numberline {4.7}Experiment -- Comparing different possible maps}{44}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Discussion}{47}
 \defcounter {refsection}{0}\relax 
