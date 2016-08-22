@@ -87,7 +87,7 @@
       \strng{fullhash}{6690ce18c352a03d2ed4c3d5c1c81b78}
       \field{sortinit}{A}
       \field{labeltitle}{Mean-shift-FAST algorithm to handle motion-blur with tracking fiducial markers}
-      \field{booktitle}{Computer Engineering \& Systems (ICCES), 2015 Tenth International Conference on}
+      \field{booktitle}{Tenth International Conference on Computer Engineering \& Systems (ICCES), 2015.}
       \field{title}{Mean-shift-FAST algorithm to handle motion-blur with tracking fiducial markers}
       \field{year}{2015}
       \field{pages}{286\bibrangedash 292}
@@ -214,7 +214,7 @@
       \strng{fullhash}{93fbf6b3302b0e2aa5abbbb59b2eb079}
       \field{sortinit}{C}
       \field{labeltitle}{A survey of optical flow techniques for UAV navigation applications}
-      \field{booktitle}{Unmanned Aircraft Systems (ICUAS), 2013 International Conference on}
+      \field{booktitle}{International Conference on Unmanned Aircraft Systems (ICUAS) 2013.}
       \field{title}{A survey of optical flow techniques for UAV navigation applications}
       \field{year}{2013}
       \field{pages}{710\bibrangedash 716}
@@ -635,7 +635,7 @@
         {{hash=c72fc39e94030f67717052309266a44d}{Zisserman}{Z\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
       }
       \list{publisher}{1}{%
-        {Cambridge university press}%
+        {Cambridge University Press}%
       }
       \strng{namehash}{8e7a03190a02019e6b707a2cb770fbb2}
       \strng{fullhash}{0e3dfde06144cdf8ac37a2746457797e}
@@ -810,7 +810,7 @@
       \strng{fullhash}{ecc108666da64b7128e221a0e5aaded6}
       \field{sortinit}{L}
       \field{labeltitle}{Object recognition from local scale-invariant features}
-      \field{booktitle}{Computer vision, 1999. The proceedings of the seventh {IEEE} international conference on}
+      \field{booktitle}{The proceedings of the seventh {IEEE} International Conference on Computer Vision, 1999.}
       \field{title}{Object recognition from local scale-invariant features}
       \field{volume}{2}
       \field{year}{1999}
@@ -858,7 +858,7 @@
       \field{title}{OptiTrack - Motion Capture Systems}
       \field{urlday}{03}
       \field{urlmonth}{08}
-      \field{urlyear}{2015}
+      \field{urlyear}{2016}
       \verb{url}
       \verb http://optitrack.com/
       \endverb
@@ -894,6 +894,25 @@
       \verb http://www.parrot.com/products/bebop-drone/
       \endverb
     \endentry
+    \entry{earth}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=97b124b4cf62fcee58dc0b550e752abc}{Prov0lone}{P\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=97b124b4cf62fcee58dc0b550e752abc}{Prov0lone}{P\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{97b124b4cf62fcee58dc0b550e752abc}
+      \strng{fullhash}{97b124b4cf62fcee58dc0b550e752abc}
+      \field{sortinit}{P}
+      \field{labeltitle}{The horizons of Venus, Earth, Moon, Mars, and Titan.}
+      \field{title}{The horizons of Venus, Earth, Moon, Mars, and Titan.}
+      \field{urlday}{10}
+      \field{urlmonth}{07}
+      \field{urlyear}{2016}
+      \verb{url}
+      \verb http://imgur.com/gallery/A1gIYXd
+      \endverb
+    \endentry
     \entry{ruffier2003bio}{inproceedings}{}
       \name{labelname}{4}{}{%
         {{hash=73787972df8e03801899469601087333}{Ruffier}{R\bibinitperiod}{Franck}{F\bibinitperiod}{}{}{}{}}%
@@ -914,7 +933,7 @@
       \strng{fullhash}{6425caecd1f218622526173e684550ac}
       \field{sortinit}{R}
       \field{labeltitle}{Bio-inspired optical flow circuits for the visual guidance of micro air vehicles}
-      \field{booktitle}{Circuits and Systems, 2003. ISCAS'03. Proceedings of the 2003 International Symposium on}
+      \field{booktitle}{International Symposium on Circuits and Systems, 2003. ISCAS'03. Proceedings of the 2003}
       \field{title}{Bio-inspired optical flow circuits for the visual guidance of micro air vehicles}
       \field{volume}{3}
       \field{year}{2003}
@@ -943,6 +962,17 @@
       \field{volume}{1}
       \field{year}{2002}
       \field{pages}{226\bibrangedash 231}
+    \endentry
+    \entry{sparkle}{online}{}
+      \field{sortinit}{S}
+      \field{labeltitle}{Sparkle Wallpaper}
+      \field{title}{Sparkle Wallpaper}
+      \field{urlday}{10}
+      \field{urlmonth}{07}
+      \field{urlyear}{2016}
+      \verb{url}
+      \verb http://e2ua.com/group/sparkle-wallpaper/
+      \endverb
     \endentry
     \entry{thrun}{online}{}
       \name{labelname}{1}{}{%
@@ -1002,7 +1032,7 @@
       \strng{fullhash}{fb02f2e0a2484820d6f5847dcec5efc6}
       \field{sortinit}{V}
       \field{labeltitle}{Texture classification: Are filter banks necessary?}
-      \field{booktitle}{2003 {IEEE} {C}omputer {S}ociety {S}onference on {C}omputer {V}ision and {P}attern {R}ecognition, 2003 Proceedings}
+      \field{booktitle}{2003 {IEEE} {C}omputer {S}ociety {C}onference on {C}omputer {V}ision and {P}attern {R}ecognition, 2003 Proceedings}
       \field{title}{Texture classification: Are filter banks necessary?}
       \field{volume}{2}
       \field{year}{2003}

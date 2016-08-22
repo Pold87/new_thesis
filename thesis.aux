@@ -41,13 +41,13 @@
 \abx@aux@cite{hornecker2005using}
 \abx@aux@cite{albasiouny2015mean}
 \abx@aux@cite{chu2013halftone}
+\abx@aux@cite{se2002global}
+\abx@aux@cite{lowe1999object}
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {2.1}Vision-based Localization Methods}{9}}
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Fiducial Markers}{9}}
 \newlabel{sec:fiducialmarkers}{{2.1.1}{9}}
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces { Examples of fiducial markers of the ArUco library.}\relax }}{9}}
 \newlabel{fig:aruco}{{2.1}{9}}
-\abx@aux@cite{se2002global}
-\abx@aux@cite{lowe1999object}
 \abx@aux@cite{kendall2015posenet}
 \abx@aux@cite{achtelik2011onboard}
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Homography Determination \& Keypoint Matching}{10}}
@@ -113,24 +113,24 @@
 \newlabel{sec:filtering}{{3.3.4}{24}}
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Kalman Filter.}}{25}}
 \newlabel{fig:kali}{{3.7}{25}}
+\abx@aux@cite{thrun}
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Bayesian Filter.}}{26}}
 \newlabel{fig:bayes}{{3.8}{26}}
-\abx@aux@cite{thrun}
 \abx@aux@cite{driessen2008map}
 \@writefile{loa}{\defcounter {refsection}{0}\relax }\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Particle filter update\relax }}{27}}
 \newlabel{alg:particle_filter}{{2}{27}}
 \@writefile{loa}{\defcounter {refsection}{0}\relax }\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces Resampling wheel\relax }}{28}}
 \newlabel{alg:resampling_wheel}{{3}{28}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {3.4}Map evaluation}{29}}
-\newlabel{sec:mapeval}{{3.4}{29}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Evaluation Scheme}{29}}
-\newlabel{sec:evaluationscheme}{{3.4.1}{29}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces {\emph  {Left:} Actual similarity between histogram $h_i$ ($\text  {pos}_i$: white cross) and all other histograms; the heatmap shows low similarity in blue and high similarity in red. For the visualization, the actual similarities were smoothed with a Gaussian filter. \emph  {Middle:} Ideal histogram similarity distribution for the given position $\text  {pos}_i$. Histograms $h_j$ taken at closeby positions should have a high similarity to $h_i$. The farther away the position $\text  {pos}_j$, the lower the similarity between $h_i$ and $h_j$ should be. \emph  {Right:} The difference between the actual and the ideal similarity shows regions that do not follow the ideal similarity distribution for histogram $h_i$ (high loss: red; low loss: blue)}\relax }}{30}}
-\newlabel{fig:local_loss}{{3.9}{30}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {3.4}Map evaluation}{28}}
+\newlabel{sec:mapeval}{{3.4}{28}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Evaluation Scheme}{28}}
+\newlabel{sec:evaluationscheme}{{3.4.1}{28}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces {\emph  {Left:} Actual similarity between histogram $h_i$ ($\text  {pos}_i$: white cross) and all other histograms; the heatmap shows low similarity in blue and high similarity in red. For the visualization, the actual similarities were smoothed with a Gaussian filter. \emph  {Middle:} Ideal histogram similarity distribution for the given position $\text  {pos}_i$. Histograms $h_j$ taken at closeby positions should have a high similarity to $h_i$. The farther away the position $\text  {pos}_j$, the lower the similarity between $h_i$ and $h_j$ should be. \emph  {Right:} The difference between the actual and the ideal similarity shows regions that do not follow the ideal similarity distribution for histogram $h_i$ (high loss: red; low loss: blue)}\relax }}{29}}
+\newlabel{fig:local_loss}{{3.9}{29}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Synthetic Data Generation}{30}}
+\newlabel{sec:syntheticdatageneration}{{3.4.2}{30}}
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces The figure shows the loss of a map: the regions that did not follow the ideal similarity pattern are displayed in red. For the visualization, the loss values per sample in the dataset were smoothed with a Gaussian filter. This assigns a loss value to each $x,y$-position of the map. The synthetic data generation tool was used for generating the underlying dataset (Section~\ref  {sec:syntheticdatageneration}). \relax }}{31}}
 \newlabel{fig:globalloss}{{3.10}{31}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Synthetic Data Generation}{31}}
-\newlabel{sec:syntheticdatageneration}{{3.4.2}{31}}
 \abx@aux@cite{jepson}
 \abx@aux@cite{hartley2003multiple}
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces { Six image patches generated by means of the synthetic data generation tool.}\relax }}{32}}
@@ -138,66 +138,68 @@
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces { Illustration of the camera model for the synthetic flight. The developed tool extracts image patches from an given image to simulate those taken with the bottom camera of the MAV during an actual flight.}\relax }}{32}}
 \newlabel{fig:cammodel}{{3.12}{32}}
 \abx@aux@cite{opti}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {chapter}{\numberline {4}Analysis}{36}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {chapter}{\numberline {4}Analysis}{35}}
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:analysis}{{4}{36}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {4.1}Determining the Number of Image Patches}{36}}
-\newlabel{sec:numtextons}{{4.1}{36}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces The indoor flight arena at the Delft University of Technology \relax }}{37}}
-\newlabel{fig:cyberzoo}{{4.1}{37}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces { Mean cosine similarity between histograms obtained by random sampling to the histograms obtained by full sampling (301\tmspace  +\thinmuskip {.1667em}625 samples) as a function of the number of extracted samples. The error bars show the standard deviation of the cosine similarity. The squares indicate the positions at which the dependency was evaluated.}\relax }}{37}}
-\newlabel{fig:cosine}{{4.2}{37}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {4.2}Determining $k$ in the $k$-NN algorithm}{38}}
-\newlabel{sec:detk}{{4.2}{38}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces The distance between ground truth and predictions in $x$-direction and $y$-direction as a number of the neighbors in the $k$-NN algorithm. The error bars show the standard deviation of the distances.\relax }}{38}}
-\newlabel{fig:k}{{4.3}{38}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {4.3}Dependence between Histogram Distance and Measurement Error}{38}}
-\newlabel{fig:cosinesim}{{\caption@xref {fig:cosinesim}{ on input line 1827}}{39}}
-\newlabel{sub@fig:cosinesim}{{}{39}}
-\newlabel{fig:cosinesd}{{\caption@xref {fig:cosinesd}{ on input line 1833}}{39}}
-\newlabel{sub@fig:cosinesd}{{}{39}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Distance between ground truth and predictions from a $k$=1-NN model in $x$-direction (\emph  {Left}) and $y$-direction (\emph  {Right}) as a function of the distance to the closest training sample.\relax }}{39}}
-\newlabel{fig:cor_sim_confi}{{4.4}{39}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {4.4}Flight Tests}{39}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Training Set based on Motion Tracking System}{39}}
-\newlabel{sec:experiment-real}{{4.4.1}{39}}
-\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Estimates of the texton-based approach}}{40}}
-\newlabel{tab:route}{{4.1}{40}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Baseline: Homography-based Approach}{40}}
-\newlabel{sec:siftvsoptitrack}{{4.4.2}{40}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces { The created map that was stitched together using 800 images. The ``non-mapped'' area in the center of the image is a result of the set flight path. An image distortion can be seen at the right-hand side, where the landing spot sign appears twice, while in reality, only one circle was visible.}\relax }}{41}}
-\newlabel{fig:mapexp}{{4.5}{41}}
-\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces Error statistics homography method.}}{41}}
-\newlabel{tab:homoerror}{{4.2}{41}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Training Set based on Homography-finding Method}{41}}
-\newlabel{sec:traininghomo}{{4.4.3}{41}}
-\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {4.3}{\ignorespaces Estimates of the texton-based approach}}{42}}
-\newlabel{tab:routehomo}{{4.3}{42}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.4}Triggered Landing}{42}}
-\newlabel{sec:triggered}{{4.4.4}{42}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {4.5}Speed versus Accuracy Trade-Off}{42}}
-\newlabel{ref:speedvs}{{4.5}{42}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces \emph  {Top row:} Distance in cm between ground truth and the predictions in $x$-direction and $y$-direction as a function of the \textbf  {number of used particles} in the particle filter. \emph  {Middle row:} Standard deviations of the distances. \emph  {Bottom row:} Frequency of the algorithm.\relax }}{44}}
-\newlabel{fig:tradepart}{{4.6}{44}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces \emph  {Top row:} Distance in cm between ground truth and the predictions in $x$-direction and $y$-direction as a function of the \textbf  {number of used samples} in the histogram extraction step. \emph  {Middle row:} Standard deviations of the distances. \emph  {Bottom row:} Frequency of the algorithm.\relax }}{45}}
-\newlabel{fig:tradesamples}{{4.7}{45}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Frequency of the main loop as a function of the number of histograms in the training set.\relax }}{46}}
-\newlabel{fig:freqhist}{{4.8}{46}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {4.6}Comparing Maps}{46}}
-\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {4.4}{\ignorespaces Map evaluation procedure on synthetic data}}{47}}
-\newlabel{tab:mapeval}{{4.4}{47}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces { Image with the lowest loss value; \emph  {Right}: Image with the highest loss value}\relax }}{47}}
-\newlabel{fig:minmaximg}{{4.9}{47}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {chapter}{\numberline {5}Discussion}{48}}
+\newlabel{chap:analysis}{{4}{35}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {4.1}Determining the Number of Image Patches}{35}}
+\newlabel{sec:numtextons}{{4.1}{35}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces The indoor flight arena at the Delft University of Technology \relax }}{36}}
+\newlabel{fig:cyberzoo}{{4.1}{36}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces { Mean cosine similarity between histograms obtained by random sampling to the histograms obtained by full sampling (301\tmspace  +\thinmuskip {.1667em}625 samples) as a function of the number of extracted samples. The error bars show the standard deviation of the cosine similarity. The squares indicate the positions at which the dependency was evaluated.}\relax }}{36}}
+\newlabel{fig:cosine}{{4.2}{36}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {4.2}Determining $k$ in the $k$-NN algorithm}{37}}
+\newlabel{sec:detk}{{4.2}{37}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces The distance between ground truth and predictions in $x$-direction and $y$-direction as a number of the neighbors in the $k$-NN algorithm. The error bars show the standard deviation of the distances.\relax }}{37}}
+\newlabel{fig:k}{{4.3}{37}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {4.3}Dependence between Histogram Distance and Measurement Error}{37}}
+\newlabel{fig:cosinesim}{{\caption@xref {fig:cosinesim}{ on input line 1833}}{38}}
+\newlabel{sub@fig:cosinesim}{{}{38}}
+\newlabel{fig:cosinesd}{{\caption@xref {fig:cosinesd}{ on input line 1839}}{38}}
+\newlabel{sub@fig:cosinesd}{{}{38}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Distance between ground truth and predictions from a $k$=1-NN model in $x$-direction (\emph  {Left}) and $y$-direction (\emph  {Right}) as a function of the distance to the closest training sample.\relax }}{38}}
+\newlabel{fig:cor_sim_confi}{{4.4}{38}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {4.4}Flight Tests}{38}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Training Set based on Motion Tracking System}{38}}
+\newlabel{sec:experiment-real}{{4.4.1}{38}}
+\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Estimates of the texton-based approach}}{39}}
+\newlabel{tab:route}{{4.1}{39}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Baseline: Homography-based Approach}{39}}
+\newlabel{sec:siftvsoptitrack}{{4.4.2}{39}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces { The created map that was stitched together using 800 images. The ``non-mapped'' area in the center of the image is a result of the set flight path. An image distortion can be seen at the right-hand side, where the landing spot appears twice, while in reality, only one circle was visible.}\relax }}{40}}
+\newlabel{fig:mapexp}{{4.5}{40}}
+\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces Error statistics homography method.}}{40}}
+\newlabel{tab:homoerror}{{4.2}{40}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Training Set based on Homography-finding Method}{40}}
+\newlabel{sec:traininghomo}{{4.4.3}{40}}
+\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {4.3}{\ignorespaces Estimates of the texton-based approach}}{41}}
+\newlabel{tab:routehomo}{{4.3}{41}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.4}Triggered Landing}{41}}
+\newlabel{sec:triggered}{{4.4.4}{41}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {4.5}Speed versus Accuracy Trade-Off}{41}}
+\newlabel{ref:speedvs}{{4.5}{41}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces \emph  {Top row:} Distance in cm between ground truth and the predictions in $x$-direction and $y$-direction as a function of the \textbf  {number of used particles} in the particle filter. \emph  {Middle row:} Standard deviations of the distances. \emph  {Bottom row:} Frequency of the algorithm.\relax }}{43}}
+\newlabel{fig:tradepart}{{4.6}{43}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces \emph  {Top row:} Distance in cm between ground truth and the predictions in $x$-direction and $y$-direction as a function of the \textbf  {number of used samples} in the histogram extraction step. \emph  {Middle row:} Standard deviations of the distances. \emph  {Bottom row:} Frequency of the algorithm.\relax }}{44}}
+\newlabel{fig:tradesamples}{{4.7}{44}}
+\abx@aux@cite{earth}
+\abx@aux@cite{sparkle}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Frequency of the main loop as a function of the number of histograms in the training set.\relax }}{45}}
+\newlabel{fig:freqhist}{{4.8}{45}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {4.6}Comparing Maps}{45}}
+\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {4.4}{\ignorespaces Map evaluation procedure on synthetic data}}{46}}
+\newlabel{tab:mapeval}{{4.4}{46}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces { \emph  {Left}: Image with the lowest loss value~\cite {earth}; \emph  {Right}: Image with the highest loss value~\cite {sparkle}}\relax }}{46}}
+\newlabel{fig:minmaximg}{{4.9}{46}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {chapter}{\numberline {5}Discussion}{47}}
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:discussion}{{5}{48}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {5.1}General Discussion}{49}}
-\newlabel{sec:generaldiscussion}{{5.1}{49}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces { Exemplifying the reality gap. \emph  {Top left}: image patch generated using the synthetic data generation tool. \emph  {Top right}: image patch taken with the MAV's camera after printing the patch. \emph  {Below left}: Texton image of the synthetic image. In the image, the colors indicate the closest texton (dictionary size: 20 textons) at the respective position. \emph  {Below right}: Texton image of the real image. }\relax }}{52}}
-\newlabel{fig:realitygap}{{5.1}{52}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusion}{53}}
+\newlabel{chap:discussion}{{5}{47}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {5.1}General Discussion}{48}}
+\newlabel{sec:generaldiscussion}{{5.1}{48}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces { Exemplifying the reality gap. \emph  {Top left}: image patch generated using the synthetic data generation tool. \emph  {Top right}: image patch taken with the MAV's camera after printing the patch. \emph  {Below left}: Texton image of the synthetic image. In the image, the colors indicate the closest texton (dictionary size: 20 textons) at the respective position. \emph  {Below right}: Texton image of the real image. }\relax }}{51}}
+\newlabel{fig:realitygap}{{5.1}{51}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusion}{52}}
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:conclusion}{{6}{53}}
+\newlabel{chap:conclusion}{{6}{52}}

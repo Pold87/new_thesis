@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.10)  21 AUG 2016 18:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.10)  21 AUG 2016 19:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -959,25 +959,25 @@ File: english.lbx 2013/11/25 v2.8a biblatex localization (PK/JW/AB)
 (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 65.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 66.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 65.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 66.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1012,8 +1012,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
  (./thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 65.
-Package biblatex Info: Reference segment=0 on input line 65.
+Package biblatex Info: Reference section=0 on input line 66.
+Package biblatex Info: Reference segment=0 on input line 66.
  (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1033,38 +1033,38 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 66.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 67.
  (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 66.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 67.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 66.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 67.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 66.
+(Font)              <12> on input line 67.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 66.
+(Font)              <8> on input line 67.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 66.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 66.
+(Font)              <6> on input line 67.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 67.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 66.
+LaTeX Font Info:    Try loading font information for U+msa on input line 67.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 66.
+LaTeX Font Info:    Try loading font information for U+msb on input line 67.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1072,7 +1072,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 81.
+(Font)              <10.95> on input line 82.
  [1] [2] (./thesis.toc [1
 
 ])
@@ -1084,8 +1084,14 @@ Chapter 1.
 <img/nutshell.png, id=27, 456.2646pt x 346.1733pt>
 File: img/nutshell.png Graphic file (type png)
  <use img/nutshell.png>
-Package pdftex.def Info: img/nutshell.png used on input line 187.
+Package pdftex.def Info: img/nutshell.png used on input line 188.
 (pdftex.def)             Requested size: 270.0pt x 204.8532pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 200.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 200.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 200.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1093,91 +1099,98 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [3
 
 ] [4 <./img/nutshell.png>] [5]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 284.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 285.
 
  (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-[6] [7]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 329.
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 329
+.
+
+(/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [6] [7]
 Chapter 2.
 [8
 
-] <img/markers.pdf, id=51, 99.7326pt x 84.315pt>
+] <img/markers.pdf, id=54, 99.7326pt x 84.315pt>
 File: img/markers.pdf Graphic file (type pdf)
  <use img/markers.pdf>
-Package pdftex.def Info: img/markers.pdf used on input line 430.
+Package pdftex.def Info: img/markers.pdf used on input line 436.
 (pdftex.def)             Requested size: 108.0011pt x 91.3097pt.
 
-[9 <./img/markers.pdf>] <img/sift.png, id=59, 1284.8pt x 481.8pt>
+[9 <./img/markers.pdf>] <img/sift.png, id=62, 1284.8pt x 481.8pt>
 File: img/sift.png Graphic file (type png)
 
 <use img/sift.png>
-Package pdftex.def Info: img/sift.png used on input line 489.
+Package pdftex.def Info: img/sift.png used on input line 495.
 (pdftex.def)             Requested size: 306.0022pt x 114.75215pt.
  [10] [11 <./img/sift.png>] [12] [13]
 Chapter 3.
 [14
 
-] <img/comparison.pdf, id=80, 3276.24pt x 1846.9pt>
+] <img/comparison.pdf, id=82, 3276.24pt x 1846.9pt>
 File: img/comparison.pdf Graphic file (type pdf)
 
 <use img/comparison.pdf>
-Package pdftex.def Info: img/comparison.pdf used on input line 678.
+Package pdftex.def Info: img/comparison.pdf used on input line 684.
 (pdftex.def)             Requested size: 251.9989pt x 142.0342pt.
  [15 <./img/comparison.pdf>]
-<img/Gcs.png, id=88, 49.03358pt x 37.84216pt>
+<img/Gcs.png, id=90, 49.03358pt x 37.84216pt>
 File: img/Gcs.png Graphic file (type png)
  <use img/Gcs.png>
-Package pdftex.def Info: img/Gcs.png used on input line 729.
+Package pdftex.def Info: img/Gcs.png used on input line 735.
 (pdftex.def)             Requested size: 251.9989pt x 194.4914pt.
  [16]
 
 pdfTeX warning: pdflatex (file ./img/overview_new.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.4> allowed
-<img/overview_new.pdf, id=93, 396.08276pt x 365.76953pt>
+<img/overview_new.pdf, id=95, 396.08276pt x 365.76953pt>
 File: img/overview_new.pdf Graphic file (type pdf)
 
 <use img/overview_new.pdf>
-Package pdftex.def Info: img/overview_new.pdf used on input line 811.
+Package pdftex.def Info: img/overview_new.pdf used on input line 817.
 (pdftex.def)             Requested size: 201.59912pt x 186.17163pt.
  [17 <./img/Gcs.png>] [18 <./img/overview_new.pdf>]
 
 pdfTeX warning: pdflatex (file ./img/overview_sift.pdf): PDF inclusion: found P
 DF version <1.5>, but at most version <1.4> allowed
-<img/overview_sift.pdf, id=139, 501.16936pt x 539.19945pt>
+<img/overview_sift.pdf, id=141, 501.16936pt x 539.19945pt>
 File: img/overview_sift.pdf Graphic file (type pdf)
 
 <use img/overview_sift.pdf>
-Package pdftex.def Info: img/overview_sift.pdf used on input line 874.
+Package pdftex.def Info: img/overview_sift.pdf used on input line 880.
 (pdftex.def)             Requested size: 251.9989pt x 271.12115pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/bestmap.png, id=140, 803.0pt x 736.7525pt>
+<img/bestmap.png, id=142, 803.0pt x 736.7525pt>
 File: img/bestmap.png Graphic file (type png)
  <use img/bestmap.png>
-Package pdftex.def Info: img/bestmap.png used on input line 909.
+Package pdftex.def Info: img/bestmap.png used on input line 915.
 (pdftex.def)             Requested size: 216.0022pt x 198.18387pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [19] [20 <./img/overview_sift.pdf>] [21 <./img/bestmap.png>]
-<img/dict.png, id=207, 578.16pt x 433.62pt>
+<img/dict.png, id=209, 578.16pt x 433.62pt>
 File: img/dict.png Graphic file (type png)
  <use img/dict.png>
-Package pdftex.def Info: img/dict.png used on input line 972.
+Package pdftex.def Info: img/dict.png used on input line 978.
 (pdftex.def)             Requested size: 251.9989pt x 188.9937pt.
  [22 <./img/dict.png>] [23]
 
 pdfTeX warning: pdflatex (file ./img/kalman-crop.pdf): PDF inclusion: found PDF
  version <1.5>, but at most version <1.4> allowed
-<img/kalman-crop.pdf, id=217, 428.65143pt x 276.5542pt>
+<img/kalman-crop.pdf, id=219, 428.65143pt x 276.5542pt>
 File: img/kalman-crop.pdf Graphic file (type pdf)
 
 <use img/kalman-crop.pdf>
-Package pdftex.def Info: img/kalman-crop.pdf used on input line 1083.
+Package pdftex.def Info: img/kalman-crop.pdf used on input line 1089.
 (pdftex.def)             Requested size: 288.0011pt x 185.81783pt.
 
 
@@ -1187,341 +1200,333 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 pdfTeX warning: pdflatex (file ./img/particle-crop.pdf): PDF inclusion: found P
 DF version <1.5>, but at most version <1.4> allowed
-<img/particle-crop.pdf, id=218, 427.55637pt x 278.81264pt>
+<img/particle-crop.pdf, id=220, 427.55637pt x 278.81264pt>
 File: img/particle-crop.pdf Graphic file (type pdf)
 
 <use img/particle-crop.pdf>
-Package pdftex.def Info: img/particle-crop.pdf used on input line 1132.
+Package pdftex.def Info: img/particle-crop.pdf used on input line 1138.
 (pdftex.def)             Requested size: 288.0011pt x 187.81601pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [24] [25 <./img/kalman-crop.pdf>] [26 <./img/particle-crop.pdf>] [27] [28]
-<img/local_loss.png, id=482, 489.5088pt x 105.7551pt>
+<img/local_loss.png, id=483, 489.5088pt x 105.7551pt>
 File: img/local_loss.png Graphic file (type png)
  <use img/local_loss.png>
-Package pdftex.def Info: img/local_loss.png used on input line 1419.
+Package pdftex.def Info: img/local_loss.png used on input line 1425.
 (pdftex.def)             Requested size: 360.0pt x 77.77666pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[29] <img/global_loss-crop.pdf, id=487, 520.94624pt x 273.02pt>
+[29 <./img/local_loss.png (PNG copy)>]
+<img/global_loss-crop.pdf, id=488, 520.94624pt x 273.02pt>
 File: img/global_loss-crop.pdf Graphic file (type pdf)
 
 <use img/global_loss-crop.pdf>
-Package pdftex.def Info: img/global_loss-crop.pdf used on input line 1478.
+Package pdftex.def Info: img/global_loss-crop.pdf used on input line 1484.
 (pdftex.def)             Requested size: 360.0pt x 188.67145pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[30 <./img/local_loss.png (PNG copy)>]
-<img/samples.png, id=491, 2087.8pt x 1038.88126pt>
+<img/samples.png, id=489, 2087.8pt x 1038.88126pt>
 File: img/samples.png Graphic file (type png)
  <use img/samples.png>
-Package pdftex.def Info: img/samples.png used on input line 1508.
+Package pdftex.def Info: img/samples.png used on input line 1514.
 (pdftex.def)             Requested size: 251.9989pt x 125.38956pt.
 
+[30]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [31 <./img/global_loss-crop.pdf>]
-<img/camera_model.png, id=509, 1249.66875pt x 385.44pt>
+<img/camera_model.png, id=511, 1249.66875pt x 385.44pt>
 File: img/camera_model.png Graphic file (type png)
 
 <use img/camera_model.png>
-Package pdftex.def Info: img/camera_model.png used on input line 1542.
+Package pdftex.def Info: img/camera_model.png used on input line 1548.
 (pdftex.def)             Requested size: 241.91895pt x 74.61647pt.
  [32 <./img/samples.png> <./img/camera_model.png>]
-[33] [34] [35]
+[33] [34]
 Chapter 4.
-<img/cyberzoo.jpg, id=525, 3276.24pt x 1846.9pt>
+<img/cyberzoo.jpg, id=524, 3276.24pt x 1846.9pt>
 File: img/cyberzoo.jpg Graphic file (type jpg)
  <use img/cyberzoo.jpg>
-Package pdftex.def Info: img/cyberzoo.jpg used on input line 1693.
+Package pdftex.def Info: img/cyberzoo.jpg used on input line 1699.
 (pdftex.def)             Requested size: 288.0011pt x 162.35298pt.
 
-[36
+[35
 
-] <img/samplescos.pdf, id=529, 505.89pt x 505.89pt>
+] <img/samplescos.pdf, id=528, 505.89pt x 505.89pt>
 File: img/samplescos.pdf Graphic file (type pdf)
 
 <use img/samplescos.pdf>
-Package pdftex.def Info: img/samplescos.pdf used on input line 1745.
+Package pdftex.def Info: img/samplescos.pdf used on input line 1751.
 (pdftex.def)             Requested size: 180.0pt x 179.99745pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 1757.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 1757.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 1757.
- [37 <./img/cyberzoo.jpg> <./img/samplescos.pdf>]
-<img/k_x-crop.pdf, id=538, 362.35374pt x 364.36125pt>
+(Font)              <14.4> on input line 1763.
+ [36 <./img/cyberzoo.jpg> <./img/samplescos.pdf>]
+<img/k_x-crop.pdf, id=537, 362.35374pt x 364.36125pt>
 File: img/k_x-crop.pdf Graphic file (type pdf)
  <use img/k_x-crop.pdf>
-Package pdftex.def Info: img/k_x-crop.pdf used on input line 1775.
+Package pdftex.def Info: img/k_x-crop.pdf used on input line 1781.
 (pdftex.def)             Requested size: 169.20044pt x 170.13786pt.
 
-<img/k_y-crop.pdf, id=539, 362.35374pt x 364.36125pt>
+<img/k_y-crop.pdf, id=538, 362.35374pt x 364.36125pt>
 File: img/k_y-crop.pdf Graphic file (type pdf)
  <use img/k_y-crop.pdf>
-Package pdftex.def Info: img/k_y-crop.pdf used on input line 1780.
+Package pdftex.def Info: img/k_y-crop.pdf used on input line 1786.
 (pdftex.def)             Requested size: 169.20044pt x 170.13786pt.
 
-Overfull \hbox (9.68779pt too wide) in paragraph at lines 1813--1813
+Overfull \hbox (9.68779pt too wide) in paragraph at lines 1819--1819
 []\OT1/lmr/m/sc/14.4 Dependence be-tween His-togram Dis-tance and
  []
 
-
+[37 <./img/k_x-crop.pdf> <./img/k_y-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./img/dependency_dist_error_x-crop.pdf): PDF inc
 lusion: found PDF version <1.5>, but at most version <1.4> allowed
-<img/dependency_dist_error_x-crop.pdf, id=540, 459.7175pt x 410.53375pt>
+<img/dependency_dist_error_x-crop.pdf, id=556, 459.7175pt x 410.53375pt>
 File: img/dependency_dist_error_x-crop.pdf Graphic file (type pdf)
 
 <use img/dependency_dist_error_x-crop.pdf>
 Package pdftex.def Info: img/dependency_dist_error_x-crop.pdf used on input lin
-e 1825.
+e 1831.
 (pdftex.def)             Requested size: 180.0pt x 160.74646pt.
 
 
 pdfTeX warning: pdflatex (file ./img/dependency_dist_error_y-crop.pdf): PDF inc
 lusion: found PDF version <1.5>, but at most version <1.4> allowed
-<img/dependency_dist_error_y-crop.pdf, id=541, 458.71375pt x 407.5225pt>
+<img/dependency_dist_error_y-crop.pdf, id=557, 458.71375pt x 407.5225pt>
 File: img/dependency_dist_error_y-crop.pdf Graphic file (type pdf)
 
 <use img/dependency_dist_error_y-crop.pdf>
 Package pdftex.def Info: img/dependency_dist_error_y-crop.pdf used on input lin
-e 1831.
+e 1837.
 (pdftex.def)             Requested size: 180.0pt x 159.91562pt.
 
-Overfull \hbox (4.86667pt too wide) in paragraph at lines 1824--1838
+Overfull \hbox (4.86667pt too wide) in paragraph at lines 1830--1844
  [][]  [] 
  []
 
-[38 <./img/k_x-crop.pdf> <./img/k_y-crop.pdf>] [39 <./img/dependency_dist_error
-_x-crop.pdf> <./img/dependency_dist_error_y-crop.pdf>]
-<img/map_rotated.png, id=614, 2399.96625pt x 1496.59125pt>
+[38 <./img/dependency_dist_error_x-crop.pdf> <./img/dependency_dist_error_y-cro
+p.pdf>] <img/map_rotated.png, id=613, 2399.96625pt x 1496.59125pt>
 File: img/map_rotated.png Graphic file (type png)
 
 <use img/map_rotated.png>
-Package pdftex.def Info: img/map_rotated.png used on input line 1934.
+Package pdftex.def Info: img/map_rotated.png used on input line 1940.
 (pdftex.def)             Requested size: 251.9989pt x 157.1353pt.
- [40]
-Overfull \hbox (11.90955pt too wide) in paragraph at lines 1945--1949
+ [39]
+Overfull \hbox (11.90955pt too wide) in paragraph at lines 1951--1955
 []\OT1/lmr/m/n/10.95 We es-ti-mated the $\OML/lmm/m/it/10.95 x; y$\OT1/lmr/m/n/
 10.95 -coordinates of the 415 test im-ages us-ing the homography-
  []
 
-[41 <./img/map_rotated.png>] [42]
-<img/Error_x_particles-crop.pdf, id=626, 366.36874pt x 364.36125pt>
+[40 <./img/map_rotated.png>] [41]
+<img/Error_x_particles-crop.pdf, id=625, 366.36874pt x 364.36125pt>
 File: img/Error_x_particles-crop.pdf Graphic file (type pdf)
 
 <use img/Error_x_particles-crop.pdf>
-Package pdftex.def Info: img/Error_x_particles-crop.pdf used on input line 2084
+Package pdftex.def Info: img/Error_x_particles-crop.pdf used on input line 2091
 .
 (pdftex.def)             Requested size: 161.9989pt x 161.11447pt.
 
-<img/Error_y_particles-crop.pdf, id=627, 366.36874pt x 364.36125pt>
+<img/Error_y_particles-crop.pdf, id=626, 366.36874pt x 364.36125pt>
 File: img/Error_y_particles-crop.pdf Graphic file (type pdf)
 
 <use img/Error_y_particles-crop.pdf>
-Package pdftex.def Info: img/Error_y_particles-crop.pdf used on input line 2089
+Package pdftex.def Info: img/Error_y_particles-crop.pdf used on input line 2096
 .
 (pdftex.def)             Requested size: 161.9989pt x 161.11447pt.
 
-<img/SD_x_particles-crop.pdf, id=628, 366.36874pt x 364.36125pt>
+<img/SD_x_particles-crop.pdf, id=627, 366.36874pt x 364.36125pt>
 File: img/SD_x_particles-crop.pdf Graphic file (type pdf)
 
 <use img/SD_x_particles-crop.pdf>
-Package pdftex.def Info: img/SD_x_particles-crop.pdf used on input line 2092.
+Package pdftex.def Info: img/SD_x_particles-crop.pdf used on input line 2099.
 (pdftex.def)             Requested size: 161.9989pt x 161.11447pt.
 
-<img/SD_y_particles-crop.pdf, id=629, 366.36874pt x 364.36125pt>
+<img/SD_y_particles-crop.pdf, id=628, 366.36874pt x 364.36125pt>
 File: img/SD_y_particles-crop.pdf Graphic file (type pdf)
 
 <use img/SD_y_particles-crop.pdf>
-Package pdftex.def Info: img/SD_y_particles-crop.pdf used on input line 2096.
+Package pdftex.def Info: img/SD_y_particles-crop.pdf used on input line 2103.
 (pdftex.def)             Requested size: 161.9989pt x 161.11447pt.
 
-<img/particles_vs_freq-crop.pdf, id=630, 366.36874pt x 364.36125pt>
+<img/particles_vs_freq-crop.pdf, id=629, 366.36874pt x 364.36125pt>
 File: img/particles_vs_freq-crop.pdf Graphic file (type pdf)
 
 <use img/particles_vs_freq-crop.pdf>
-Package pdftex.def Info: img/particles_vs_freq-crop.pdf used on input line 2100
+Package pdftex.def Info: img/particles_vs_freq-crop.pdf used on input line 2107
 .
 (pdftex.def)             Requested size: 161.9989pt x 161.11447pt.
- [43]
-Overfull \vbox (21.43138pt too high) has occurred while \output is active []
+ [42]
+Overfull \vbox (14.90337pt too high) has occurred while \output is active []
 
 
-[44 <./img/Error_x_particles-crop.pdf> <./img/Error_y_particles-crop.pdf> <./im
+[43 <./img/Error_x_particles-crop.pdf> <./img/Error_y_particles-crop.pdf> <./im
 g/SD_x_particles-crop.pdf> <./img/SD_y_particles-crop.pdf> <./img/particles_vs_
 freq-crop.pdf>]
-<img/Error_x_samples-crop.pdf, id=672, 371.3875pt x 364.36125pt>
+<img/Error_x_samples-crop.pdf, id=671, 371.3875pt x 364.36125pt>
 File: img/Error_x_samples-crop.pdf Graphic file (type pdf)
 
 <use img/Error_x_samples-crop.pdf>
-Package pdftex.def Info: img/Error_x_samples-crop.pdf used on input line 2113.
+Package pdftex.def Info: img/Error_x_samples-crop.pdf used on input line 2120.
 (pdftex.def)             Requested size: 161.9989pt x 158.93507pt.
 
-<img/Error_y_samples-crop.pdf, id=673, 371.3875pt x 364.36125pt>
+<img/Error_y_samples-crop.pdf, id=672, 371.3875pt x 364.36125pt>
 File: img/Error_y_samples-crop.pdf Graphic file (type pdf)
 
 <use img/Error_y_samples-crop.pdf>
-Package pdftex.def Info: img/Error_y_samples-crop.pdf used on input line 2118.
+Package pdftex.def Info: img/Error_y_samples-crop.pdf used on input line 2125.
 (pdftex.def)             Requested size: 161.9989pt x 158.93507pt.
 
-<img/SD_x_samples-crop.pdf, id=674, 371.3875pt x 364.36125pt>
+<img/SD_x_samples-crop.pdf, id=673, 371.3875pt x 364.36125pt>
 File: img/SD_x_samples-crop.pdf Graphic file (type pdf)
 
 <use img/SD_x_samples-crop.pdf>
-Package pdftex.def Info: img/SD_x_samples-crop.pdf used on input line 2121.
+Package pdftex.def Info: img/SD_x_samples-crop.pdf used on input line 2128.
 (pdftex.def)             Requested size: 161.9989pt x 158.93507pt.
 
-<img/SD_y_samples-crop.pdf, id=675, 371.3875pt x 364.36125pt>
+<img/SD_y_samples-crop.pdf, id=674, 371.3875pt x 364.36125pt>
 File: img/SD_y_samples-crop.pdf Graphic file (type pdf)
 
 <use img/SD_y_samples-crop.pdf>
-Package pdftex.def Info: img/SD_y_samples-crop.pdf used on input line 2125.
+Package pdftex.def Info: img/SD_y_samples-crop.pdf used on input line 2132.
 (pdftex.def)             Requested size: 161.9989pt x 158.93507pt.
 
-<img/samples_vs_freq-crop.pdf, id=676, 371.3875pt x 364.36125pt>
+<img/samples_vs_freq-crop.pdf, id=675, 371.3875pt x 364.36125pt>
 File: img/samples_vs_freq-crop.pdf Graphic file (type pdf)
 
 <use img/samples_vs_freq-crop.pdf>
-Package pdftex.def Info: img/samples_vs_freq-crop.pdf used on input line 2129.
+Package pdftex.def Info: img/samples_vs_freq-crop.pdf used on input line 2136.
 (pdftex.def)             Requested size: 161.9989pt x 158.93507pt.
 
-Overfull \vbox (14.89319pt too high) has occurred while \output is active []
+Overfull \vbox (8.36517pt too high) has occurred while \output is active []
 
 
-[45 <./img/Error_x_samples-crop.pdf> <./img/Error_y_samples-crop.pdf> <./img/SD
+[44 <./img/Error_x_samples-crop.pdf> <./img/Error_y_samples-crop.pdf> <./img/SD
 _x_samples-crop.pdf> <./img/SD_y_samples-crop.pdf> <./img/samples_vs_freq-crop.
-pdf>] <img/histograms_vs_freq-crop.pdf, id=715, 371.3875pt x 364.36125pt>
+pdf>] <img/histograms_vs_freq-crop.pdf, id=714, 371.3875pt x 364.36125pt>
 File: img/histograms_vs_freq-crop.pdf Graphic file (type pdf)
 
 <use img/histograms_vs_freq-crop.pdf>
 Package pdftex.def Info: img/histograms_vs_freq-crop.pdf used on input line 214
-1.
+8.
 (pdftex.def)             Requested size: 180.0pt x 176.59824pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/lowest_highest.png, id=716, 427.3566pt x 112.2594pt>
+<img/lowest_highest.png, id=715, 427.3566pt x 112.2594pt>
 File: img/lowest_highest.png Graphic file (type png)
 
 <use img/lowest_highest.png>
-Package pdftex.def Info: img/lowest_highest.png used on input line 2197.
+Package pdftex.def Info: img/lowest_highest.png used on input line 2204.
 (pdftex.def)             Requested size: 251.9989pt x 66.19649pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[46 <./img/histograms_vs_freq-crop.pdf>] [47 <./img/lowest_highest.png>]
+[45 <./img/histograms_vs_freq-crop.pdf>] [46 <./img/lowest_highest.png>]
 Chapter 5.
-[48
+[47
 
 ]
-Overfull \hbox (13.29247pt too wide) in paragraph at lines 2290--2315
+Overfull \hbox (13.29247pt too wide) in paragraph at lines 2297--2322
 \OT1/lmr/m/n/10.95 time in-door lo-cal-iza-tion. The de-vel-oped al-go-rithm ru
 ns with a high frequency---
  []
 
-[49]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 2348.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 2348.
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 234
-8.
- (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
-File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [50]
-<img/realitygap.png, id=741, 455.301pt x 341.3553pt>
+[48] [49] <img/realitygap.png, id=740, 455.301pt x 341.3553pt>
 File: img/realitygap.png Graphic file (type png)
- <use img/realitygap.png>
-Package pdftex.def Info: img/realitygap.png used on input line 2403.
+
+<use img/realitygap.png>
+Package pdftex.def Info: img/realitygap.png used on input line 2409.
 (pdftex.def)             Requested size: 233.9978pt x 175.43272pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[51] [52 <./img/realitygap.png>]
+[50] [51 <./img/realitygap.png>]
 Chapter 6.
 
-Overfull \hbox (1.44498pt too wide) in paragraph at lines 2459--2467
+Overfull \hbox (1.44498pt too wide) in paragraph at lines 2465--2473
 \OT1/lmr/m/n/10.95 GPS-denied en-vi-ron-ments, such as homes, of-fices, or fac-
 tory build-ings. While
  []
 
-[53
+[52
 
 ]
-Overfull \hbox (5.9985pt too wide) in paragraph at lines 2469--2469
+Overfull \hbox (5.9985pt too wide) in paragraph at lines 2475--2475
 \OT1/lmr/m/it/10.95 and au-toma-tion (ICRA), 2011 IEEE in-ter-na-tional con-fer
 -ence on\OT1/lmr/m/n/10.95 . IEEE.
  []
 
-[54
+[53
 
-] [55]
-Overfull \hbox (5.31116pt too wide) in paragraph at lines 2469--2469
+] [54]
+Overfull \hbox (5.31116pt too wide) in paragraph at lines 2475--2475
 \OT1/lmr/m/it/10.95 tional Con-fer-ence on Robotics and Au-toma-tion, 2009 (ICR
 A'09). \OT1/lmr/m/n/10.95 IEEE.
  []
 
 
-Overfull \hbox (0.9007pt too wide) in paragraph at lines 2469--2469
+Overfull \hbox (0.9007pt too wide) in paragraph at lines 2475--2475
 []\OT1/lmr/m/n/10.95 Michael Jep-son. \OT1/lmr/m/it/10.95 Ro-ta-tion in 3D us-i
 ng OpenCV's warp-Per-spec-tive\OT1/lmr/m/n/10.95 . \OT1/lmr/m/sc/10.95 url\OT1/
 lmr/m/n/10.95 :
  []
 
-[56]
-Overfull \hbox (9.28864pt too wide) in paragraph at lines 2469--2469
+[55]
+Overfull \hbox (9.28864pt too wide) in paragraph at lines 2475--2475
 []\OT1/lmr/m/it/10.95 Microsoft Im-age Com-pos-ite Ed-i-tor\OT1/lmr/m/n/10.95 .
  \OT1/lmr/m/sc/10.95 url\OT1/lmr/m/n/10.95 : $\OT1/lmtt/m/n/10.95 http : / / re
 search . microsoft .
  []
 
-[57] (./thesis.aux)
+
+Overfull \hbox (12.85933pt too wide) in paragraph at lines 2475--2475
+[]\OT1/lmr/m/it/10.95 Sparkle Wall-pa-per\OT1/lmr/m/n/10.95 . \OT1/lmr/m/sc/10.
+95 url\OT1/lmr/m/n/10.95 : $\OT1/lmtt/m/n/10.95 http : / / e2ua . com / group /
+ sparkle -[] wallpaper/$
+ []
+
+[56] (./thesis.aux)
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20729 strings out of 493308
- 367602 string characters out of 6140092
- 758991 words of memory out of 5000000
- 23730 multiletter control sequences out of 15000+600000
- 101440 words of font info for 93 fonts, out of 8000000 for 9000
+ 20733 strings out of 493308
+ 367666 string characters out of 6140092
+ 760969 words of memory out of 5000000
+ 23734 multiletter control sequences out of 15000+600000
+ 108406 words of font info for 95 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  63i,16n,75p,935b,1636s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/
-dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr
-/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips
+dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr
+/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips
 /lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf
 /fonts/enc/dvips/lm/lm-rmsc.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts
 /type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb>
 </usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type
-1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/shar
-e/texmf/fonts/type1/public/lm/lmtt9.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (60 pages, 36292368 bytes).
+1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm
+/lmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/m
+sbm10.pfb>
+Output written on thesis.pdf (59 pages, 36299054 bytes).
 PDF statistics:
- 839 PDF objects out of 1000 (max. 8388607)
+ 840 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  188 words of extra memory for PDF output out of 10000 (max. 10000000)
 

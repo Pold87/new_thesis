@@ -40,36 +40,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.4}Filtering}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Map evaluation}{29}
+\contentsline {section}{\numberline {3.4}Map evaluation}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Evaluation Scheme}{29}
+\contentsline {subsection}{\numberline {3.4.1}Evaluation Scheme}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}Synthetic Data Generation}{31}
+\contentsline {subsection}{\numberline {3.4.2}Synthetic Data Generation}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Analysis}{36}
+\contentsline {chapter}{\numberline {4}Analysis}{35}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Determining the Number of Image Patches}{36}
+\contentsline {section}{\numberline {4.1}Determining the Number of Image Patches}{35}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Determining $k$ in the $k$-NN algorithm}{38}
+\contentsline {section}{\numberline {4.2}Determining $k$ in the $k$-NN algorithm}{37}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Dependence between Histogram Distance and Measurement Error}{38}
+\contentsline {section}{\numberline {4.3}Dependence between Histogram Distance and Measurement Error}{37}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Flight Tests}{39}
+\contentsline {section}{\numberline {4.4}Flight Tests}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Training Set based on Motion Tracking System}{39}
+\contentsline {subsection}{\numberline {4.4.1}Training Set based on Motion Tracking System}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}Baseline: Homography-based Approach}{40}
+\contentsline {subsection}{\numberline {4.4.2}Baseline: Homography-based Approach}{39}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.3}Training Set based on Homography-finding Method}{41}
+\contentsline {subsection}{\numberline {4.4.3}Training Set based on Homography-finding Method}{40}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.4}Triggered Landing}{42}
+\contentsline {subsection}{\numberline {4.4.4}Triggered Landing}{41}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Speed versus Accuracy Trade-Off}{42}
+\contentsline {section}{\numberline {4.5}Speed versus Accuracy Trade-Off}{41}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Comparing Maps}{46}
+\contentsline {section}{\numberline {4.6}Comparing Maps}{45}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Discussion}{48}
+\contentsline {chapter}{\numberline {5}Discussion}{47}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}General Discussion}{49}
+\contentsline {section}{\numberline {5.1}General Discussion}{48}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion}{53}
+\contentsline {chapter}{\numberline {6}Conclusion}{52}

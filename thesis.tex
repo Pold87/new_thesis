@@ -4,6 +4,7 @@
 \usepackage{titlesec}
 \usepackage{xcolor}
 \usepackage{subcaption}
+\usepackage[margin=0.7cm,font=small]{caption}
 \usepackage{algorithm}
 \usepackage[noend]{algpseudocode}
 \algnewcommand{\LineComment}[1]{\State \(\triangleright\) #1}
@@ -112,10 +113,10 @@
 %  identify well-performing maps.
 
 
-  We conducted several flight tests to evaluate the performance of the
+  We conducted flight tests to evaluate the performance of the
   approach. A comparison of the localization technique with the ground
   truth showed promising results: the algorithm has a localization
-  accuracy of approximately 0.6\,m on a $5\times5$ meter area at a
+  accuracy of approximately 0.6\,m on a 5\,m$\times$\,5\,m area at a
   runtime of 32\,ms on board of an MAV. In a triggered landing
   experiment, the MAV correctly landed in or close to specified
   areas. The map evaluation technique was applied to various
@@ -324,10 +325,15 @@ the simulated camera model.
 The developed software is made publicly available. It encompasses (i)
 the localization algorithm as part of the Paparazzi autopilot
 system~\cite{brisset2006paparazzi}, which consists of the texton-based
-approach in combination with a particle filter (ii) software for
-augmenting an image with synthetic views, (iii) a script for
-evaluating a map based on histograms and corresponding
-$x,y$-positions.
+approach in combination with a particle
+filter\footnote{\url{https://github.com/Pold87/paparazzi_new}} (ii)
+software for augmenting an image with synthetic
+views\footnote{\url{https://github.com/Pold87/draug}}, (iii) a script
+for labeling images with $x,y$-positions based on
+homographies\footnote{\url{https://github.com/Pold87/relocalizer}},
+and (iv) a script for evaluating a map based on histograms and
+corresponding
+$x,y$-positions\footnote{\url{https://github.com/Pold87/map_eval}}.
 
 
 \section{Thesis Outline}
@@ -337,12 +343,12 @@ The remainder of this thesis is structured as follows.
 Chapter~\ref{chap:relatedwork} surveys existing indoor localization
 approaches related to this thesis. In Chapter~\ref{chap:methods}, the
 developed texton-based approach is presented and its components, the
-$k$-NN algorithm and the particle filter, are introduced. Details about
-the synthetic data generation tool and map evaluation technique are
-also given. Chapter~4 describes the setup and
-results of the on-ground and in-flight experiments. The results are
-then discussed in Chapter~5. Finally, we draw our
-conclusions and indicate future research directions in
+$k$-NN algorithm and the particle filter, are introduced. Details
+about the synthetic data generation tool and map evaluation technique
+are also given. Chapter~4 describes the setup and results of the
+on-ground and in-flight experiments. We discuss the results are then
+discussed in Chapter~5 and indicate future research
+directions. Finally, we draw our conclusions in
 Chapter~6.%\ref{chap:conclusion}.
 
 \chapter{Related Work}
@@ -495,7 +501,7 @@ images.
 The approach has been employed for global localization for UAVs:
 \citeauthor{blosch2010vision}~\cite{blosch2010vision} evaluate it on a
 $3.5\,m \times 2\,m$ area and achieve a root mean square (RMS)
-positional error below $10\,cm$ in $x,y,z$-direction. Calculations are
+positional error below $10$\,cm in $x,y,z$-direction. Calculations are
 executed on a powerful ground station, which is connected to the UAV
 with a USB cable. Subsequent research has brought the algorithm on
 board of UAVs~\cite{achtelik2011onboard}, achieving a frequency of
@@ -1757,12 +1763,12 @@ the corresponding standard deviations.
 \section{Determining $k$ in the $k$-NN algorithm}
 \label{sec:detk}
 
-The number of nearest neighbors $k$ influences the predictions of the
+The number of nearest neighbors, $k$, influences the predictions of the
 $k$-NN algorithm: a low value can lead to unstable predictions, while
 a higher value reduces the variance in the predictions. However, a too
 high value can lead to a high bias resulting in inaccurate
-predictions. In this experiment, we analyzed we influence of the
-number of nearest neighbors $k$ on the distance between ground truth
+predictions. In this experiment, we analyzed the influence of the
+number of nearest neighbors, $k$, on the distance between ground truth
 and the predictions. The value of the measurement model was set to a
 constant value for all neighbors: $\forall j \in \{1, \ldots, k\}:
 \Sigma^{[j]} = \mathbf{c}$. This ensures that the effect of the number
@@ -1816,7 +1822,7 @@ As described in Section~\ref{sec:filtering}, we planned to include the
 distance to the neighbors in the $k$-NN algorithm as confidence value
 for the predictions. Figure~\ref{fig:cor_sim_confi} shows the
 dependence structure between the distance to the nearest neighbor and
-the error in $x$-direction and $y$-direction, measured as distance in cm
+the error in $x$-direction and $y$-direction, measured as the distance in cm
 between the ground truth and the label of the nearest neighbor.
 
 \begin{figure}[H]
@@ -1908,8 +1914,8 @@ seconds.
     \toprule
     & x-position & y-position\\
     \midrule
-    Error in $cm$ & 61 & 59\\
-    STD in $cm$ & 39 & 39\\
+    Error in cm & 61 & 59\\
+    STD in cm & 39 & 39\\
     \bottomrule
   \end{tabular}
   \caption[Estimates of the texton-based approach]{Differences between
@@ -1936,7 +1942,7 @@ using 800 images and the software Microsoft ICE.
     together using 800 images. The ``non-mapped'' area in the center
     of the image is a result of the set flight path. An image
     distortion can be seen at the right-hand side, where the landing
-    spot sign appears twice, while in reality, only one circle was
+    spot appears twice, while in reality, only one circle was
     visible.%
   }}
 \end{center}
@@ -1962,8 +1968,8 @@ Table~\ref{tab:homoerror}.
     \toprule
     & x-position & y-position\\
     \midrule
-    Error in $cm$ & 31 & 59\\
-    STD in $cm$ & 68 & 77\\
+    Error in cm & 31 & 59\\
+    STD in cm & 68 & 77\\
     \bottomrule
   \end{tabular}
   \caption[Error statistics homography method.]{Error statistics for the homography method.}
@@ -1990,8 +1996,8 @@ Experiment~\ref{sec:experiment-real}.
     \toprule
     & x-position & y-position\\
     \midrule
-    Error in $cm$ & 54 & 97\\
-    STD in $cm$ & 41 & 61\\
+    Error in cm & 54 & 97\\
+    STD in cm & 41 & 61\\
     \bottomrule
   \end{tabular}
   \caption[Estimates of the texton-based approach]{Differences between
@@ -2008,15 +2014,15 @@ Experiment~\ref{sec:experiment-real}.
 For the triggered landing experiment, the MAV was guided along random
 flight paths, which covered the $5 \times 5$ meter area; during
 navigation, the MAV was programmed to land as soon as its position
-estimates were in a ``landing zone'': a $x,y$-position with a
+estimates were in a ``landing zone'': an $x,y$-position with a
 specified radius $r$. A safety criterion was introduced such that the
 landing is only performed if the variances of the particles in
 $x$-direction and $y$-direction are below thresholds $\theta_x$ and
 $\theta_y$. We set the parameters to $\theta_x = \theta_y = 60$\,cm.
 The $x,y$-coordinate of the circle was specified in the flight plan;
-the radius was set to $r = 60\,cm$. We performed six triggered
+the radius was set to $r = 60$\,cm. We performed six triggered
 landings; after each landing, the $x,y$-center of the zone was
-randomly set another position in the map. For the texton framework,
+randomly set to another position in the map. For the texton framework,
 the same training set as in Experiment~\ref{sec:experiment-real} was
 used.
 
@@ -2074,9 +2080,10 @@ frequency to the distance between ground truth and the predictions,
 since our training dataset did not contain more than 800 histograms.
 
 After having received the image, the processing time of the presented
-algorithm using the \emph{default} values is 32\,ms, which includes
-the histogram extraction (16\,ms) as well as the $k$-NN predictions,
-the filtering and the output of the best $x,y$-coordinate (16\,ms).
+algorithm using the \emph{default} parameter values is 32\,ms, which
+includes the histogram extraction (16\,ms) as well as the $k$-NN
+predictions, the filtering and the output of the best $x,y$-coordinate
+(16\,ms).
 
 \begin{figure}[H]
   \centering
@@ -2196,8 +2203,8 @@ value and the map with the lowest global loss value.
 \begin{center}
 \includegraphics[width=0.7\columnwidth]{lowest_highest}
 \caption{{\label{fig:minmaximg}
-Image with the lowest loss value; \emph{Right}:
-    Image with the highest loss value%
+\emph{Left}: Image with the lowest loss value~\cite{earth}; \emph{Right}:
+    Image with the highest loss value~\cite{sparkle}%
 }}
 \end{center}
 \end{figure}
@@ -2207,15 +2214,15 @@ Image with the lowest loss value; \emph{Right}:
 
 In this chapter, the results of the experiments are discussed with
 regards to accuracy and frequency. Afterward, in the General
-Discussion, we address the research questions and give directions for
+Discussion, we address the research questions and indicate directions for
 future research.
 
 The comparison between random sampling and full sampling
 (Section~\ref{sec:numtextons}) has shown that only a small part of the
 maximum amount of samples in the histogram extraction step is
 necessary. In fact, $\frac{1000}{301625} = 0.33\,\%$ of the maximum
-amount of samples suffice to achieve cosine similarities between the
-texton histograms larger than $99\,\%$. This sets the stage for large
+amount of samples suffice to achieve cosine similarities greater than
+$99\,\%$ between the texton histograms. This sets the stage for large
 speed-ups during live operation and allows for executing the main loop
 of the algorithm in real-time.  In contrast, the full sampling
 technique---where a kernel is convolved over the entire image---would
@@ -2251,13 +2258,13 @@ from 0.58 to 0.98 underlines the varying suitability of different maps
 for the developed algorithm.
 % To visually evaluate the map evaluation technique, a simple map was
 % constructed with two repeating tiles.
-The image with the minimum and the one with the maximum loss value
-based are shown in Figure~\ref{fig:minmaximg}. The different patterns
-of the images are clearly visible: while the image with the minimum
-value roughly fulfills the desired properties---closeby areas have
-similar color values, distant areas are dissimilar, the image with the
-maximum loss is mainly black resulting in similar histograms all over
-and leading to high loss values. The image with the lowest loss value
+The image with the minimum and the one with the maximum loss value are
+shown in Figure~\ref{fig:minmaximg}. The different patterns of the
+images are clearly visible: while the image with the minimum value
+roughly fulfills the desired properties---closeby areas have similar
+color values, distant areas are dissimilar, the image with the maximum
+loss is mainly black resulting in similar histograms all over and
+leading to high loss values. The image with the lowest loss value
 still has a loss of 0.58 and, therefore, leaves room for improvement.
 %This initial evidence can be taken to
 %test the predictive power of the evaluation algorithm for texton
@@ -2297,10 +2304,10 @@ random sampling are the cornerstones of the developed algorithm. For
 finding a way to modify the environment in a certain direction, we
 introduced RQ\,2. In the scope of this research question, we developed
 a framework for evaluating different maps based on an ideal similarity
-of histograms. To answer RQ\,2, we still have to evaluate, if the
+of histograms. To answer RQ\,2, we still have to evaluate, whether the
 regions with a high loss value within an environment are actually the
 regions where the algorithm performs worse. We also still need to
-investigate if the results of the synthetically generated images
+investigate whether the results of the synthetically generated images
 generalize to the real-world.
 %In
 %contrast to R\,1, the generalization from the synthetic data to
@@ -2316,7 +2323,7 @@ real-world images.
 The presented approach is a vision-only approach. This makes it robust
 to external disruptions such as magnetic fields and reduces the amount
 of points of failure. Additionally, the approach can be used on
-different devices, such as handheld cameras.
+further devices, such as handheld cameras.
 
 Despite the overall promising results of our localization algorithm,
 we noticed drawbacks during the flight tests and identified several
@@ -2328,13 +2335,13 @@ directions for future research that are described in what follows.
 The accuracy---that is the difference between the estimates of the
 motion tracking system and the texton-based approach--- could be
 further improved by combining the presented global localization
-technique with local technique. To this end, odometry estimates using
-optical flow or the inclusion or data from the inertial measurement
+technique with a local technique. To this end, odometry estimates using
+optical flow or the inclusion of data from the inertial measurement
 unit (IMU)---which is a sensor that measures the angular displacement
 and acceleration of the MAV--- could be suitable.
 
 % Write about general rotations
-The current implementation assumes rather constant height up to few
+The current implementation assumes constant height up to few
 centimeters and only small rotations of the MAV. While a quadroter can
 move in every direction without performing yaw movements, other MAVs
 or the use of the front camera for obstacle avoidance could require
@@ -2345,11 +2352,10 @@ time-complexity of the $k$-NN algorithm. Instead, a ``derotation'' of
 the camera image could be performed to align it with the underlying
 images of the dataset. We developed a prototype for this
 procedure\footnote{An initial version of such a system can be found in
-  our GitHub repository \url{https://github.com/Pold87/derotator}}.
+  our GitHub repository\\\url{https://github.com/Pold87/derotator}}.
 %(Figure~\ref{fig:rotation}).
-The rotation is done on the basis of data
-from the inertial measurement unit (IMU), which is a sensor that
-measures the angular displacement of the MAV.
+The rotation is done on the basis of data from the inertial
+IMU.
 
 % \begin{figure}[h]
 %   \centering
@@ -2361,7 +2367,7 @@ measures the angular displacement of the MAV.
 
 While the current map evaluation approach used existing images, it
 could also serve as a fitness function for an optimization
-approach---for example, an evolutionary algorithm---which modifies a
+approach---for example, an evolutionary algorithm---that modifies a
 given image. While the solution to a loss value of zero or near zero
 might be unique and independent of the original image, a higher loss
 value might change the initial image only to a certain extent,
@@ -2390,7 +2396,7 @@ synthetic images to histograms of real images, by mapping ``synthetic
 textons'' to ``real-world textons.''
 
 The presented synthetic data generation software generates image
-patches based on drawing samples from parametric distributions
+patches by drawing samples from parametric distributions
 only. This was motivated by the fact that an ideal map should be
 independent of previous estimates and based on single images
 only---ideally requiring no filtering to address the kidnapped robot
@@ -2415,9 +2421,9 @@ The shift of the processing power could be further amplified by using
 a different regression technique. While the $k$-NN algorithm showed
 one of the best performances in our tests, larger training data sets
 are penalized due to a greater prediction time. However, the choice of
-a different regression technique is not straightforward: the technique
-should be able to output multiple predictions, since certain map
-regions might be ambiguous.
+a different regression technique is not straightforward: it should be
+able to output multiple predictions, since certain map regions might
+be ambiguous.
 
 %Still, future
 %developments could incorporate data from the inertial measurement unit
@@ -2445,7 +2451,7 @@ localization for MAVs. The first pillar shifts computational effort
 from the flight phase to a preprocessing step. This provides the
 advantages of sophisticated algorithms, without affecting performance
 during flight. The second pillar states that on-board algorithms
-should be able to trade off speed with accuracy. This allows their use
+should be able to trade off speed with accuracy. This capacitates their use
 on a wide range of models. Examples of these adaptable algorithms are
 the random sampling steps in the texton-based approach and the
 particle filter. The third pillar is a known---and
